@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>es-es</value></data>
+<data name="Xaml_BuildSelection_Title" xml:space="preserve"><value>Selección de build</value></data>
+<data name="Xaml_BuildSelection_BuildNumber" xml:space="preserve"><value>Número de build</value></data>
+<data name="Xaml_Common_Cancel" xml:space="preserve"><value>Cancelar</value></data>
+<data name="Xaml_Common_Apply" xml:space="preserve"><value>Aplicar</value></data>
+<data name="Xaml_Common_Refresh" xml:space="preserve"><value>Actualizar</value></data>
+<data name="Xaml_Common_Save" xml:space="preserve"><value>Guardar</value></data>
+<data name="Xaml_Common_Add" xml:space="preserve"><value>Añadir</value></data>
+<data name="Xaml_AuditLog_Title" xml:space="preserve"><value>Registro de auditoría / Historial de cambios</value></data>
+<data name="Xaml_AuditLog_DisplayCount" xml:space="preserve"><value>Cantidad mostrada</value></data>
+<data name="Xaml_AuditLog_HeaderTimestampUtc" xml:space="preserve"><value>Fecha y hora (UTC)</value></data>
+<data name="Xaml_AuditLog_HeaderCategory" xml:space="preserve"><value>Categoría</value></data>
+<data name="Xaml_AuditLog_HeaderAction" xml:space="preserve"><value>Acción</value></data>
+<data name="Xaml_AuditLog_HeaderEntityId" xml:space="preserve"><value>ID objetivo</value></data>
+<data name="Xaml_AuditLog_HeaderProperty" xml:space="preserve"><value>Campo</value></data>
+<data name="Xaml_AuditLog_HeaderBefore" xml:space="preserve"><value>Antes / Contenido</value></data>
+<data name="Xaml_AuditLog_HeaderAfter" xml:space="preserve"><value>Después</value></data>
+<data name="Xaml_AuditLog_HeaderActor" xml:space="preserve"><value>Ejecutor</value></data>
+<data name="Xaml_StructuredLog_Title" xml:space="preserve"><value>Registro estructurado</value></data>
+<data name="Xaml_StructuredLog_MaxItems" xml:space="preserve"><value>Máximo de elementos</value></data>
+<data name="Xaml_StructuredLog_Reload" xml:space="preserve"><value>Recargar</value></data>
+<data name="Xaml_StructuredLog_ClearLogs" xml:space="preserve"><value>Borrar registros</value></data>
+<data name="Xaml_StructuredLog_Folder" xml:space="preserve"><value>Carpeta</value></data>
+<data name="Xaml_StructuredLog_Level" xml:space="preserve"><value>Nivel</value></data>
+<data name="Xaml_StructuredLog_Category" xml:space="preserve"><value>Categoría</value></data>
+<data name="Xaml_StructuredLog_Operation" xml:space="preserve"><value>Operación</value></data>
+<data name="Xaml_StructuredLog_ServerId" xml:space="preserve"><value>ID del servidor</value></data>
+<data name="Xaml_StructuredLog_Search" xml:space="preserve"><value>Buscar</value></data>
+<data name="Xaml_StructuredLog_ResetFilter" xml:space="preserve"><value>Restablecer filtros</value></data>
+<data name="Xaml_StructuredLog_HeaderTimestampUtc" xml:space="preserve"><value>Hora (UTC)</value></data>
+<data name="Xaml_StructuredLog_HeaderLevel" xml:space="preserve"><value>Nivel</value></data>
+<data name="Xaml_StructuredLog_HeaderCategory" xml:space="preserve"><value>Categoría</value></data>
+<data name="Xaml_StructuredLog_HeaderOperation" xml:space="preserve"><value>Operación</value></data>
+<data name="Xaml_StructuredLog_HeaderServerId" xml:space="preserve"><value>ID del servidor</value></data>
+<data name="Xaml_StructuredLog_HeaderProcess" xml:space="preserve"><value>Proceso</value></data>
+<data name="Xaml_StructuredLog_HeaderMessage" xml:space="preserve"><value>Mensaje</value></data>
+<data name="Xaml_StructuredLog_HeaderException" xml:space="preserve"><value>Excepción</value></data>
+<data name="Xaml_StructuredLog_HeaderCorrelationId" xml:space="preserve"><value>ID de correlación</value></data>
+<data name="Xaml_PluginManager_Title" xml:space="preserve"><value>Gestor de plugins</value></data>
+<data name="Xaml_PluginManager_ServerRunningNotice" xml:space="preserve"><value>Servidor en ejecución — los cambios se aplican tras reiniciar.</value></data>
+<data name="Xaml_PluginManager_Install" xml:space="preserve"><value>Instalar</value></data>
+<data name="Xaml_PluginManager_OpenFolder" xml:space="preserve"><value>Abrir carpeta</value></data>
+<data name="Xaml_PluginManager_NoPlugins" xml:space="preserve"><value>No hay plugins</value></data>
+<data name="Xaml_PluginManager_DropOrInstallHint" xml:space="preserve"><value>Arrastra JAR aquí o usa el botón Instalar.</value></data>
+<data name="Xaml_PluginManager_DropToInstall" xml:space="preserve"><value>Soltar aquí para instalar</value></data>
+<data name="Xaml_PluginManager_Uninstall" xml:space="preserve"><value>Desinstalar</value></data>
+<data name="Xaml_OperationsCenter_Title" xml:space="preserve"><value>Panel de operaciones</value></data>
+<data name="Xaml_OperationsCenter_HeaderJobName" xml:space="preserve"><value>Nombre del trabajo</value></data>
+<data name="Xaml_OperationsCenter_HeaderServerId" xml:space="preserve"><value>ID del servidor</value></data>
+<data name="Xaml_OperationsCenter_HeaderStatus" xml:space="preserve"><value>Estado</value></data>
+<data name="Xaml_OperationsCenter_HeaderAttempt" xml:space="preserve"><value>Intentos</value></data>
+<data name="Xaml_OperationsCenter_HeaderMaxAttempt" xml:space="preserve"><value>Intentos máximos</value></data>
+<data name="Xaml_OperationsCenter_HeaderDurationMs" xml:space="preserve"><value>Duración (ms)</value></data>
+<data name="Xaml_OperationsCenter_HeaderCompletedUtc" xml:space="preserve"><value>Hora de finalización</value></data>
+<data name="Xaml_OperationsCenter_HeaderError" xml:space="preserve"><value>Error</value></data>
+<data name="Xaml_ServerFileEditor_Title" xml:space="preserve"><value>Editor de archivos</value></data>
+<data name="Xaml_ServerFileEditor_ConfigFiles" xml:space="preserve"><value>Archivos de configuración</value></data>
+<data name="Xaml_ServerFileEditor_AddSource" xml:space="preserve"><value>Agregar origen</value></data>
+<data name="Xaml_ServerFileEditor_ApplyWorld" xml:space="preserve"><value>Aplicar mundo</value></data>
+<data name="JobOrchestrator_LogJobSuccessFormat" xml:space="preserve"><value>Trabajo exitoso: {0} attempt={1}</value></data>
+<data name="JobOrchestrator_LogJobFailedFormat" xml:space="preserve"><value>Trabajo fallido: {0} attempt={1} error={2}</value></data>
+<data name="ServerFileEditor_WorldSlotOverworld" xml:space="preserve"><value>Overworld</value></data>
+<data name="ServerFileEditor_WorldSlotNether" xml:space="preserve"><value>Nether</value></data>
+<data name="ServerFileEditor_WorldSlotEnd" xml:space="preserve"><value>End</value></data>
+<data name="ServerFileEditor_JsonLoadFailed" xml:space="preserve"><value>No se pudo cargar JSON.</value></data>
+<data name="ServerFileEditor_InvalidUserName" xml:space="preserve"><value>Nombre de usuario no válido.</value></data>
+<data name="ServerFileEditor_DuplicateUserName" xml:space="preserve"><value>Ya existe un usuario con el mismo nombre.</value></data>
+<data name="ServerFileEditor_ResolvingUuid" xml:space="preserve"><value>Resolviendo UUID...</value></data>
+<data name="ServerFileEditor_ResolveUuidFailed" xml:space="preserve"><value>No se pudo resolver el UUID.</value></data>
+<data name="ServerFileEditor_Added" xml:space="preserve"><value>Añadido.</value></data>
+<data name="ServerFileEditor_Removed" xml:space="preserve"><value>Eliminado.</value></data>
+<data name="ServerFileEditor_InvalidIpAddress" xml:space="preserve"><value>Dirección IP no válida.</value></data>
+<data name="ServerFileEditor_DuplicateIpAddress" xml:space="preserve"><value>La misma IP ya existe.</value></data>
+<data name="ServerFileEditor_InvalidFolderPath" xml:space="preserve"><value>Especifica una carpeta válida.</value></data>
+<data name="ServerFileEditor_AlreadyExistsInList" xml:space="preserve"><value>Ya existe en la lista.</value></data>
+<data name="ServerFileEditor_AssignedToSlotFormat" xml:space="preserve"><value>Asignado a {0}.</value></data>
+<data name="ServerFileEditor_RemovedFromList" xml:space="preserve"><value>Eliminado de la lista.</value></data>
+<data name="ServerFileEditor_ApplyingWorlds" xml:space="preserve"><value>Aplicando mundos...</value></data>
+<data name="ServerFileEditor_NoAssignments" xml:space="preserve"><value>No hay asignaciones.</value></data>
+<data name="ServerFileEditor_WorldSourceNotFoundFormat" xml:space="preserve"><value>No se encontró la fuente de {0}.</value></data>
+<data name="ServerFileEditor_Applied" xml:space="preserve"><value>Aplicado.</value></data>
+<data name="ServerFileEditor_ApplyFailedFormat" xml:space="preserve"><value>Error al aplicar: {0}</value></data>
+<data name="PluginManager_StatusPluginCountFormat" xml:space="preserve"><value>{0} plugins</value></data>
+<data name="PluginManager_SelectJarTitle" xml:space="preserve"><value>Seleccionar JAR del plugin</value></data>
+<data name="PluginManager_SelectJarFilter" xml:space="preserve"><value>Archivos JAR (*.jar)|*.jar</value></data>
+<data name="PluginManager_InstallFailedFormat" xml:space="preserve"><value>Error al instalar {0}: {1}</value></data>
+<data name="Common_ErrorTitle" xml:space="preserve"><value>Error</value></data>
+<data name="PluginManager_InstallCompletedFormat" xml:space="preserve"><value>{0} instalados — total {1} plugins</value></data>
+<data name="PluginManager_UninstallConfirmFormat" xml:space="preserve"><value>¿Eliminar {0}?</value></data>
+<data name="Common_ConfirmTitle" xml:space="preserve"><value>Confirmar</value></data>
+<data name="PluginManager_UninstallFailedFormat" xml:space="preserve"><value>Error al eliminar: {0}</value></data>
+<data name="EulaGuidance_InitialAgreementRequired" xml:space="preserve"><value>Se requiere aceptar el EULA en el primer inicio. Abre eula.txt desde configuración y cambia eula=true y guarda.</value></data>
+<data name="Authorization_InlineDeniedFormat" xml:space="preserve"><value>La autorización no permite esta operación: {0}</value></data>
+<data name="Authorization_DialogDenied" xml:space="preserve"><value>La autorización no permite esta operación.</value></data>
+<data name="Authorization_DialogDeniedWithReasonFormat" xml:space="preserve"><value>La autorización no permite esta operación.\nMotivo: {0}</value></data>
+<data name="BoundaryException_WrapMessageFormat" xml:space="preserve"><value>Excepción de límite en {0} de tipo {1}: {2}</value></data>
+<data name="ServerProcess_LogSendCommandFormat" xml:space="preserve"><value>Enviar comando: {0}</value></data>
+<data name="ServerProcess_LogStopBegin" xml:space="preserve"><value>Iniciando detención del proceso del servidor.</value></data>
+<data name="ServerProcess_LogStopAsyncBegin" xml:space="preserve"><value>Iniciando detención asíncrona del proceso del servidor.</value></data>
+<data name="MainPage_ServerNotSelected" xml:space="preserve"><value>No hay ningún servidor seleccionado.</value></data>
+<data name="MainPage_NewServerName" xml:space="preserve"><value>Nuevo servidor</value></data>
+<data name="MainPage_DeleteAfterStopRequired" xml:space="preserve"><value>Detén el servidor antes de eliminarlo.</value></data>
+<data name="MainPage_DeleteServerConfirmFormat" xml:space="preserve"><value>¿Eliminar el servidor '{0}'? También se eliminará su directorio. ¿Continuar?</value></data>
+<data name="MainPage_DeleteServerDirectoryFailedFormat" xml:space="preserve"><value>No se pudo eliminar el directorio del servidor: {0}</value></data>
+<data name="SettingPage_UnnamedServer" xml:space="preserve"><value>Sin nombre</value></data>
+<data name="SettingPage_JavaPathStatusNotConfigured" xml:space="preserve"><value>Sin configurar: se intentará la descarga automática al iniciar.</value></data>
+<data name="SettingPage_JavaPathStatusValid" xml:space="preserve"><value>Se ha configurado una ruta válida.</value></data>
+<data name="SettingPage_JavaPathStatusNotFound" xml:space="preserve"><value>No se encontró el archivo especificado.</value></data>
+<data name="SettingPage_SelectJavaExeTitle" xml:space="preserve"><value>Seleccionar java.exe</value></data>
+<data name="SettingPage_SelectJavaExeFilter" xml:space="preserve"><value>java.exe|java.exe|Archivos ejecutables (*.exe)|*.exe|Todos los archivos (*.*)|*.*</value></data>
+<data name="SettingPage_UnregisteredServer" xml:space="preserve"><value>Servidor no registrado</value></data>
+<data name="SettingPage_PinMismatch" xml:space="preserve"><value>El PIN nuevo y la confirmación no coinciden.</value></data>
+<data name="SettingPage_PinLengthInvalid" xml:space="preserve"><value>Configura el PIN entre 4 y 32 caracteres.</value></data>
+<data name="SettingPage_RoleElevationPinRequired" xml:space="preserve"><value>La elevación de rol requiere autenticación. Configura primero un PIN.</value></data>
+<data name="SettingPage_CurrentPinRequired" xml:space="preserve"><value>Introduce el PIN actual.</value></data>
+<data name="SettingPage_PinVerificationFailed" xml:space="preserve"><value>La verificación del PIN falló.</value></data>
+<data name="SettingPage_WindowsHelloPrompt" xml:space="preserve"><value>Verifica tu identidad para la elevación de rol.</value></data>
+<data name="SettingPage_WindowsHelloCanceled" xml:space="preserve"><value>Se canceló la verificación de Windows Hello.</value></data>
+<data name="SettingPage_WindowsHelloRetriesExhausted" xml:space="preserve"><value>Se alcanzó el límite de reintentos de Windows Hello.</value></data>
+<data name="SettingPage_WindowsHelloDeviceBusy" xml:space="preserve"><value>El dispositivo de Windows Hello está ocupado.</value></data>
+<data name="SettingPage_WindowsHelloDisabledByPolicy" xml:space="preserve"><value>Windows Hello está deshabilitado por directiva.</value></data>
+<data name="SettingPage_WindowsHelloNotConfigured" xml:space="preserve"><value>Windows Hello no está configurado.</value></data>
+<data name="SettingPage_WindowsHelloDeviceNotPresent" xml:space="preserve"><value>No se encontró el dispositivo de Windows Hello.</value></data>
+<data name="SettingPage_WindowsHelloFailed" xml:space="preserve"><value>La verificación de Windows Hello falló.</value></data>
+<data name="OperationsCenter_SummaryFormat" xml:space="preserve"><value>Total de trabajos={0}  Éxitos={1}  Fallos={2}  En ejecución={3}  Tiempo prom.(ms)={4:0.0}</value></data>
+<data name="StructuredLog_AllFilter" xml:space="preserve"><value>Todos</value></data>
+<data name="StructuredLog_LoadFailedFormat" xml:space="preserve"><value>Error al cargar: {0}</value></data>
+<data name="StructuredLog_ClearFailedFormat" xml:space="preserve"><value>Error al borrar: {0}</value></data>
+<data name="StructuredLog_StatusFormat" xml:space="preserve"><value>Mostrando {0} / Total {1}</value></data>
+<data name="ServerItem_CurrentBuildUnpinned" xml:space="preserve"><value>build: no fijado</value></data>
+<data name="ServerItem_CurrentBuildPinnedFormat" xml:space="preserve"><value>build: {0}</value></data>
+<data name="ServerItem_UpdateTargetBuildFormat" xml:space="preserve"><value>build {0}</value></data>
+<data name="ServerItem_UpdateMessageLatestVersionFormat" xml:space="preserve"><value>Última versión: {0}</value></data>
+<data name="ServerItem_UpdateMessageLatestBuildFormat" xml:space="preserve"><value>Último build: {0}</value></data>
+<data name="ServerItem_DownloadStatusCheckingServerFile" xml:space="preserve"><value>Comprobando archivo del servidor...</value></data>
+<data name="ServerItem_LoadVersionsFailedFormat" xml:space="preserve"><value>Error al obtener la lista de versiones: {0}</value></data>
+<data name="ServerItem_CheckingJavaInstallation" xml:space="preserve"><value>Comprobando instalación de Java...</value></data>
+<data name="ServerItem_LogStartSequenceBegin" xml:space="preserve"><value>Se inició la secuencia de arranque del servidor.</value></data>
+<data name="ServerItem_JavaPathFormat" xml:space="preserve"><value>Ruta de Java: {0}</value></data>
+<data name="ServerItem_CheckingServerFile" xml:space="preserve"><value>Comprobando archivo del servidor...</value></data>
+<data name="ServerItem_StartingServerFormat" xml:space="preserve"><value>Iniciando servidor: {0}</value></data>
+<data name="ServerItem_LogStartFailed" xml:space="preserve"><value>Falló el inicio del servidor.</value></data>
+<data name="ServerItem_StartErrorFormat" xml:space="preserve"><value>Error de inicio: {0}</value></data>
+<data name="ServerItem_LogStopRequested" xml:space="preserve"><value>Se solicitó detener el servidor.</value></data>
+<data name="ServerItem_StoppingServer" xml:space="preserve"><value>Deteniendo servidor...</value></data>
+<data name="ServerItem_SendCommandFailedFormat" xml:space="preserve"><value>Error al enviar comando: {0}</value></data>
+<data name="ServerItem_ServerProcessExited" xml:space="preserve"><value>El proceso del servidor finalizó.</value></data>
+<data name="ServerItem_AutoRestartSkippedWaitingEula" xml:space="preserve"><value>No se ejecutará el reinicio automático mientras se espera la aceptación del EULA.</value></data>
+<data name="ServerItem_AutoRestartLimitReached" xml:space="preserve"><value>Se detiene porque se alcanzó el límite de reinicios automáticos.</value></data>
+<data name="ServerItem_LogAutoRestartScheduledFormat" xml:space="preserve"><value>Reinicio automático programado: {0}/{1}</value></data>
+<data name="ServerItem_AutoRestartScheduledFormat" xml:space="preserve"><value>El reinicio automático se ejecutará en {0:0} segundos ({1}/{2}).</value></data>
+<data name="ServerItem_DownloadStatusCreatingBackup" xml:space="preserve"><value>Creando copia de seguridad...</value></data>
+<data name="ServerItem_DownloadStatusDownloading" xml:space="preserve"><value>Descargando...</value></data>
+<data name="ServerItem_DownloadStatusVerifyingIntegrity" xml:space="preserve"><value>Verificando integridad...</value></data>
+<data name="Xaml_Main_ServerManager" xml:space="preserve"><value>Administrador de servidores</value></data>
+<data name="Xaml_Main_CreateNew" xml:space="preserve"><value>Crear nuevo</value></data>
+<data name="Xaml_Main_Name" xml:space="preserve"><value>Nombre</value></data>
+<data name="Xaml_Main_Type" xml:space="preserve"><value>Tipo</value></data>
+<data name="Xaml_Main_Version" xml:space="preserve"><value>Versión</value></data>
+<data name="Xaml_Main_Loading" xml:space="preserve"><value>Cargando...</value></data>
+<data name="Xaml_Main_MemoryMb" xml:space="preserve"><value>Memoria (MB)</value></data>
+<data name="Xaml_Main_Port" xml:space="preserve"><value>Puerto</value></data>
+<data name="Xaml_Main_Start" xml:space="preserve"><value>Iniciar</value></data>
+<data name="Xaml_Main_Stop" xml:space="preserve"><value>Detener</value></data>
+<data name="Xaml_Main_Folder" xml:space="preserve"><value>Carpeta</value></data>
+<data name="Xaml_Setting_JavaSettings" xml:space="preserve"><value>Ajustes de Java</value></data>
+<data name="Xaml_Setting_JavaDescription" xml:space="preserve"><value>Si defines la ruta de Java manualmente se omite la descarga. Si está vacío se intenta descarga automática. Si ya está instalado especifica la ruta completa a java.exe.</value></data>
+<data name="Xaml_Setting_JavaExecutable" xml:space="preserve"><value>Ejecutable Java (java.exe)</value></data>
+<data name="Xaml_Setting_Browse" xml:space="preserve"><value>Examinar...</value></data>
+<data name="Xaml_Setting_NetworkSettings" xml:space="preserve"><value>Ajustes de red</value></data>
+<data name="Xaml_Setting_EnablePortForwarding" xml:space="preserve"><value>Habilitar apertura de puertos (Firewall de Windows + UPnP)</value></data>
+<data name="Xaml_Setting_PortForwardingDescription" xml:space="preserve"><value>Al habilitar se intenta regla de firewall y mapeo UPnP al iniciar. Si se deshabilita configura manualmente.</value></data>
+<data name="Xaml_Setting_OperationsStability" xml:space="preserve"><value>Estabilidad operativa</value></data>
+<data name="Xaml_Setting_ConsoleLineRetention" xml:space="preserve"><value>Retención de líneas de consola (200-20000)</value></data>
+<data name="Xaml_Setting_EnableAutoRestart" xml:space="preserve"><value>Reiniciar automáticamente al detenerse inesperadamente</value></data>
+<data name="Xaml_Setting_MaxRetryCount" xml:space="preserve"><value>Máximo de reintentos</value></data>
+<data name="Xaml_Setting_RestartDelaySeconds" xml:space="preserve"><value>Segundos de espera para reinicio</value></data>
+<data name="Xaml_Setting_StructuredLog" xml:space="preserve"><value>Registro estructurado</value></data>
+<data name="Xaml_Setting_LogDirectory" xml:space="preserve"><value>Directorio de logs</value></data>
+<data name="Xaml_Setting_KeepFileCount" xml:space="preserve"><value>Cantidad de archivos retenidos</value></data>
+<data name="Xaml_Setting_MaxFileSizeMb" xml:space="preserve"><value>Tamaño máximo de archivo (MB)</value></data>
+<data name="Xaml_Setting_OpenLogViewer" xml:space="preserve"><value>Abrir visor de logs</value></data>
+<data name="Xaml_Setting_BackupRestore" xml:space="preserve"><value>Copia de seguridad y restauración</value></data>
+<data name="Xaml_Setting_EnableSafeUpdateBackup" xml:space="preserve"><value>Habilitar copia de seguridad de التحديث الآمن</value></data>
+<data name="Xaml_Setting_BackupRetentionGenerations" xml:space="preserve"><value>Generaciones de retención (1-30)</value></data>
+<data name="Xaml_Setting_AuthorizationPolicy" xml:space="preserve"><value>Autenticación autorización y política</value></data>
+<data name="Xaml_Setting_OperatorRole" xml:space="preserve"><value>Rol de operador</value></data>
+<data name="Xaml_Setting_RequireAuthOnRoleElevation" xml:space="preserve"><value>Requerir autenticación al elevar rol</value></data>
+<data name="Xaml_Setting_PreferWindowsHello" xml:space="preserve"><value>Preferir Windows Hello al elevar rol</value></data>
+<data name="Xaml_Setting_CurrentPin" xml:space="preserve"><value>PIN actual</value></data>
+<data name="Xaml_Setting_NewPin" xml:space="preserve"><value>Nuevo PIN</value></data>
+<data name="Xaml_Setting_NewPinConfirm" xml:space="preserve"><value>Confirmar nuevo PIN</value></data>
+<data name="Xaml_Setting_EnableMaintenanceMode" xml:space="preserve"><value>Habilitar modo mantenimiento</value></data>
+<data name="Xaml_Setting_LockedTargetServer" xml:space="preserve"><value>Servidor objetivo bloqueado</value></data>
+<data name="Xaml_Setting_ClearSelection" xml:space="preserve"><value>Borrar selección</value></data>
+<data name="Xaml_Setting_AuditAndOperations" xml:space="preserve"><value>Auditoría historial y operaciones</value></data>
+<data name="Xaml_Setting_OpenAuditLog" xml:space="preserve"><value>Abrir auditoría e historial</value></data>
+<data name="Xaml_Setting_OpenOperationsDashboard" xml:space="preserve"><value>Abrir panel de operaciones</value></data>
+<data name="Xaml_Setting_AutoSaveNotice" xml:space="preserve"><value>Los cambios se guardan automáticamente</value></data>
+<data name="Xaml_Setting_Clear" xml:space="preserve"><value>Limpiar</value></data>
+<data name="JavaResolver_UseConfiguredJavaPath" xml:space="preserve"><value>Se usa la ruta de Java configurada.</value></data>
+<data name="JavaResolver_ConfiguredJavaNotFoundFormat" xml:space="preserve"><value>No se encontró el Java configurado: {0}</value></data>
+<data name="JavaResolver_UseEmbeddedJre" xml:space="preserve"><value>Usando JRE integrado existente.</value></data>
+<data name="JavaResolver_UseEmbeddedJreSearchResult" xml:space="preserve"><value>Usando JRE integrado encontrado.</value></data>
+<data name="JavaResolver_JavaExeNotFoundAfterExtract" xml:space="preserve"><value>No se encontró java.exe tras extraer. Define la ruta manualmente en configuración.</value></data>
+<data name="JavaResolver_DownloadAndExtractCompleted" xml:space="preserve"><value>Se completó la descarga y extracción automática de Java.</value></data>
+<data name="JarIntegrity_Sha256VerifyFailedFormat" xml:space="preserve"><value>Falló la verificación SHA256 de {0}.</value></data>
+<data name="JarIntegrity_Sha1VerifyFailedFormat" xml:space="preserve"><value>Falló la verificación SHA1 de {0}.</value></data>
+<data name="JarIntegrity_ContentHashVerifyFailedFormat" xml:space="preserve"><value>Falló la verificación de hash de contenido de {0}.</value></data>
+<data name="Xaml_ModManager_Title" xml:space="preserve"><value>Gestor de mods</value></data>
+<data name="Xaml_ModManager_ServerRunningNotice" xml:space="preserve"><value>Servidor en ejecución — los cambios se aplican tras reiniciar.</value></data>
+<data name="Xaml_ModManager_Install" xml:space="preserve"><value>Instalar</value></data>
+<data name="Xaml_ModManager_OpenFolder" xml:space="preserve"><value>Abrir carpeta</value></data>
+<data name="Xaml_ModManager_NoMods" xml:space="preserve"><value>No hay mods</value></data>
+<data name="Xaml_ModManager_DropOrInstallHint" xml:space="preserve"><value>Arrastra JAR aquí o usa el botón Instalar.</value></data>
+<data name="Xaml_ModManager_DropToInstall" xml:space="preserve"><value>Soltar aquí para instalar</value></data>
+<data name="Xaml_ModManager_Uninstall" xml:space="preserve"><value>Desinstalar</value></data>
+<data name="ModManager_StatusModCountFormat" xml:space="preserve"><value>{0} mods</value></data>
+<data name="ModManager_SelectJarTitle" xml:space="preserve"><value>Seleccionar JAR del mod</value></data>
+<data name="ModManager_SelectJarFilter" xml:space="preserve"><value>Archivos JAR (*.jar)|*.jar</value></data>
+<data name="ModManager_InstallFailedFormat" xml:space="preserve"><value>Error al instalar {0}: {1}</value></data>
+<data name="ModManager_InstallCompletedFormat" xml:space="preserve"><value>{0} instalados — total {1} mods</value></data>
+<data name="ModManager_UninstallConfirmFormat" xml:space="preserve"><value>¿Eliminar {0}?</value></data>
+<data name="ModManager_UninstallFailedFormat" xml:space="preserve"><value>Error al eliminar: {0}</value></data>
+<data name="Auth_Error_MaintenanceMode" xml:space="preserve"><value>No se puede operar debido al modo de mantenimiento.</value></data>
+<data name="Auth_Error_ServerLocked" xml:space="preserve"><value>El servidor de destino está bloqueado por política.</value></data>
+<data name="Auth_Error_RoleInsufficientFormat" xml:space="preserve"><value>Permisos insuficientes. Rol requerido: {0}</value></data>
+<data name="JarIntegrity_UnsupportedServerTypeFormat" xml:space="preserve"><value>Tipo de servidor no soportado: {0}</value></data>
+<data name="JarIntegrity_OnlyHttpsAllowed" xml:space="preserve"><value>No se permiten URLs de descarga que no sean HTTPS.</value></data>
+<data name="JarIntegrity_UnauthorizedHostFormat" xml:space="preserve"><value>Host de descarga no autorizado: {0}</value></data>
+<data name="JarIntegrity_VanillaMetadataNotFoundFormat" xml:space="preserve"><value>Metadatos de validación para la versión Vanilla {0} no encontrados.</value></data>
+<data name="JarIntegrity_VanillaSha1NotFound" xml:space="preserve"><value>No se pudo obtener la información SHA1 para el JAR de Vanilla.</value></data>
+<data name="JarIntegrity_VanillaIntegrityFailed" xml:space="preserve"><value>Fallo en la verificación de integridad del JAR de Vanilla.</value></data>
+<data name="JarIntegrity_PaperBuildNumberParseFailed" xml:space="preserve"><value>No se pudo analizar el número de compilación de Paper.</value></data>
+<data name="JarIntegrity_PaperSha256NotFound" xml:space="preserve"><value>No se pudo obtener la información SHA256 para el JAR de Paper.</value></data>
+<data name="JarIntegrity_PaperIntegrityFailed" xml:space="preserve"><value>Fallo en la verificación de integridad del JAR de Paper.</value></data>
+<data name="Xaml_Eula_Title" xml:space="preserve"><value>Acuerdo de EULA</value></data>
+<data name="Xaml_Eula_Message" xml:space="preserve"><value>Minecraft 서버를 이용하려면</value></data>
+<data name="Xaml_Eula_MinecraftEula" xml:space="preserve"><value>Leer EULA de Minecraft</value></data>
+<data name="Xaml_Eula_PrivacyStatement" xml:space="preserve"><value>Leer Declaración de Privacidad de Microsoft</value></data>
+<data name="Xaml_Eula_Agree" xml:space="preserve"><value>Aceptar</value></data>
+<data name="Xaml_Eula_Decline" xml:space="preserve"><value>Rechazar</value></data>
+<data name="Xaml_Main_OpenScheduler" xml:space="preserve"><value>Programador</value></data>
+<data name="Xaml_Scheduler_Title" xml:space="preserve"><value>Programador de tareas</value></data>
+<data name="Xaml_Scheduler_Add" xml:space="preserve"><value>Agregar tarea</value></data>
+<data name="Xaml_Scheduler_Delete" xml:space="preserve"><value>Eliminar tarea</value></data>
+<data name="Xaml_Scheduler_Name" xml:space="preserve"><value>Nombre de tarea</value></data>
+<data name="Xaml_Scheduler_Enabled" xml:space="preserve"><value>Habilitado</value></data>
+<data name="Xaml_Scheduler_Mode" xml:space="preserve"><value>Modo de ejecución</value></data>
+<data name="Xaml_Scheduler_ModeInterval" xml:space="preserve"><value>Intervalo</value></data>
+<data name="Xaml_Scheduler_ModeDaily" xml:space="preserve"><value>Diario</value></data>
+<data name="Xaml_Scheduler_ModeWeekly" xml:space="preserve"><value>Semanal</value></data>
+<data name="Xaml_Scheduler_ModeSpecific" xml:space="preserve"><value>Fecha específica</value></data>
+<data name="Xaml_Scheduler_IntervalSeconds" xml:space="preserve"><value>Intervalo (seg)</value></data>
+<data name="Xaml_Scheduler_TimeOfDay" xml:space="preserve"><value>Hora (HH:mm)</value></data>
+<data name="Xaml_Scheduler_DayOfWeek" xml:space="preserve"><value>Día de la semana</value></data>
+<data name="Xaml_Scheduler_SpecificDate" xml:space="preserve"><value>Fecha</value></data>
+<data name="Xaml_Scheduler_FilePath" xml:space="preserve"><value>Ruta del archivo</value></data>
+<data name="Xaml_Scheduler_Arguments" xml:space="preserve"><value>Argumentos</value></data>
+<data name="Xaml_Scheduler_TargetType" xml:space="preserve"><value>Servidores objetivo</value></data>
+<data name="Xaml_Scheduler_TargetAll" xml:space="preserve"><value>Todos los servidores</value></data>
+<data name="Xaml_Scheduler_TargetSpecific" xml:space="preserve"><value>Servidores específicos</value></data>
+<data name="Job_Scheduler_TaskRun" xml:space="preserve"><value>Ejecutar a través del programador: {0}</value></data>
+<data name="Log_Scheduler_TaskStarted" xml:space="preserve"><value>Tarea programada '{0}' iniciada.</value></data>
+<data name="Log_Scheduler_TaskCompleted" xml:space="preserve"><value>Tarea programada '{0}' completada.</value></data>
+<data name="Job_Server_Create" xml:space="preserve"><value>Crear Servidor: {0}</value></data>
+<data name="Job_Server_Delete" xml:space="preserve"><value>Eliminar Servidor: {0}</value></data>
+<data name="Job_Plugin_Install" xml:space="preserve"><value>Instalar Plugins: {0}</value></data>
+<data name="Job_Plugin_Uninstall" xml:space="preserve"><value>Desinstalar Plugin: {0}</value></data>
+<data name="Job_Mod_Install" xml:space="preserve"><value>Instalar Mods: {0}</value></data>
+<data name="Job_Mod_Uninstall" xml:space="preserve"><value>Desinstalar Mod: {0}</value></data>
+<data name="Job_Server_Stop" xml:space="preserve"><value>Detener Servidor: {0}</value></data>
+<data name="Log_Server_Created" xml:space="preserve"><value>Servidor creado: {0}</value></data>
+<data name="Log_Server_Deleted" xml:space="preserve"><value>Servidor eliminado: {0}</value></data>
+<data name="Log_Plugin_Installed" xml:space="preserve"><value>Plugin instalado: {0}</value></data>
+<data name="Log_Plugin_Uninstalled" xml:space="preserve"><value>Plugin desinstalado: {0}</value></data>
+<data name="Log_Mod_Installed" xml:space="preserve"><value>Mod instalado: {0}</value></data>
+<data name="Log_Mod_Uninstalled" xml:space="preserve"><value>Mod desinstalado: {0}</value></data>
+<data name="ServerStartedToast_Title" xml:space="preserve"><value>Servidor Iniciado</value></data>
+<data name="ServerStartedToast_Message" xml:space="preserve"><value>Publicado: {0}</value></data>
+<data name="ServerStartedToast_MessageWithPort" xml:space="preserve"><value>Publicado: {0}:{1}</value></data>
+</root>

@@ -1,0 +1,60 @@
+<Window x:Class="MinecraftHost.Views.OperationsCenterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="clr-namespace:MinecraftHost.Models"
+        xmlns:loc="clr-namespace:MinecraftHost.Localization"
+        mc:Ignorable="d"
+        Title="{x:Static loc:Texts.Xaml_OperationsCenter_Title}"
+        Height="620"
+        Width="960"
+        WindowStartupLocation="CenterOwner"
+        Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
+        Foreground="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+                BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+                BorderThickness="0,0,0,1"
+                Padding="12,8">
+            <DockPanel>
+                <Button DockPanel.Dock="Right"
+                        Content="{x:Static loc:Texts.Xaml_Common_Refresh}"
+                        Command="{Binding RefreshCommand}"
+                        Style="{StaticResource BtnPrimary}"
+                        Padding="12,6"/>
+                <TextBlock Text="{Binding Summary}"
+                           Foreground="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"
+                           FontFamily="Consolas"
+                           FontSize="12"
+                           VerticalAlignment="Center"/>
+            </DockPanel>
+        </Border>
+
+        <DataGrid Grid.Row="1"
+                  Margin="8"
+                  ItemsSource="{Binding Jobs}"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  HeadersVisibility="Column"
+                  GridLinesVisibility="Horizontal"
+                  CanUserSortColumns="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_OperationsCenter_HeaderJobName}" Binding="{Binding Name}" Width="180"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_OperationsCenter_HeaderServerId}" Binding="{Binding ServerId}" Width="220"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_OperationsCenter_HeaderStatus}" Binding="{Binding Status}" Width="100"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_OperationsCenter_HeaderAttempt}" Binding="{Binding Attempt}" Width="90"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_OperationsCenter_HeaderMaxAttempt}" Binding="{Binding MaxAttempts}" Width="90"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_OperationsCenter_HeaderDurationMs}" Binding="{Binding DurationMs}" Width="120"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_OperationsCenter_HeaderCompletedUtc}" Binding="{Binding CompletedUtc}" Width="180"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_OperationsCenter_HeaderError}" Binding="{Binding LastError}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

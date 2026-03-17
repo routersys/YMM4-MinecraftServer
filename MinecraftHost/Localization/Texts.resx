@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>ja-jp</value></data>
+<data name="Xaml_BuildSelection_Title" xml:space="preserve"><value>ビルド選択</value></data>
+<data name="Xaml_BuildSelection_BuildNumber" xml:space="preserve"><value>ビルド番号</value></data>
+<data name="Xaml_Common_Cancel" xml:space="preserve"><value>キャンセル</value></data>
+<data name="Xaml_Common_Apply" xml:space="preserve"><value>適用</value></data>
+<data name="Xaml_Common_Refresh" xml:space="preserve"><value>更新</value></data>
+<data name="Xaml_Common_Save" xml:space="preserve"><value>保存</value></data>
+<data name="Xaml_Common_Add" xml:space="preserve"><value>追加</value></data>
+<data name="Xaml_AuditLog_Title" xml:space="preserve"><value>監査ログ / 変更履歴</value></data>
+<data name="Xaml_AuditLog_DisplayCount" xml:space="preserve"><value>表示件数</value></data>
+<data name="Xaml_AuditLog_HeaderTimestampUtc" xml:space="preserve"><value>日時(UTC)</value></data>
+<data name="Xaml_AuditLog_HeaderCategory" xml:space="preserve"><value>カテゴリ</value></data>
+<data name="Xaml_AuditLog_HeaderAction" xml:space="preserve"><value>操作</value></data>
+<data name="Xaml_AuditLog_HeaderEntityId" xml:space="preserve"><value>対象ID</value></data>
+<data name="Xaml_AuditLog_HeaderProperty" xml:space="preserve"><value>項目</value></data>
+<data name="Xaml_AuditLog_HeaderBefore" xml:space="preserve"><value>変更前/内容</value></data>
+<data name="Xaml_AuditLog_HeaderAfter" xml:space="preserve"><value>変更後</value></data>
+<data name="Xaml_AuditLog_HeaderActor" xml:space="preserve"><value>実行者</value></data>
+<data name="Xaml_StructuredLog_Title" xml:space="preserve"><value>構造化ログ</value></data>
+<data name="Xaml_StructuredLog_MaxItems" xml:space="preserve"><value>最大件数</value></data>
+<data name="Xaml_StructuredLog_Reload" xml:space="preserve"><value>再読込</value></data>
+<data name="Xaml_StructuredLog_ClearLogs" xml:space="preserve"><value>ログ削除</value></data>
+<data name="Xaml_StructuredLog_Folder" xml:space="preserve"><value>フォルダ</value></data>
+<data name="Xaml_StructuredLog_Level" xml:space="preserve"><value>レベル</value></data>
+<data name="Xaml_StructuredLog_Category" xml:space="preserve"><value>カテゴリ</value></data>
+<data name="Xaml_StructuredLog_Operation" xml:space="preserve"><value>操作</value></data>
+<data name="Xaml_StructuredLog_ServerId" xml:space="preserve"><value>サーバーID</value></data>
+<data name="Xaml_StructuredLog_Search" xml:space="preserve"><value>検索</value></data>
+<data name="Xaml_StructuredLog_ResetFilter" xml:space="preserve"><value>フィルタ解除</value></data>
+<data name="Xaml_StructuredLog_HeaderTimestampUtc" xml:space="preserve"><value>時刻(UTC)</value></data>
+<data name="Xaml_StructuredLog_HeaderLevel" xml:space="preserve"><value>レベル</value></data>
+<data name="Xaml_StructuredLog_HeaderCategory" xml:space="preserve"><value>カテゴリ</value></data>
+<data name="Xaml_StructuredLog_HeaderOperation" xml:space="preserve"><value>操作</value></data>
+<data name="Xaml_StructuredLog_HeaderServerId" xml:space="preserve"><value>サーバーID</value></data>
+<data name="Xaml_StructuredLog_HeaderProcess" xml:space="preserve"><value>プロセス</value></data>
+<data name="Xaml_StructuredLog_HeaderMessage" xml:space="preserve"><value>メッセージ</value></data>
+<data name="Xaml_StructuredLog_HeaderException" xml:space="preserve"><value>例外</value></data>
+<data name="Xaml_StructuredLog_HeaderCorrelationId" xml:space="preserve"><value>相関ID</value></data>
+<data name="Xaml_PluginManager_Title" xml:space="preserve"><value>プラグイン管理</value></data>
+<data name="Xaml_PluginManager_ServerRunningNotice" xml:space="preserve"><value>サーバー稼働中 — 変更はサーバー再起動後に反映されます</value></data>
+<data name="Xaml_PluginManager_Install" xml:space="preserve"><value>インストール</value></data>
+<data name="Xaml_PluginManager_OpenFolder" xml:space="preserve"><value>フォルダを開く</value></data>
+<data name="Xaml_PluginManager_NoPlugins" xml:space="preserve"><value>プラグインがありません</value></data>
+<data name="Xaml_PluginManager_DropOrInstallHint" xml:space="preserve"><value>JARファイルをここにドラッグ &amp; ドロップするかインストールボタンを押してください</value></data>
+<data name="Xaml_PluginManager_DropToInstall" xml:space="preserve"><value>ここにドロップしてインストール</value></data>
+<data name="Xaml_PluginManager_Uninstall" xml:space="preserve"><value>アンインストール</value></data>
+<data name="Xaml_OperationsCenter_Title" xml:space="preserve"><value>運用ダッシュボード</value></data>
+<data name="Xaml_OperationsCenter_HeaderJobName" xml:space="preserve"><value>ジョブ名</value></data>
+<data name="Xaml_OperationsCenter_HeaderServerId" xml:space="preserve"><value>サーバーID</value></data>
+<data name="Xaml_OperationsCenter_HeaderStatus" xml:space="preserve"><value>状態</value></data>
+<data name="Xaml_OperationsCenter_HeaderAttempt" xml:space="preserve"><value>試行回数</value></data>
+<data name="Xaml_OperationsCenter_HeaderMaxAttempt" xml:space="preserve"><value>最大試行</value></data>
+<data name="Xaml_OperationsCenter_HeaderDurationMs" xml:space="preserve"><value>実行時間(ms)</value></data>
+<data name="Xaml_OperationsCenter_HeaderCompletedUtc" xml:space="preserve"><value>完了時刻</value></data>
+<data name="Xaml_OperationsCenter_HeaderError" xml:space="preserve"><value>エラー</value></data>
+<data name="Xaml_ServerFileEditor_Title" xml:space="preserve"><value>ファイル編集</value></data>
+<data name="Xaml_ServerFileEditor_ConfigFiles" xml:space="preserve"><value>設定ファイル</value></data>
+<data name="Xaml_ServerFileEditor_AddSource" xml:space="preserve"><value>ソース追加</value></data>
+<data name="Xaml_ServerFileEditor_ApplyWorld" xml:space="preserve"><value>ワールド適用</value></data>
+<data name="JobOrchestrator_LogJobSuccessFormat" xml:space="preserve"><value>ジョブ成功: {0} attempt={1}</value></data>
+<data name="JobOrchestrator_LogJobFailedFormat" xml:space="preserve"><value>ジョブ失敗: {0} attempt={1} error={2}</value></data>
+<data name="ServerFileEditor_WorldSlotOverworld" xml:space="preserve"><value>オーバーワールド</value></data>
+<data name="ServerFileEditor_WorldSlotNether" xml:space="preserve"><value>ネザー</value></data>
+<data name="ServerFileEditor_WorldSlotEnd" xml:space="preserve"><value>エンド</value></data>
+<data name="ServerFileEditor_JsonLoadFailed" xml:space="preserve"><value>JSONの読み込みに失敗しました。</value></data>
+<data name="ServerFileEditor_InvalidUserName" xml:space="preserve"><value>ユーザー名が無効です。</value></data>
+<data name="ServerFileEditor_DuplicateUserName" xml:space="preserve"><value>同名ユーザーは既に存在します。</value></data>
+<data name="ServerFileEditor_ResolvingUuid" xml:space="preserve"><value>UUIDを取得中...</value></data>
+<data name="ServerFileEditor_ResolveUuidFailed" xml:space="preserve"><value>UUIDの取得に失敗しました。</value></data>
+<data name="ServerFileEditor_Added" xml:space="preserve"><value>追加しました。</value></data>
+<data name="ServerFileEditor_Removed" xml:space="preserve"><value>削除しました。</value></data>
+<data name="ServerFileEditor_InvalidIpAddress" xml:space="preserve"><value>IPアドレスが無効です。</value></data>
+<data name="ServerFileEditor_DuplicateIpAddress" xml:space="preserve"><value>同じIPは既に存在します。</value></data>
+<data name="ServerFileEditor_InvalidFolderPath" xml:space="preserve"><value>有効なフォルダーを指定してください。</value></data>
+<data name="ServerFileEditor_AlreadyExistsInList" xml:space="preserve"><value>すでに一覧に存在します。</value></data>
+<data name="ServerFileEditor_AssignedToSlotFormat" xml:space="preserve"><value>{0} に割り当てました。</value></data>
+<data name="ServerFileEditor_RemovedFromList" xml:space="preserve"><value>一覧から削除しました。</value></data>
+<data name="ServerFileEditor_ApplyingWorlds" xml:space="preserve"><value>ワールドを適用中...</value></data>
+<data name="ServerFileEditor_NoAssignments" xml:space="preserve"><value>割り当てがありません。</value></data>
+<data name="ServerFileEditor_WorldSourceNotFoundFormat" xml:space="preserve"><value>{0} のソースが見つかりません。</value></data>
+<data name="ServerFileEditor_Applied" xml:space="preserve"><value>適用しました。</value></data>
+<data name="ServerFileEditor_ApplyFailedFormat" xml:space="preserve"><value>適用に失敗しました: {0}</value></data>
+<data name="PluginManager_StatusPluginCountFormat" xml:space="preserve"><value>{0} プラグイン</value></data>
+<data name="PluginManager_SelectJarTitle" xml:space="preserve"><value>プラグイン JAR を選択</value></data>
+<data name="PluginManager_SelectJarFilter" xml:space="preserve"><value>JAR ファイル (*.jar)|*.jar</value></data>
+<data name="PluginManager_InstallFailedFormat" xml:space="preserve"><value>{0} のインストールに失敗: {1}</value></data>
+<data name="Common_ErrorTitle" xml:space="preserve"><value>エラー</value></data>
+<data name="PluginManager_InstallCompletedFormat" xml:space="preserve"><value>{0} 個インストール完了 — 合計 {1} プラグイン</value></data>
+<data name="PluginManager_UninstallConfirmFormat" xml:space="preserve"><value>「{0}」を削除しますか？</value></data>
+<data name="Common_ConfirmTitle" xml:space="preserve"><value>確認</value></data>
+<data name="PluginManager_UninstallFailedFormat" xml:space="preserve"><value>削除に失敗: {0}</value></data>
+<data name="EulaGuidance_InitialAgreementRequired" xml:space="preserve"><value>初回起動で EULA 同意が必要です。設定編集から eula.txt を開き、eula=true に変更して保存してください。</value></data>
+<data name="Authorization_InlineDeniedFormat" xml:space="preserve"><value>認可により操作できません: {0}</value></data>
+<data name="Authorization_DialogDenied" xml:space="preserve"><value>認可により操作できません。</value></data>
+<data name="Authorization_DialogDeniedWithReasonFormat" xml:space="preserve"><value>認可により操作できません。\n理由: {0}</value></data>
+<data name="BoundaryException_WrapMessageFormat" xml:space="preserve"><value>{0} で {1} 境界の例外が発生しました: {2}</value></data>
+<data name="ServerProcess_LogSendCommandFormat" xml:space="preserve"><value>コマンド送信: {0}</value></data>
+<data name="ServerProcess_LogStopBegin" xml:space="preserve"><value>サーバープロセス停止を開始します。</value></data>
+<data name="ServerProcess_LogStopAsyncBegin" xml:space="preserve"><value>サーバープロセス非同期停止を開始します。</value></data>
+<data name="MainPage_ServerNotSelected" xml:space="preserve"><value>対象サーバーが選択されていません。</value></data>
+<data name="MainPage_NewServerName" xml:space="preserve"><value>新規サーバー</value></data>
+<data name="MainPage_DeleteAfterStopRequired" xml:space="preserve"><value>サーバー停止後に削除してください。</value></data>
+<data name="MainPage_DeleteServerConfirmFormat" xml:space="preserve"><value>サーバー '{0}' を削除します。ディレクトリも削除されます。よろしいですか？</value></data>
+<data name="MainPage_DeleteServerDirectoryFailedFormat" xml:space="preserve"><value>サーバーディレクトリの削除に失敗しました: {0}</value></data>
+<data name="SettingPage_UnnamedServer" xml:space="preserve"><value>名称未設定</value></data>
+<data name="SettingPage_JavaPathStatusNotConfigured" xml:space="preserve"><value>未設定 — 起動時に自動ダウンロードを試みます</value></data>
+<data name="SettingPage_JavaPathStatusValid" xml:space="preserve"><value>有効なパスが設定されています</value></data>
+<data name="SettingPage_JavaPathStatusNotFound" xml:space="preserve"><value>指定されたファイルが見つかりません</value></data>
+<data name="SettingPage_SelectJavaExeTitle" xml:space="preserve"><value>java.exe を選択</value></data>
+<data name="SettingPage_SelectJavaExeFilter" xml:space="preserve"><value>java.exe|java.exe|実行ファイル (*.exe)|*.exe|すべてのファイル (*.*)|*.*</value></data>
+<data name="SettingPage_UnregisteredServer" xml:space="preserve"><value>未登録サーバー</value></data>
+<data name="SettingPage_PinMismatch" xml:space="preserve"><value>新しいPINと確認入力が一致しません。</value></data>
+<data name="SettingPage_PinLengthInvalid" xml:space="preserve"><value>PINは4〜32文字で設定してください。</value></data>
+<data name="SettingPage_RoleElevationPinRequired" xml:space="preserve"><value>ロール昇格には認証が必要です。PINを先に設定してください。</value></data>
+<data name="SettingPage_CurrentPinRequired" xml:space="preserve"><value>現在PINを入力してください。</value></data>
+<data name="SettingPage_PinVerificationFailed" xml:space="preserve"><value>PIN認証に失敗しました。</value></data>
+<data name="SettingPage_WindowsHelloPrompt" xml:space="preserve"><value>ロール昇格のため認証してください。</value></data>
+<data name="SettingPage_WindowsHelloCanceled" xml:space="preserve"><value>Windows Hello認証がキャンセルされました。</value></data>
+<data name="SettingPage_WindowsHelloRetriesExhausted" xml:space="preserve"><value>Windows Hello認証の試行回数上限に達しました。</value></data>
+<data name="SettingPage_WindowsHelloDeviceBusy" xml:space="preserve"><value>Windows Helloデバイスが使用中です。</value></data>
+<data name="SettingPage_WindowsHelloDisabledByPolicy" xml:space="preserve"><value>Windows Helloがポリシーで無効化されています。</value></data>
+<data name="SettingPage_WindowsHelloNotConfigured" xml:space="preserve"><value>Windows Helloが未設定です。</value></data>
+<data name="SettingPage_WindowsHelloDeviceNotPresent" xml:space="preserve"><value>Windows Helloデバイスが見つかりません。</value></data>
+<data name="SettingPage_WindowsHelloFailed" xml:space="preserve"><value>Windows Hello認証に失敗しました。</value></data>
+<data name="OperationsCenter_SummaryFormat" xml:space="preserve"><value>総ジョブ={0}  成功={1}  失敗={2}  実行中={3}  平均時間(ms)={4:0.0}</value></data>
+<data name="StructuredLog_AllFilter" xml:space="preserve"><value>すべて</value></data>
+<data name="StructuredLog_LoadFailedFormat" xml:space="preserve"><value>読み込み失敗: {0}</value></data>
+<data name="StructuredLog_ClearFailedFormat" xml:space="preserve"><value>削除失敗: {0}</value></data>
+<data name="StructuredLog_StatusFormat" xml:space="preserve"><value>表示 {0} / 全 {1} 件</value></data>
+<data name="ServerItem_CurrentBuildUnpinned" xml:space="preserve"><value>build: 未固定</value></data>
+<data name="ServerItem_CurrentBuildPinnedFormat" xml:space="preserve"><value>build: {0}</value></data>
+<data name="ServerItem_UpdateTargetBuildFormat" xml:space="preserve"><value>build {0}</value></data>
+<data name="ServerItem_UpdateMessageLatestVersionFormat" xml:space="preserve"><value>最新バージョン: {0}</value></data>
+<data name="ServerItem_UpdateMessageLatestBuildFormat" xml:space="preserve"><value>最新ビルド: {0}</value></data>
+<data name="ServerItem_DownloadStatusCheckingServerFile" xml:space="preserve"><value>サーバーファイルを確認中...</value></data>
+<data name="ServerItem_LoadVersionsFailedFormat" xml:space="preserve"><value>バージョン一覧の取得に失敗しました: {0}</value></data>
+<data name="ServerItem_CheckingJavaInstallation" xml:space="preserve"><value>Java のインストール状況を確認しています...</value></data>
+<data name="ServerItem_LogStartSequenceBegin" xml:space="preserve"><value>サーバー起動シーケンスを開始しました。</value></data>
+<data name="ServerItem_JavaPathFormat" xml:space="preserve"><value>Java パス: {0}</value></data>
+<data name="ServerItem_CheckingServerFile" xml:space="preserve"><value>サーバーファイルを確認しています...</value></data>
+<data name="ServerItem_StartingServerFormat" xml:space="preserve"><value>サーバーを起動しています: {0}</value></data>
+<data name="ServerItem_LogStartFailed" xml:space="preserve"><value>サーバー起動に失敗しました。</value></data>
+<data name="ServerItem_StartErrorFormat" xml:space="preserve"><value>起動エラー: {0}</value></data>
+<data name="ServerItem_LogStopRequested" xml:space="preserve"><value>サーバー停止を要求しました。</value></data>
+<data name="ServerItem_StoppingServer" xml:space="preserve"><value>サーバーを停止しています...</value></data>
+<data name="ServerItem_SendCommandFailedFormat" xml:space="preserve"><value>コマンド送信失敗: {0}</value></data>
+<data name="ServerItem_ServerProcessExited" xml:space="preserve"><value>サーバープロセスが終了しました。</value></data>
+<data name="ServerItem_AutoRestartSkippedWaitingEula" xml:space="preserve"><value>EULA 同意待ちのため自動再起動は実行しません。</value></data>
+<data name="ServerItem_AutoRestartLimitReached" xml:space="preserve"><value>自動再起動の上限に達したため停止します。</value></data>
+<data name="ServerItem_LogAutoRestartScheduledFormat" xml:space="preserve"><value>自動再起動を予約しました: {0}/{1}</value></data>
+<data name="ServerItem_AutoRestartScheduledFormat" xml:space="preserve"><value>自動再起動を {0:0} 秒後に実行します ({1}/{2})。</value></data>
+<data name="ServerItem_DownloadStatusCreatingBackup" xml:space="preserve"><value>バックアップ作成中...</value></data>
+<data name="ServerItem_DownloadStatusDownloading" xml:space="preserve"><value>ダウンロード中...</value></data>
+<data name="ServerItem_DownloadStatusVerifyingIntegrity" xml:space="preserve"><value>整合性確認中...</value></data>
+<data name="Xaml_Main_ServerManager" xml:space="preserve"><value>Server Manager</value></data>
+<data name="Xaml_Main_CreateNew" xml:space="preserve"><value>新規作成</value></data>
+<data name="Xaml_Main_Name" xml:space="preserve"><value>名前</value></data>
+<data name="Xaml_Main_Type" xml:space="preserve"><value>タイプ</value></data>
+<data name="Xaml_Main_Version" xml:space="preserve"><value>バージョン</value></data>
+<data name="Xaml_Main_Loading" xml:space="preserve"><value>取得中...</value></data>
+<data name="Xaml_Main_MemoryMb" xml:space="preserve"><value>メモリ (MB)</value></data>
+<data name="Xaml_Main_Port" xml:space="preserve"><value>ポート</value></data>
+<data name="Xaml_Main_Start" xml:space="preserve"><value>起動</value></data>
+<data name="Xaml_Main_Stop" xml:space="preserve"><value>停止</value></data>
+<data name="Xaml_Main_Folder" xml:space="preserve"><value>フォルダ</value></data>
+<data name="Xaml_Setting_JavaSettings" xml:space="preserve"><value>Java 設定</value></data>
+<data name="Xaml_Setting_JavaDescription" xml:space="preserve"><value>Java のパスを手動で指定するとダウンロードをスキップします。 空白のままにすると Adoptium から自動ダウンロードを試みます。 すでに Java がインストールされている場合は、java.exe のフルパスを指定してください。</value></data>
+<data name="Xaml_Setting_JavaExecutable" xml:space="preserve"><value>Java 実行ファイル (java.exe)</value></data>
+<data name="Xaml_Setting_Browse" xml:space="preserve"><value>参照...</value></data>
+<data name="Xaml_Setting_NetworkSettings" xml:space="preserve"><value>ネットワーク設定</value></data>
+<data name="Xaml_Setting_EnablePortForwarding" xml:space="preserve"><value>ポート開放を有効にする (Windows ファイアウォール + UPnP)</value></data>
+<data name="Xaml_Setting_PortForwardingDescription" xml:space="preserve"><value>有効にするとサーバー起動時にファイアウォール規則追加と UPnP ポートマッピングを試みます。無効時は手動設定してください。</value></data>
+<data name="Xaml_Setting_OperationsStability" xml:space="preserve"><value>運用安定化</value></data>
+<data name="Xaml_Setting_ConsoleLineRetention" xml:space="preserve"><value>コンソール保持行数 (200〜20000)</value></data>
+<data name="Xaml_Setting_EnableAutoRestart" xml:space="preserve"><value>サーバー異常終了時に自動再起動する</value></data>
+<data name="Xaml_Setting_MaxRetryCount" xml:space="preserve"><value>最大再試行回数</value></data>
+<data name="Xaml_Setting_RestartDelaySeconds" xml:space="preserve"><value>再起動待機秒数</value></data>
+<data name="Xaml_Setting_StructuredLog" xml:space="preserve"><value>構造化ログ</value></data>
+<data name="Xaml_Setting_LogDirectory" xml:space="preserve"><value>ログディレクトリ</value></data>
+<data name="Xaml_Setting_KeepFileCount" xml:space="preserve"><value>保持ファイル数</value></data>
+<data name="Xaml_Setting_MaxFileSizeMb" xml:space="preserve"><value>ファイル最大サイズ(MB)</value></data>
+<data name="Xaml_Setting_OpenLogViewer" xml:space="preserve"><value>ログビューアを開く</value></data>
+<data name="Xaml_Setting_BackupRestore" xml:space="preserve"><value>バックアップ・復旧</value></data>
+<data name="Xaml_Setting_EnableSafeUpdateBackup" xml:space="preserve"><value>安全更新バックアップを有効にする</value></data>
+<data name="Xaml_Setting_BackupRetentionGenerations" xml:space="preserve"><value>保持世代数 (1〜30)</value></data>
+<data name="Xaml_Setting_AuthorizationPolicy" xml:space="preserve"><value>認証・認可・ポリシー運用</value></data>
+<data name="Xaml_Setting_OperatorRole" xml:space="preserve"><value>オペレーターロール</value></data>
+<data name="Xaml_Setting_RequireAuthOnRoleElevation" xml:space="preserve"><value>ロール昇格時に認証を必須化する</value></data>
+<data name="Xaml_Setting_PreferWindowsHello" xml:space="preserve"><value>ロール昇格時にWindows Helloを優先する</value></data>
+<data name="Xaml_Setting_CurrentPin" xml:space="preserve"><value>現在PIN</value></data>
+<data name="Xaml_Setting_NewPin" xml:space="preserve"><value>新しいPIN</value></data>
+<data name="Xaml_Setting_NewPinConfirm" xml:space="preserve"><value>新しいPIN(確認)</value></data>
+<data name="Xaml_Setting_EnableMaintenanceMode" xml:space="preserve"><value>メンテナンスモードを有効にする</value></data>
+<data name="Xaml_Setting_LockedTargetServer" xml:space="preserve"><value>ロック対象サーバー</value></data>
+<data name="Xaml_Setting_ClearSelection" xml:space="preserve"><value>選択を解除</value></data>
+<data name="Xaml_Setting_AuditAndOperations" xml:space="preserve"><value>監査ログ・変更履歴・運用</value></data>
+<data name="Xaml_Setting_OpenAuditLog" xml:space="preserve"><value>監査ログ / 変更履歴を開く</value></data>
+<data name="Xaml_Setting_OpenOperationsDashboard" xml:space="preserve"><value>運用ダッシュボードを開く</value></data>
+<data name="Xaml_Setting_AutoSaveNotice" xml:space="preserve"><value>変更は自動保存されます</value></data>
+<data name="Xaml_Setting_Clear" xml:space="preserve"><value>クリア</value></data>
+<data name="JavaResolver_UseConfiguredJavaPath" xml:space="preserve"><value>設定済みJavaパスを使用します。</value></data>
+<data name="JavaResolver_ConfiguredJavaNotFoundFormat" xml:space="preserve"><value>設定で指定された Java が見つかりません: {0}</value></data>
+<data name="JavaResolver_UseEmbeddedJre" xml:space="preserve"><value>既存の内蔵JREを使用します。</value></data>
+<data name="JavaResolver_UseEmbeddedJreSearchResult" xml:space="preserve"><value>内蔵JRE探索結果を使用します。</value></data>
+<data name="JavaResolver_JavaExeNotFoundAfterExtract" xml:space="preserve"><value>展開後に java.exe が見つかりませんでした。設定画面からパスを手動指定してください。</value></data>
+<data name="JavaResolver_DownloadAndExtractCompleted" xml:space="preserve"><value>Javaの自動ダウンロードと展開が完了しました。</value></data>
+<data name="JarIntegrity_Sha256VerifyFailedFormat" xml:space="preserve"><value>{0} のSHA256整合性検証に失敗しました。</value></data>
+<data name="JarIntegrity_Sha1VerifyFailedFormat" xml:space="preserve"><value>{0} のSHA1整合性検証に失敗しました。</value></data>
+<data name="JarIntegrity_ContentHashVerifyFailedFormat" xml:space="preserve"><value>{0} のコンテンツハッシュ検証に失敗しました。</value></data>
+<data name="Xaml_ModManager_Title" xml:space="preserve"><value>MOD管理</value></data>
+<data name="Xaml_ModManager_ServerRunningNotice" xml:space="preserve"><value>サーバー稼働中 — 変更はサーバー再起動後に反映されます</value></data>
+<data name="Xaml_ModManager_Install" xml:space="preserve"><value>インストール</value></data>
+<data name="Xaml_ModManager_OpenFolder" xml:space="preserve"><value>フォルダを開く</value></data>
+<data name="Xaml_ModManager_NoMods" xml:space="preserve"><value>MODがありません</value></data>
+<data name="Xaml_ModManager_DropOrInstallHint" xml:space="preserve"><value>JARファイルをここにドラッグ &amp; ドロップするかインストールボタンを押してください</value></data>
+<data name="Xaml_ModManager_DropToInstall" xml:space="preserve"><value>ここにドロップしてインストール</value></data>
+<data name="Xaml_ModManager_Uninstall" xml:space="preserve"><value>アンインストール</value></data>
+<data name="ModManager_StatusModCountFormat" xml:space="preserve"><value>{0} MOD</value></data>
+<data name="ModManager_SelectJarTitle" xml:space="preserve"><value>MOD JAR を選択</value></data>
+<data name="ModManager_SelectJarFilter" xml:space="preserve"><value>JAR ファイル (*.jar)|*.jar</value></data>
+<data name="ModManager_InstallFailedFormat" xml:space="preserve"><value>{0} のインストールに失敗: {1}</value></data>
+<data name="ModManager_InstallCompletedFormat" xml:space="preserve"><value>{0} 個インストール完了 — 合計 {1} MOD</value></data>
+<data name="ModManager_UninstallConfirmFormat" xml:space="preserve"><value>「{0}」を削除しますか？</value></data>
+<data name="ModManager_UninstallFailedFormat" xml:space="preserve"><value>削除に失敗: {0}</value></data>
+<data name="Auth_Error_MaintenanceMode" xml:space="preserve"><value>メンテナンスモードのため操作できません。</value></data>
+<data name="Auth_Error_ServerLocked" xml:space="preserve"><value>ポリシーにより対象サーバーはロックされています。</value></data>
+<data name="Auth_Error_RoleInsufficientFormat" xml:space="preserve"><value>権限不足です。必要ロール: {0}</value></data>
+<data name="JarIntegrity_UnsupportedServerTypeFormat" xml:space="preserve"><value>未対応のサーバータイプです: {0}</value></data>
+<data name="JarIntegrity_OnlyHttpsAllowed" xml:space="preserve"><value>HTTPS 以外のダウンロードURLは許可されていません。</value></data>
+<data name="JarIntegrity_UnauthorizedHostFormat" xml:space="preserve"><value>許可されていないダウンロードホストです: {0}</value></data>
+<data name="JarIntegrity_VanillaMetadataNotFoundFormat" xml:space="preserve"><value>Vanilla バージョン {0} の検証メタデータが見つかりません。</value></data>
+<data name="JarIntegrity_VanillaSha1NotFound" xml:space="preserve"><value>Vanilla JAR のSHA1情報が取得できませんでした。</value></data>
+<data name="JarIntegrity_VanillaIntegrityFailed" xml:space="preserve"><value>Vanilla JAR の整合性検証に失敗しました。</value></data>
+<data name="JarIntegrity_PaperBuildNumberParseFailed" xml:space="preserve"><value>Paper ビルド番号の解析に失敗しました。</value></data>
+<data name="JarIntegrity_PaperSha256NotFound" xml:space="preserve"><value>Paper JAR のSHA256情報が取得できませんでした。</value></data>
+<data name="JarIntegrity_PaperIntegrityFailed" xml:space="preserve"><value>Paper JAR の整合性検証に失敗しました。</value></data>
+<data name="Xaml_Eula_Title" xml:space="preserve"><value>EULA 同意</value></data>
+<data name="Xaml_Eula_Message" xml:space="preserve"><value>Minecraft サーバーを利用するには、Minecraft EULA と Microsoft プライバシー ステートメントに同意する必要があります。</value></data>
+<data name="Xaml_Eula_MinecraftEula" xml:space="preserve"><value>Minecraft EULAを読む</value></data>
+<data name="Xaml_Eula_PrivacyStatement" xml:space="preserve"><value>Microsoft プライバシー ステートメントを読む</value></data>
+<data name="Xaml_Eula_Agree" xml:space="preserve"><value>同意する</value></data>
+<data name="Xaml_Eula_Decline" xml:space="preserve"><value>同意しない</value></data>
+<data name="Xaml_Main_OpenScheduler" xml:space="preserve"><value>スケジューラー</value></data>
+<data name="Xaml_Scheduler_Title" xml:space="preserve"><value>タスクスケジューラー</value></data>
+<data name="Xaml_Scheduler_Add" xml:space="preserve"><value>タスク追加</value></data>
+<data name="Xaml_Scheduler_Delete" xml:space="preserve"><value>タスク削除</value></data>
+<data name="Xaml_Scheduler_Name" xml:space="preserve"><value>タスク名</value></data>
+<data name="Xaml_Scheduler_Enabled" xml:space="preserve"><value>有効</value></data>
+<data name="Xaml_Scheduler_Mode" xml:space="preserve"><value>実行モード</value></data>
+<data name="Xaml_Scheduler_ModeInterval" xml:space="preserve"><value>一定間隔</value></data>
+<data name="Xaml_Scheduler_ModeDaily" xml:space="preserve"><value>毎日</value></data>
+<data name="Xaml_Scheduler_ModeWeekly" xml:space="preserve"><value>毎週</value></data>
+<data name="Xaml_Scheduler_ModeSpecific" xml:space="preserve"><value>指定日時</value></data>
+<data name="Xaml_Scheduler_IntervalSeconds" xml:space="preserve"><value>間隔 (秒)</value></data>
+<data name="Xaml_Scheduler_TimeOfDay" xml:space="preserve"><value>実行時刻 (HH:mm)</value></data>
+<data name="Xaml_Scheduler_DayOfWeek" xml:space="preserve"><value>曜日</value></data>
+<data name="Xaml_Scheduler_SpecificDate" xml:space="preserve"><value>指定日</value></data>
+<data name="Xaml_Scheduler_FilePath" xml:space="preserve"><value>実行ファイルパス (.bat / .ps1 / .ps2)</value></data>
+<data name="Xaml_Scheduler_Arguments" xml:space="preserve"><value>引数</value></data>
+<data name="Xaml_Scheduler_TargetType" xml:space="preserve"><value>対象サーバー</value></data>
+<data name="Xaml_Scheduler_TargetAll" xml:space="preserve"><value>全てのサーバー</value></data>
+<data name="Xaml_Scheduler_TargetSpecific" xml:space="preserve"><value>指定したサーバーのみ</value></data>
+<data name="Job_Scheduler_TaskRun" xml:space="preserve"><value>スケジューラー経由で実行: {0}</value></data>
+<data name="Log_Scheduler_TaskStarted" xml:space="preserve"><value>スケジューラータスク「{0}」を開始しました。</value></data>
+<data name="Log_Scheduler_TaskCompleted" xml:space="preserve"><value>スケジューラータスク「{0}」が完了しました。</value></data>
+<data name="Job_Server_Create" xml:space="preserve"><value>サーバー作成: {0}</value></data>
+<data name="Job_Server_Delete" xml:space="preserve"><value>サーバー削除: {0}</value></data>
+<data name="Job_Plugin_Install" xml:space="preserve"><value>プラグイン追加: {0}</value></data>
+<data name="Job_Plugin_Uninstall" xml:space="preserve"><value>プラグイン削除: {0}</value></data>
+<data name="Job_Mod_Install" xml:space="preserve"><value>Mod追加: {0}</value></data>
+<data name="Job_Mod_Uninstall" xml:space="preserve"><value>Mod削除: {0}</value></data>
+<data name="Job_Server_Stop" xml:space="preserve"><value>サーバー停止: {0}</value></data>
+<data name="Log_Server_Created" xml:space="preserve"><value>サーバーを作成しました: {0}</value></data>
+<data name="Log_Server_Deleted" xml:space="preserve"><value>サーバーを削除しました: {0}</value></data>
+<data name="Log_Plugin_Installed" xml:space="preserve"><value>プラグインをインストールしました: {0}</value></data>
+<data name="Log_Plugin_Uninstalled" xml:space="preserve"><value>プラグインを削除しました: {0}</value></data>
+<data name="Log_Mod_Installed" xml:space="preserve"><value>Modをインストールしました: {0}</value></data>
+<data name="Log_Mod_Uninstalled" xml:space="preserve"><value>Modを削除しました: {0}</value></data>
+<data name="ServerStartedToast_Title" xml:space="preserve"><value>サーバー起動準備完了</value></data>
+<data name="ServerStartedToast_Message" xml:space="preserve"><value>公開されました: {0}</value></data>
+<data name="ServerStartedToast_MessageWithPort" xml:space="preserve"><value>公開されました: {0}:{1}</value></data>
+</root>

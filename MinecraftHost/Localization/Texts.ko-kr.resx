@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>ko-kr</value></data>
+<data name="Xaml_BuildSelection_Title" xml:space="preserve"><value>빌드 선택</value></data>
+<data name="Xaml_BuildSelection_BuildNumber" xml:space="preserve"><value>빌드 번호</value></data>
+<data name="Xaml_Common_Cancel" xml:space="preserve"><value>취소</value></data>
+<data name="Xaml_Common_Apply" xml:space="preserve"><value>적용</value></data>
+<data name="Xaml_Common_Refresh" xml:space="preserve"><value>새로 고침</value></data>
+<data name="Xaml_Common_Save" xml:space="preserve"><value>저장</value></data>
+<data name="Xaml_Common_Add" xml:space="preserve"><value>추가</value></data>
+<data name="Xaml_AuditLog_Title" xml:space="preserve"><value>감사 로그 / 변경 이력</value></data>
+<data name="Xaml_AuditLog_DisplayCount" xml:space="preserve"><value>표시 건수</value></data>
+<data name="Xaml_AuditLog_HeaderTimestampUtc" xml:space="preserve"><value>시간(UTC)</value></data>
+<data name="Xaml_AuditLog_HeaderCategory" xml:space="preserve"><value>카테고리</value></data>
+<data name="Xaml_AuditLog_HeaderAction" xml:space="preserve"><value>작업</value></data>
+<data name="Xaml_AuditLog_HeaderEntityId" xml:space="preserve"><value>대상 ID</value></data>
+<data name="Xaml_AuditLog_HeaderProperty" xml:space="preserve"><value>항목</value></data>
+<data name="Xaml_AuditLog_HeaderBefore" xml:space="preserve"><value>변경 전/내용</value></data>
+<data name="Xaml_AuditLog_HeaderAfter" xml:space="preserve"><value>변경 후</value></data>
+<data name="Xaml_AuditLog_HeaderActor" xml:space="preserve"><value>실행자</value></data>
+<data name="Xaml_StructuredLog_Title" xml:space="preserve"><value>구조화 로그</value></data>
+<data name="Xaml_StructuredLog_MaxItems" xml:space="preserve"><value>최대 항목 수</value></data>
+<data name="Xaml_StructuredLog_Reload" xml:space="preserve"><value>다시 불러오기</value></data>
+<data name="Xaml_StructuredLog_ClearLogs" xml:space="preserve"><value>로그 삭제</value></data>
+<data name="Xaml_StructuredLog_Folder" xml:space="preserve"><value>폴더</value></data>
+<data name="Xaml_StructuredLog_Level" xml:space="preserve"><value>레벨</value></data>
+<data name="Xaml_StructuredLog_Category" xml:space="preserve"><value>카테고리</value></data>
+<data name="Xaml_StructuredLog_Operation" xml:space="preserve"><value>작업</value></data>
+<data name="Xaml_StructuredLog_ServerId" xml:space="preserve"><value>서버 ID</value></data>
+<data name="Xaml_StructuredLog_Search" xml:space="preserve"><value>검색</value></data>
+<data name="Xaml_StructuredLog_ResetFilter" xml:space="preserve"><value>필터 초기화</value></data>
+<data name="Xaml_StructuredLog_HeaderTimestampUtc" xml:space="preserve"><value>시간(UTC)</value></data>
+<data name="Xaml_StructuredLog_HeaderLevel" xml:space="preserve"><value>레벨</value></data>
+<data name="Xaml_StructuredLog_HeaderCategory" xml:space="preserve"><value>카테고리</value></data>
+<data name="Xaml_StructuredLog_HeaderOperation" xml:space="preserve"><value>작업</value></data>
+<data name="Xaml_StructuredLog_HeaderServerId" xml:space="preserve"><value>서버 ID</value></data>
+<data name="Xaml_StructuredLog_HeaderProcess" xml:space="preserve"><value>프로세스</value></data>
+<data name="Xaml_StructuredLog_HeaderMessage" xml:space="preserve"><value>메시지</value></data>
+<data name="Xaml_StructuredLog_HeaderException" xml:space="preserve"><value>예외</value></data>
+<data name="Xaml_StructuredLog_HeaderCorrelationId" xml:space="preserve"><value>상관 ID</value></data>
+<data name="Xaml_PluginManager_Title" xml:space="preserve"><value>플러그인 관리</value></data>
+<data name="Xaml_PluginManager_ServerRunningNotice" xml:space="preserve"><value>서버 실행 중 — 변경 사항은 서버 재시작 후 적용됩니다.</value></data>
+<data name="Xaml_PluginManager_Install" xml:space="preserve"><value>설치</value></data>
+<data name="Xaml_PluginManager_OpenFolder" xml:space="preserve"><value>폴더 열기</value></data>
+<data name="Xaml_PluginManager_NoPlugins" xml:space="preserve"><value>플러그인이 없습니다</value></data>
+<data name="Xaml_PluginManager_DropOrInstallHint" xml:space="preserve"><value>JAR 파일을 여기에 끌어다 놓거나 설치 버튼을 누르세요.</value></data>
+<data name="Xaml_PluginManager_DropToInstall" xml:space="preserve"><value>여기에 놓아 설치</value></data>
+<data name="Xaml_PluginManager_Uninstall" xml:space="preserve"><value>제거</value></data>
+<data name="Xaml_OperationsCenter_Title" xml:space="preserve"><value>운영 대시보드</value></data>
+<data name="Xaml_OperationsCenter_HeaderJobName" xml:space="preserve"><value>작업 이름</value></data>
+<data name="Xaml_OperationsCenter_HeaderServerId" xml:space="preserve"><value>서버 ID</value></data>
+<data name="Xaml_OperationsCenter_HeaderStatus" xml:space="preserve"><value>상태</value></data>
+<data name="Xaml_OperationsCenter_HeaderAttempt" xml:space="preserve"><value>시도 횟수</value></data>
+<data name="Xaml_OperationsCenter_HeaderMaxAttempt" xml:space="preserve"><value>최대 시도</value></data>
+<data name="Xaml_OperationsCenter_HeaderDurationMs" xml:space="preserve"><value>실행 시간(ms)</value></data>
+<data name="Xaml_OperationsCenter_HeaderCompletedUtc" xml:space="preserve"><value>완료 시각</value></data>
+<data name="Xaml_OperationsCenter_HeaderError" xml:space="preserve"><value>오류</value></data>
+<data name="Xaml_ServerFileEditor_Title" xml:space="preserve"><value>파일 편집</value></data>
+<data name="Xaml_ServerFileEditor_ConfigFiles" xml:space="preserve"><value>설정 파일</value></data>
+<data name="Xaml_ServerFileEditor_AddSource" xml:space="preserve"><value>소스 추가</value></data>
+<data name="Xaml_ServerFileEditor_ApplyWorld" xml:space="preserve"><value>월드 적용</value></data>
+<data name="JobOrchestrator_LogJobSuccessFormat" xml:space="preserve"><value>작업 성공: {0} attempt={1}</value></data>
+<data name="JobOrchestrator_LogJobFailedFormat" xml:space="preserve"><value>작업 실패: {0} attempt={1} error={2}</value></data>
+<data name="ServerFileEditor_WorldSlotOverworld" xml:space="preserve"><value>오버월드</value></data>
+<data name="ServerFileEditor_WorldSlotNether" xml:space="preserve"><value>네더</value></data>
+<data name="ServerFileEditor_WorldSlotEnd" xml:space="preserve"><value>엔드</value></data>
+<data name="ServerFileEditor_JsonLoadFailed" xml:space="preserve"><value>JSON 로드에 실패했습니다.</value></data>
+<data name="ServerFileEditor_InvalidUserName" xml:space="preserve"><value>사용자 이름이 올바르지 않습니다.</value></data>
+<data name="ServerFileEditor_DuplicateUserName" xml:space="preserve"><value>같은 이름의 사용자가 이미 존재합니다.</value></data>
+<data name="ServerFileEditor_ResolvingUuid" xml:space="preserve"><value>UUID를 조회 중...</value></data>
+<data name="ServerFileEditor_ResolveUuidFailed" xml:space="preserve"><value>UUID 조회에 실패했습니다.</value></data>
+<data name="ServerFileEditor_Added" xml:space="preserve"><value>추가했습니다.</value></data>
+<data name="ServerFileEditor_Removed" xml:space="preserve"><value>삭제했습니다.</value></data>
+<data name="ServerFileEditor_InvalidIpAddress" xml:space="preserve"><value>IP 주소가 올바르지 않습니다.</value></data>
+<data name="ServerFileEditor_DuplicateIpAddress" xml:space="preserve"><value>같은 IP가 이미 존재합니다.</value></data>
+<data name="ServerFileEditor_InvalidFolderPath" xml:space="preserve"><value>유효한 폴더를 지정하세요.</value></data>
+<data name="ServerFileEditor_AlreadyExistsInList" xml:space="preserve"><value>목록에 이미 존재합니다.</value></data>
+<data name="ServerFileEditor_AssignedToSlotFormat" xml:space="preserve"><value>{0}에 할당했습니다.</value></data>
+<data name="ServerFileEditor_RemovedFromList" xml:space="preserve"><value>목록에서 제거했습니다.</value></data>
+<data name="ServerFileEditor_ApplyingWorlds" xml:space="preserve"><value>월드를 적용 중...</value></data>
+<data name="ServerFileEditor_NoAssignments" xml:space="preserve"><value>할당이 없습니다.</value></data>
+<data name="ServerFileEditor_WorldSourceNotFoundFormat" xml:space="preserve"><value>{0}의 소스를 찾을 수 없습니다.</value></data>
+<data name="ServerFileEditor_Applied" xml:space="preserve"><value>적용했습니다.</value></data>
+<data name="ServerFileEditor_ApplyFailedFormat" xml:space="preserve"><value>적용에 실패했습니다: {0}</value></data>
+<data name="PluginManager_StatusPluginCountFormat" xml:space="preserve"><value>{0}개 플러그인</value></data>
+<data name="PluginManager_SelectJarTitle" xml:space="preserve"><value>플러그인 JAR 선택</value></data>
+<data name="PluginManager_SelectJarFilter" xml:space="preserve"><value>JAR 파일 (*.jar)|*.jar</value></data>
+<data name="PluginManager_InstallFailedFormat" xml:space="preserve"><value>{0} 설치 실패: {1}</value></data>
+<data name="Common_ErrorTitle" xml:space="preserve"><value>오류</value></data>
+<data name="PluginManager_InstallCompletedFormat" xml:space="preserve"><value>{0}개 설치 완료 — 총 {1}개 플러그인</value></data>
+<data name="PluginManager_UninstallConfirmFormat" xml:space="preserve"><value>{0}를 삭제할까요?</value></data>
+<data name="Common_ConfirmTitle" xml:space="preserve"><value>확인</value></data>
+<data name="PluginManager_UninstallFailedFormat" xml:space="preserve"><value>삭제 실패: {0}</value></data>
+<data name="EulaGuidance_InitialAgreementRequired" xml:space="preserve"><value>첫 실행 시 EULA 동의가 필요합니다. 설정에서 eula.txt를 열고 eula=true로 변경 후 저장하세요.</value></data>
+<data name="Authorization_InlineDeniedFormat" xml:space="preserve"><value>권한 정책으로 작업할 수 없습니다: {0}</value></data>
+<data name="Authorization_DialogDenied" xml:space="preserve"><value>권한 정책으로 작업할 수 없습니다.</value></data>
+<data name="Authorization_DialogDeniedWithReasonFormat" xml:space="preserve"><value>권한 정책으로 작업할 수 없습니다.\n사유: {0}</value></data>
+<data name="BoundaryException_WrapMessageFormat" xml:space="preserve"><value>{0}에서 {1} 경계 예외가 발생했습니다: {2}</value></data>
+<data name="ServerProcess_LogSendCommandFormat" xml:space="preserve"><value>명령 전송: {0}</value></data>
+<data name="ServerProcess_LogStopBegin" xml:space="preserve"><value>서버 프로세스 중지를 시작합니다.</value></data>
+<data name="ServerProcess_LogStopAsyncBegin" xml:space="preserve"><value>서버 프로세스 비동기 중지를 시작합니다.</value></data>
+<data name="MainPage_ServerNotSelected" xml:space="preserve"><value>선택된 서버가 없습니다.</value></data>
+<data name="MainPage_NewServerName" xml:space="preserve"><value>새 서버</value></data>
+<data name="MainPage_DeleteAfterStopRequired" xml:space="preserve"><value>서버를 중지한 후 삭제하세요.</value></data>
+<data name="MainPage_DeleteServerConfirmFormat" xml:space="preserve"><value>서버 '{0}'를 삭제하시겠습니까? 디렉터리도 함께 삭제됩니다. 계속할까요?</value></data>
+<data name="MainPage_DeleteServerDirectoryFailedFormat" xml:space="preserve"><value>서버 디렉터리 삭제에 실패했습니다: {0}</value></data>
+<data name="SettingPage_UnnamedServer" xml:space="preserve"><value>이름 없음</value></data>
+<data name="SettingPage_JavaPathStatusNotConfigured" xml:space="preserve"><value>설정되지 않음 — 시작 시 자동 다운로드를 시도합니다.</value></data>
+<data name="SettingPage_JavaPathStatusValid" xml:space="preserve"><value>유효한 경로가 설정되어 있습니다.</value></data>
+<data name="SettingPage_JavaPathStatusNotFound" xml:space="preserve"><value>지정한 파일을 찾을 수 없습니다.</value></data>
+<data name="SettingPage_SelectJavaExeTitle" xml:space="preserve"><value>java.exe 선택</value></data>
+<data name="SettingPage_SelectJavaExeFilter" xml:space="preserve"><value>java.exe|java.exe|실행 파일 (*.exe)|*.exe|모든 파일 (*.*)|*.*</value></data>
+<data name="SettingPage_UnregisteredServer" xml:space="preserve"><value>등록되지 않은 서버</value></data>
+<data name="SettingPage_PinMismatch" xml:space="preserve"><value>새 PIN과 확인 입력이 일치하지 않습니다.</value></data>
+<data name="SettingPage_PinLengthInvalid" xml:space="preserve"><value>PIN은 4자에서 32자로 설정하세요.</value></data>
+<data name="SettingPage_RoleElevationPinRequired" xml:space="preserve"><value>역할 상승에는 인증이 필요합니다. 먼저 PIN을 설정하세요.</value></data>
+<data name="SettingPage_CurrentPinRequired" xml:space="preserve"><value>현재 PIN을 입력하세요.</value></data>
+<data name="SettingPage_PinVerificationFailed" xml:space="preserve"><value>PIN 인증에 실패했습니다.</value></data>
+<data name="SettingPage_WindowsHelloPrompt" xml:space="preserve"><value>역할 상승을 위해 인증해 주세요.</value></data>
+<data name="SettingPage_WindowsHelloCanceled" xml:space="preserve"><value>Windows Hello 인증이 취소되었습니다.</value></data>
+<data name="SettingPage_WindowsHelloRetriesExhausted" xml:space="preserve"><value>Windows Hello 재시도 한도에 도달했습니다.</value></data>
+<data name="SettingPage_WindowsHelloDeviceBusy" xml:space="preserve"><value>Windows Hello 장치가 사용 중입니다.</value></data>
+<data name="SettingPage_WindowsHelloDisabledByPolicy" xml:space="preserve"><value>Windows Hello가 정책으로 비활성화되었습니다.</value></data>
+<data name="SettingPage_WindowsHelloNotConfigured" xml:space="preserve"><value>Windows Hello가 설정되지 않았습니다.</value></data>
+<data name="SettingPage_WindowsHelloDeviceNotPresent" xml:space="preserve"><value>Windows Hello 장치를 찾을 수 없습니다.</value></data>
+<data name="SettingPage_WindowsHelloFailed" xml:space="preserve"><value>Windows Hello 인증에 실패했습니다.</value></data>
+<data name="OperationsCenter_SummaryFormat" xml:space="preserve"><value>총 작업={0}  성공={1}  실패={2}  실행 중={3}  평균 시간(ms)={4:0.0}</value></data>
+<data name="StructuredLog_AllFilter" xml:space="preserve"><value>전체</value></data>
+<data name="StructuredLog_LoadFailedFormat" xml:space="preserve"><value>로드 실패: {0}</value></data>
+<data name="StructuredLog_ClearFailedFormat" xml:space="preserve"><value>삭제 실패: {0}</value></data>
+<data name="StructuredLog_StatusFormat" xml:space="preserve"><value>표시 {0} / 전체 {1}건</value></data>
+<data name="ServerItem_CurrentBuildUnpinned" xml:space="preserve"><value>build: 고정 안 됨</value></data>
+<data name="ServerItem_CurrentBuildPinnedFormat" xml:space="preserve"><value>build: {0}</value></data>
+<data name="ServerItem_UpdateTargetBuildFormat" xml:space="preserve"><value>build {0}</value></data>
+<data name="ServerItem_UpdateMessageLatestVersionFormat" xml:space="preserve"><value>최신 버전: {0}</value></data>
+<data name="ServerItem_UpdateMessageLatestBuildFormat" xml:space="preserve"><value>최신 빌드: {0}</value></data>
+<data name="ServerItem_DownloadStatusCheckingServerFile" xml:space="preserve"><value>서버 파일 확인 중...</value></data>
+<data name="ServerItem_LoadVersionsFailedFormat" xml:space="preserve"><value>버전 목록을 가져오지 못했습니다: {0}</value></data>
+<data name="ServerItem_CheckingJavaInstallation" xml:space="preserve"><value>Java 설치 상태를 확인 중입니다...</value></data>
+<data name="ServerItem_LogStartSequenceBegin" xml:space="preserve"><value>서버 시작 시퀀스를 시작했습니다.</value></data>
+<data name="ServerItem_JavaPathFormat" xml:space="preserve"><value>Java 경로: {0}</value></data>
+<data name="ServerItem_CheckingServerFile" xml:space="preserve"><value>서버 파일을 확인 중입니다...</value></data>
+<data name="ServerItem_StartingServerFormat" xml:space="preserve"><value>서버 시작 중: {0}</value></data>
+<data name="ServerItem_LogStartFailed" xml:space="preserve"><value>서버 시작에 실패했습니다.</value></data>
+<data name="ServerItem_StartErrorFormat" xml:space="preserve"><value>시작 오류: {0}</value></data>
+<data name="ServerItem_LogStopRequested" xml:space="preserve"><value>서버 중지를 요청했습니다.</value></data>
+<data name="ServerItem_StoppingServer" xml:space="preserve"><value>서버를 중지하는 중...</value></data>
+<data name="ServerItem_SendCommandFailedFormat" xml:space="preserve"><value>명령 전송 실패: {0}</value></data>
+<data name="ServerItem_ServerProcessExited" xml:space="preserve"><value>서버 프로세스가 종료되었습니다.</value></data>
+<data name="ServerItem_AutoRestartSkippedWaitingEula" xml:space="preserve"><value>EULA 동의 대기 중에는 자동 재시작을 실행하지 않습니다.</value></data>
+<data name="ServerItem_AutoRestartLimitReached" xml:space="preserve"><value>자동 재시작 한도에 도달하여 중지합니다.</value></data>
+<data name="ServerItem_LogAutoRestartScheduledFormat" xml:space="preserve"><value>자동 재시작 예약됨: {0}/{1}</value></data>
+<data name="ServerItem_AutoRestartScheduledFormat" xml:space="preserve"><value>{0:0}초 후 자동 재시작을 실행합니다 ({1}/{2}).</value></data>
+<data name="ServerItem_DownloadStatusCreatingBackup" xml:space="preserve"><value>백업 생성 중...</value></data>
+<data name="ServerItem_DownloadStatusDownloading" xml:space="preserve"><value>다운로드 중...</value></data>
+<data name="ServerItem_DownloadStatusVerifyingIntegrity" xml:space="preserve"><value>무결성 확인 중...</value></data>
+<data name="Xaml_Main_ServerManager" xml:space="preserve"><value>서버 관리자</value></data>
+<data name="Xaml_Main_CreateNew" xml:space="preserve"><value>새로 만들기</value></data>
+<data name="Xaml_Main_Name" xml:space="preserve"><value>이름</value></data>
+<data name="Xaml_Main_Type" xml:space="preserve"><value>유형</value></data>
+<data name="Xaml_Main_Version" xml:space="preserve"><value>버전</value></data>
+<data name="Xaml_Main_Loading" xml:space="preserve"><value>불러오는 중...</value></data>
+<data name="Xaml_Main_MemoryMb" xml:space="preserve"><value>메모리 (MB)</value></data>
+<data name="Xaml_Main_Port" xml:space="preserve"><value>포트</value></data>
+<data name="Xaml_Main_Start" xml:space="preserve"><value>시작</value></data>
+<data name="Xaml_Main_Stop" xml:space="preserve"><value>중지</value></data>
+<data name="Xaml_Main_Folder" xml:space="preserve"><value>폴더</value></data>
+<data name="Xaml_Setting_JavaSettings" xml:space="preserve"><value>Java 설정</value></data>
+<data name="Xaml_Setting_JavaDescription" xml:space="preserve"><value>Java 경로를 수동 지정하면 다운로드를 건너뜁니다. 비워두면 자동 다운로드를 시도합니다. 설치되어 있으면 java.exe 전체 경로를 지정하세요.</value></data>
+<data name="Xaml_Setting_JavaExecutable" xml:space="preserve"><value>Java 실행 파일 (java.exe)</value></data>
+<data name="Xaml_Setting_Browse" xml:space="preserve"><value>찾아보기...</value></data>
+<data name="Xaml_Setting_NetworkSettings" xml:space="preserve"><value>네트워크 설정</value></data>
+<data name="Xaml_Setting_EnablePortForwarding" xml:space="preserve"><value>포트 포워딩 사용 (Windows 방화벽 + UPnP)</value></data>
+<data name="Xaml_Setting_PortForwardingDescription" xml:space="preserve"><value>활성화 시 시작할 때 방화벽 규칙과 UPnP 포트 매핑을 시도합니다. 비활성화 시 수동 설정하세요.</value></data>
+<data name="Xaml_Setting_OperationsStability" xml:space="preserve"><value>운영 안정화</value></data>
+<data name="Xaml_Setting_ConsoleLineRetention" xml:space="preserve"><value>콘솔 유지 줄 수 (200-20000)</value></data>
+<data name="Xaml_Setting_EnableAutoRestart" xml:space="preserve"><value>서버 비정상 종료 시 자동 재시작</value></data>
+<data name="Xaml_Setting_MaxRetryCount" xml:space="preserve"><value>최대 재시도 횟수</value></data>
+<data name="Xaml_Setting_RestartDelaySeconds" xml:space="preserve"><value>재시작 대기 초</value></data>
+<data name="Xaml_Setting_StructuredLog" xml:space="preserve"><value>구조화 로그</value></data>
+<data name="Xaml_Setting_LogDirectory" xml:space="preserve"><value>로그 디렉터리</value></data>
+<data name="Xaml_Setting_KeepFileCount" xml:space="preserve"><value>보관 파일 수</value></data>
+<data name="Xaml_Setting_MaxFileSizeMb" xml:space="preserve"><value>파일 최대 크기(MB)</value></data>
+<data name="Xaml_Setting_OpenLogViewer" xml:space="preserve"><value>로그 뷰어 열기</value></data>
+<data name="Xaml_Setting_BackupRestore" xml:space="preserve"><value>백업 및 복구</value></data>
+<data name="Xaml_Setting_EnableSafeUpdateBackup" xml:space="preserve"><value>안전 업데이트 백업 사용</value></data>
+<data name="Xaml_Setting_BackupRetentionGenerations" xml:space="preserve"><value>보관 세대 수 (1-30)</value></data>
+<data name="Xaml_Setting_AuthorizationPolicy" xml:space="preserve"><value>인증 권한 정책 운영</value></data>
+<data name="Xaml_Setting_OperatorRole" xml:space="preserve"><value>운영자 역할</value></data>
+<data name="Xaml_Setting_RequireAuthOnRoleElevation" xml:space="preserve"><value>역할 상승 시 인증 필수</value></data>
+<data name="Xaml_Setting_PreferWindowsHello" xml:space="preserve"><value>역할 상승 시 Windows Hello 우선</value></data>
+<data name="Xaml_Setting_CurrentPin" xml:space="preserve"><value>현재 PIN</value></data>
+<data name="Xaml_Setting_NewPin" xml:space="preserve"><value>새 PIN</value></data>
+<data name="Xaml_Setting_NewPinConfirm" xml:space="preserve"><value>새 PIN(확인)</value></data>
+<data name="Xaml_Setting_EnableMaintenanceMode" xml:space="preserve"><value>유지보수 모드 사용</value></data>
+<data name="Xaml_Setting_LockedTargetServer" xml:space="preserve"><value>잠금 대상 서버</value></data>
+<data name="Xaml_Setting_ClearSelection" xml:space="preserve"><value>선택 해제</value></data>
+<data name="Xaml_Setting_AuditAndOperations" xml:space="preserve"><value>감사 로그 변경 이력 운영</value></data>
+<data name="Xaml_Setting_OpenAuditLog" xml:space="preserve"><value>감사 로그와 이력 열기</value></data>
+<data name="Xaml_Setting_OpenOperationsDashboard" xml:space="preserve"><value>운영 대시보드 열기</value></data>
+<data name="Xaml_Setting_AutoSaveNotice" xml:space="preserve"><value>변경 사항은 자동 저장됩니다</value></data>
+<data name="Xaml_Setting_Clear" xml:space="preserve"><value>지우기</value></data>
+<data name="JavaResolver_UseConfiguredJavaPath" xml:space="preserve"><value>설정된 Java 경로를 사용합니다.</value></data>
+<data name="JavaResolver_ConfiguredJavaNotFoundFormat" xml:space="preserve"><value>설정에서 지정한 Java를 찾을 수 없습니다: {0}</value></data>
+<data name="JavaResolver_UseEmbeddedJre" xml:space="preserve"><value>기존 내장 JRE를 사용합니다.</value></data>
+<data name="JavaResolver_UseEmbeddedJreSearchResult" xml:space="preserve"><value>검색된 내장 JRE를 사용합니다.</value></data>
+<data name="JavaResolver_JavaExeNotFoundAfterExtract" xml:space="preserve"><value>압축 해제 후 java.exe를 찾을 수 없습니다. 설정에서 경로를 수동 지정하세요.</value></data>
+<data name="JavaResolver_DownloadAndExtractCompleted" xml:space="preserve"><value>Java 자동 다운로드 및 압축 해제가 완료되었습니다.</value></data>
+<data name="JarIntegrity_Sha256VerifyFailedFormat" xml:space="preserve"><value>{0}의 SHA256 무결성 검증에 실패했습니다.</value></data>
+<data name="JarIntegrity_Sha1VerifyFailedFormat" xml:space="preserve"><value>{0}의 SHA1 무결성 검증에 실패했습니다.</value></data>
+<data name="JarIntegrity_ContentHashVerifyFailedFormat" xml:space="preserve"><value>{0}의 콘텐츠 해시 검증에 실패했습니다.</value></data>
+<data name="Xaml_ModManager_Title" xml:space="preserve"><value>모드 관리</value></data>
+<data name="Xaml_ModManager_ServerRunningNotice" xml:space="preserve"><value>서버 실행 중 — 변경 사항은 서버 재시작 후 적용됩니다.</value></data>
+<data name="Xaml_ModManager_Install" xml:space="preserve"><value>설치</value></data>
+<data name="Xaml_ModManager_OpenFolder" xml:space="preserve"><value>폴더 열기</value></data>
+<data name="Xaml_ModManager_NoMods" xml:space="preserve"><value>모드가 없습니다</value></data>
+<data name="Xaml_ModManager_DropOrInstallHint" xml:space="preserve"><value>JAR 파일을 여기에 끌어다 놓거나 설치 버튼을 누르세요.</value></data>
+<data name="Xaml_ModManager_DropToInstall" xml:space="preserve"><value>여기에 놓아 설치</value></data>
+<data name="Xaml_ModManager_Uninstall" xml:space="preserve"><value>제거</value></data>
+<data name="ModManager_StatusModCountFormat" xml:space="preserve"><value>{0}개 모드</value></data>
+<data name="ModManager_SelectJarTitle" xml:space="preserve"><value>모드 JAR 선택</value></data>
+<data name="ModManager_SelectJarFilter" xml:space="preserve"><value>JAR 파일 (*.jar)|*.jar</value></data>
+<data name="ModManager_InstallFailedFormat" xml:space="preserve"><value>{0} 설치 실패: {1}</value></data>
+<data name="ModManager_InstallCompletedFormat" xml:space="preserve"><value>{0}개 설치 완료 — 총 {1}개 모드</value></data>
+<data name="ModManager_UninstallConfirmFormat" xml:space="preserve"><value>{0}를 삭제할까요?</value></data>
+<data name="ModManager_UninstallFailedFormat" xml:space="preserve"><value>삭제 실패: {0}</value></data>
+<data name="Auth_Error_MaintenanceMode" xml:space="preserve"><value>유지보수 모드이므로 조작할 수 없습니다.</value></data>
+<data name="Auth_Error_ServerLocked" xml:space="preserve"><value>정책에 의해 대상 서버가 잠겨 있습니다.</value></data>
+<data name="Auth_Error_RoleInsufficientFormat" xml:space="preserve"><value>권한이 부족합니다. 필요 역할: {0}</value></data>
+<data name="JarIntegrity_UnsupportedServerTypeFormat" xml:space="preserve"><value>지원되지 않는 서버 유형입니다: {0}</value></data>
+<data name="JarIntegrity_OnlyHttpsAllowed" xml:space="preserve"><value>HTTPS 이외의 다운로드 URL은 허용되지 않습니다.</value></data>
+<data name="JarIntegrity_UnauthorizedHostFormat" xml:space="preserve"><value>허가되지 않은 다운로드 호스트입니다: {0}</value></data>
+<data name="JarIntegrity_VanillaMetadataNotFoundFormat" xml:space="preserve"><value>Vanilla 버전 {0}의 검증 메타데이터를 찾을 수 없습니다.</value></data>
+<data name="JarIntegrity_VanillaSha1NotFound" xml:space="preserve"><value>Vanilla JAR의 SHA1 정보를 가져올 수 없습니다.</value></data>
+<data name="JarIntegrity_VanillaIntegrityFailed" xml:space="preserve"><value>Vanilla JAR의 무결성 검증에 실패했습니다.</value></data>
+<data name="JarIntegrity_PaperBuildNumberParseFailed" xml:space="preserve"><value>Paper 빌드 번호 파싱에 실패했습니다.</value></data>
+<data name="JarIntegrity_PaperSha256NotFound" xml:space="preserve"><value>Paper JAR의 SHA256 정보를 가져올 수 없습니다.</value></data>
+<data name="JarIntegrity_PaperIntegrityFailed" xml:space="preserve"><value>Paper JAR의 무결성 검증에 실패했습니다.</value></data>
+<data name="Xaml_Eula_Title" xml:space="preserve"><value>EULA 동의</value></data>
+<data name="Xaml_Eula_Message" xml:space="preserve"><value>使用 Minecraft 伺服器前，必須同意 Minecraft EULA 和 Microsoft 隱私權聲明。</value></data>
+<data name="Xaml_Eula_MinecraftEula" xml:space="preserve"><value>Minecraft EULA 읽기</value></data>
+<data name="Xaml_Eula_PrivacyStatement" xml:space="preserve"><value>Microsoft 개인정보처리방침 읽기</value></data>
+<data name="Xaml_Eula_Agree" xml:space="preserve"><value>동의</value></data>
+<data name="Xaml_Eula_Decline" xml:space="preserve"><value>동의하지 않음</value></data>
+<data name="Xaml_Main_OpenScheduler" xml:space="preserve"><value>스케줄러</value></data>
+<data name="Xaml_Scheduler_Title" xml:space="preserve"><value>작업 스케줄러</value></data>
+<data name="Xaml_Scheduler_Add" xml:space="preserve"><value>작업 추가</value></data>
+<data name="Xaml_Scheduler_Delete" xml:space="preserve"><value>작업 삭제</value></data>
+<data name="Xaml_Scheduler_Name" xml:space="preserve"><value>작업 이름</value></data>
+<data name="Xaml_Scheduler_Enabled" xml:space="preserve"><value>활성화</value></data>
+<data name="Xaml_Scheduler_Mode" xml:space="preserve"><value>실행 모드</value></data>
+<data name="Xaml_Scheduler_ModeInterval" xml:space="preserve"><value>일정 간격</value></data>
+<data name="Xaml_Scheduler_ModeDaily" xml:space="preserve"><value>매일</value></data>
+<data name="Xaml_Scheduler_ModeWeekly" xml:space="preserve"><value>매주</value></data>
+<data name="Xaml_Scheduler_ModeSpecific" xml:space="preserve"><value>지정 일시</value></data>
+<data name="Xaml_Scheduler_IntervalSeconds" xml:space="preserve"><value>간격(초)</value></data>
+<data name="Xaml_Scheduler_TimeOfDay" xml:space="preserve"><value>실행 시각(HH:mm)</value></data>
+<data name="Xaml_Scheduler_DayOfWeek" xml:space="preserve"><value>요일</value></data>
+<data name="Xaml_Scheduler_SpecificDate" xml:space="preserve"><value>지정일</value></data>
+<data name="Xaml_Scheduler_FilePath" xml:space="preserve"><value>파일 경로</value></data>
+<data name="Xaml_Scheduler_Arguments" xml:space="preserve"><value>인수</value></data>
+<data name="Xaml_Scheduler_TargetType" xml:space="preserve"><value>대상 서버</value></data>
+<data name="Xaml_Scheduler_TargetAll" xml:space="preserve"><value>모든 서버</value></data>
+<data name="Xaml_Scheduler_TargetSpecific" xml:space="preserve"><value>지정한 서버만</value></data>
+<data name="Job_Scheduler_TaskRun" xml:space="preserve"><value>스케줄러를 통한 실행: {0}</value></data>
+<data name="Log_Scheduler_TaskStarted" xml:space="preserve"><value>스케줄러 작업 '{0}'이(가) 시작되었습니다.</value></data>
+<data name="Log_Scheduler_TaskCompleted" xml:space="preserve"><value>스케줄러 작업 '{0}'이(가) 완료되었습니다.</value></data>
+<data name="Job_Server_Create" xml:space="preserve"><value>서버 생성: {0}</value></data>
+<data name="Job_Server_Delete" xml:space="preserve"><value>서버 삭제: {0}</value></data>
+<data name="Job_Plugin_Install" xml:space="preserve"><value>플러그인 추가: {0}</value></data>
+<data name="Job_Plugin_Uninstall" xml:space="preserve"><value>플러그인 삭제: {0}</value></data>
+<data name="Job_Mod_Install" xml:space="preserve"><value>Mod 추가: {0}</value></data>
+<data name="Job_Mod_Uninstall" xml:space="preserve"><value>Mod 삭제: {0}</value></data>
+<data name="Job_Server_Stop" xml:space="preserve"><value>서버 정지: {0}</value></data>
+<data name="Log_Server_Created" xml:space="preserve"><value>서버를 생성했습니다: {0}</value></data>
+<data name="Log_Server_Deleted" xml:space="preserve"><value>서버를 삭제했습니다: {0}</value></data>
+<data name="Log_Plugin_Installed" xml:space="preserve"><value>플러그인을 설치했습니다: {0}</value></data>
+<data name="Log_Plugin_Uninstalled" xml:space="preserve"><value>플러그인을 삭제했습니다: {0}</value></data>
+<data name="Log_Mod_Installed" xml:space="preserve"><value>Mod를 설치했습니다: {0}</value></data>
+<data name="Log_Mod_Uninstalled" xml:space="preserve"><value>Mod를 삭제했습니다: {0}</value></data>
+<data name="ServerStartedToast_Title" xml:space="preserve"><value>서버 시작 완료</value></data>
+<data name="ServerStartedToast_Message" xml:space="preserve"><value>공개되었습니다: {0}</value></data>
+<data name="ServerStartedToast_MessageWithPort" xml:space="preserve"><value>공개되었습니다: {0}:{1}</value></data>
+</root>

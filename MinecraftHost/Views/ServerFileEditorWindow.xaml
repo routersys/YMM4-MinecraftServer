@@ -1,0 +1,454 @@
+<Window x:Class="MinecraftHost.Views.ServerFileEditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:MinecraftHost.ViewModels.Windows"
+        xmlns:local="clr-namespace:MinecraftHost.Views"
+        xmlns:loc="clr-namespace:MinecraftHost.Localization"
+        mc:Ignorable="d"
+        Title="{x:Static loc:Texts.Xaml_ServerFileEditor_Title}" Height="560" Width="980"
+        Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
+        Foreground="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"
+        WindowStartupLocation="CenterOwner"
+        d:DataContext="{d:DesignInstance Type=vm:ServerFileEditorViewModel}">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <Geometry x:Key="GlyphClose">M0,0 L10,10 M10,0 L0,10</Geometry>
+
+            <Style x:Key="SideListBoxItem" TargetType="ListBoxItem">
+                <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+                <Setter Property="Padding" Value="10,8"/>
+                <Setter Property="Opacity" Value="0.8"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ListBoxItem">
+                            <Border Background="Transparent" Padding="{TemplateBinding Padding}">
+                                <ContentPresenter/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Opacity" Value="1.0"/>
+                    </Trigger>
+                    <Trigger Property="IsSelected" Value="True">
+                        <Setter Property="Opacity" Value="1.0"/>
+                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Background="Transparent" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="0,0,1,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Background="Transparent" Padding="10,8"
+                        BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="0,0,0,1">
+                    <TextBlock Text="{x:Static loc:Texts.Xaml_ServerFileEditor_ConfigFiles}" Foreground="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" Opacity="0.8" FontSize="11" FontWeight="SemiBold"/>
+                </Border>
+                <ListBox Grid.Row="1"
+                         ItemsSource="{Binding Files}"
+                         SelectedItem="{Binding SelectedFile, Mode=TwoWay}"
+                         Background="Transparent" BorderThickness="0"
+                         ItemContainerStyle="{StaticResource SideListBoxItem}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}" FontFamily="Consolas" FontSize="12"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Column="1" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Background="Transparent" Padding="10,7"
+                    BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="0,0,0,1">
+                <DockPanel>
+                    <Button DockPanel.Dock="Right"
+                            Command="{Binding SaveCommand}"
+                            Style="{StaticResource BtnPrimary}"
+                            Content="{x:Static loc:Texts.Xaml_Common_Save}"
+                            Visibility="{Binding CanSaveFile, Converter={StaticResource BoolToVis}}"/>
+                    <TextBlock Text="{Binding SelectedFile.Name}"
+                               VerticalAlignment="Center"
+                               Foreground="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"
+                               FontWeight="SemiBold"
+                               FontFamily="Consolas"
+                               FontSize="13"/>
+                </DockPanel>
+            </Border>
+
+            <Grid Grid.Row="1">
+                <local:SyntaxHighlightingEditor
+                    IsEnabled="{Binding CanSaveFile}"
+                    FileExtension="{Binding SelectedFileExtension}"
+                    Text="{Binding FileContent, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <local:SyntaxHighlightingEditor.Style>
+                        <Style TargetType="local:SyntaxHighlightingEditor">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsPlayerPolicyEditor}" Value="True">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsBannedIpsEditor}" Value="True">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsWorldManager}" Value="True">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </local:SyntaxHighlightingEditor.Style>
+                </local:SyntaxHighlightingEditor>
+
+                <Grid Margin="10"
+                      Visibility="{Binding IsPlayerPolicyEditor, Converter={StaticResource BoolToVis}}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="8"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="6"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="0"
+                                 Text="{Binding NewPlayerName, UpdateSourceTrigger=PropertyChanged}"
+                                 Style="{StaticResource TxtSystem}"
+                                 VerticalContentAlignment="Center"/>
+                        <Button Grid.Column="2"
+                                Command="{Binding AddPlayerEntryCommand}"
+                                Style="{StaticResource BtnPrimary}"
+                                Padding="12,6"
+                                Content="{x:Static loc:Texts.Xaml_Common_Add}"/>
+                    </Grid>
+
+                    <ListBox Grid.Row="2"
+                             ItemsSource="{Binding PlayerEntries}"
+                             SelectedItem="{Binding SelectedPlayerEntry, Mode=TwoWay}"
+                             Background="Transparent"
+                             HorizontalContentAlignment="Stretch"
+                             BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+                             BorderThickness="1">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Margin="6,4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="34"/>
+                                        <ColumnDefinition Width="8"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="8"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Border Grid.Column="0" Width="30" Height="30"
+                                            BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+                                            BorderThickness="1"
+                                            Background="Transparent"
+                                            VerticalAlignment="Center">
+                                        <Image Source="{Binding AvatarPath}" Stretch="UniformToFill"/>
+                                    </Border>
+
+                                    <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding Name}" FontWeight="SemiBold" FontSize="13"/>
+                                        <TextBlock Text="{Binding Uuid}" Opacity="0.75" FontFamily="Consolas" FontSize="11"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="4" Orientation="Horizontal" VerticalAlignment="Center"
+                                                Visibility="Collapsed">
+                                        <StackPanel.Style>
+                                            <Style TargetType="StackPanel">
+                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding DataContext.IsOpsEditor, RelativeSource={RelativeSource AncestorType=Window}}" Value="True">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </StackPanel.Style>
+                                        <ComboBox Width="62"
+                                                  Margin="0,0,8,0"
+                                                  ItemsSource="{Binding DataContext.OperatorLevels, RelativeSource={RelativeSource AncestorType=Window}}"
+                                                  SelectedItem="{Binding Level, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                  Style="{StaticResource CmbSystem}"/>
+                                        <CheckBox Content="Bypass"
+                                                  IsChecked="{Binding BypassesPlayerLimit, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                  VerticalAlignment="Center"/>
+                                    </StackPanel>
+
+                                    <Button Grid.Column="5"
+                                            Command="{Binding DataContext.RemovePlayerEntryCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                            CommandParameter="{Binding}"
+                                            Style="{StaticResource BtnDanger}"
+                                            Width="24" Height="24"
+                                            HorizontalAlignment="Right"
+                                            VerticalAlignment="Center"
+                                            Padding="0"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center">
+                                        <Path Width="10" Height="10"
+                                              Data="{StaticResource GlyphClose}"
+                                              Stretch="Fill"
+                                              Stroke="White"
+                                              StrokeThickness="1.8"
+                                              StrokeStartLineCap="Round"
+                                              StrokeEndLineCap="Round"
+                                              SnapsToDevicePixels="True"/>
+                                    </Button>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <TextBlock Grid.Row="3"
+                               Text="{Binding PlayerEditorStatus}"
+                               Margin="0,8,0,0"
+                               Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"
+                               FontSize="12"/>
+                </Grid>
+
+                <Grid Margin="10"
+                      Visibility="{Binding IsBannedIpsEditor, Converter={StaticResource BoolToVis}}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="8"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="6"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="0"
+                                 Text="{Binding NewIpAddress, UpdateSourceTrigger=PropertyChanged}"
+                                 Style="{StaticResource TxtSystem}"
+                                 VerticalContentAlignment="Center"/>
+                        <Button Grid.Column="2"
+                                Command="{Binding AddIpEntryCommand}"
+                                Style="{StaticResource BtnPrimary}"
+                                Padding="12,6"
+                                Content="{x:Static loc:Texts.Xaml_Common_Add}"/>
+                    </Grid>
+
+                    <ListBox Grid.Row="2"
+                             ItemsSource="{Binding IpEntries}"
+                             SelectedItem="{Binding SelectedIpEntry, Mode=TwoWay}"
+                             Background="Transparent"
+                             HorizontalContentAlignment="Stretch"
+                             BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+                             BorderThickness="1">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Margin="6,4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="12"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0"
+                                               Text="{Binding Ip}"
+                                               FontWeight="SemiBold"
+                                               VerticalAlignment="Center"
+                                               FontFamily="Consolas"/>
+                                    <Button Grid.Column="2"
+                                            Command="{Binding DataContext.RemoveIpEntryCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                            CommandParameter="{Binding}"
+                                            Style="{StaticResource BtnDanger}"
+                                            Width="24" Height="24"
+                                            Padding="0"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center">
+                                        <Path Width="10" Height="10"
+                                              Data="{StaticResource GlyphClose}"
+                                              Stretch="Fill"
+                                              Stroke="White"
+                                              StrokeThickness="1.8"
+                                              StrokeStartLineCap="Round"
+                                              StrokeEndLineCap="Round"
+                                              SnapsToDevicePixels="True"/>
+                                    </Button>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <TextBlock Grid.Row="3"
+                               Text="{Binding IpEditorStatus}"
+                               Margin="0,8,0,0"
+                               Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"
+                               FontSize="12"/>
+                </Grid>
+
+                <Grid Margin="10"
+                      Visibility="{Binding IsWorldManager, Converter={StaticResource BoolToVis}}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="8"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="6"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="6"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="0"
+                                 Text="{Binding NewWorldSourcePath, UpdateSourceTrigger=PropertyChanged}"
+                                 Style="{StaticResource TxtSystem}"
+                                 VerticalContentAlignment="Center"/>
+                        <Button Grid.Column="2"
+                                Command="{Binding AddWorldSourceCommand}"
+                                Style="{StaticResource BtnSecondary}"
+                                Padding="12,6"
+                                Content="{x:Static loc:Texts.Xaml_ServerFileEditor_AddSource}"/>
+                        <Button Grid.Column="4"
+                                Command="{Binding RefreshWorldSourcesCommand}"
+                                Style="{StaticResource BtnSecondary}"
+                                Padding="12,6"
+                                Content="{x:Static loc:Texts.Xaml_StructuredLog_Reload}"/>
+                    </Grid>
+
+                    <ListBox Grid.Row="2"
+                             Height="138"
+                             ItemsSource="{Binding WorldSources}"
+                             Background="Transparent"
+                             HorizontalContentAlignment="Stretch"
+                             BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+                             BorderThickness="1">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Margin="6,4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="42"/>
+                                        <ColumnDefinition Width="8"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="12"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Border Grid.Column="0" Width="40" Height="40"
+                                            BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+                                            BorderThickness="1"
+                                            Background="Transparent">
+                                        <Image Source="{Binding ThumbnailPath}" Stretch="UniformToFill"/>
+                                    </Border>
+
+                                    <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding DisplayName}" FontWeight="SemiBold"/>
+                                        <TextBlock Text="{Binding FullPath}" FontSize="11" Opacity="0.7" TextTrimming="CharacterEllipsis"/>
+                                    </StackPanel>
+
+                                    <Button Grid.Column="4"
+                                            Command="{Binding DataContext.RemoveWorldSourceCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                            CommandParameter="{Binding}"
+                                            Style="{StaticResource BtnDanger}"
+                                            Width="24" Height="24"
+                                            HorizontalAlignment="Right"
+                                            VerticalAlignment="Center"
+                                            Padding="0"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center">
+                                        <Path Width="10" Height="10"
+                                              Data="{StaticResource GlyphClose}"
+                                              Stretch="Fill"
+                                              Stroke="White"
+                                              StrokeThickness="1.8"
+                                              StrokeStartLineCap="Round"
+                                              StrokeEndLineCap="Round"
+                                              SnapsToDevicePixels="True"/>
+                                    </Button>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <ItemsControl Grid.Row="4" ItemsSource="{Binding WorldSlots}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+                                        BorderThickness="1"
+                                        Padding="8"
+                                        Margin="0,0,0,8"
+                                        AllowDrop="True"
+                                        Tag="{Binding}"
+                                        DragOver="WorldSlotDragOver"
+                                        Drop="WorldSlotDrop">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="6"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0" Text="{Binding DisplayName}" FontWeight="SemiBold"/>
+                                        <Grid Grid.Row="2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="6"/>
+                                                <ColumnDefinition Width="180"/>
+                                            </Grid.ColumnDefinitions>
+                                            <ComboBox Grid.Column="0"
+                                                      ItemsSource="{Binding DataContext.WorldSources, RelativeSource={RelativeSource AncestorType=Window}}"
+                                                      SelectedItem="{Binding SelectedSource, Mode=TwoWay}"
+                                                      DisplayMemberPath="DisplayName"
+                                                      Style="{StaticResource CmbSystem}"/>
+                                            <TextBox Grid.Column="2"
+                                                     Text="{Binding TargetFolderName, UpdateSourceTrigger=PropertyChanged}"
+                                                     Style="{StaticResource TxtSystem}"/>
+                                        </Grid>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                    <DockPanel Grid.Row="5" Margin="0,4,0,0">
+                        <Button DockPanel.Dock="Right"
+                                Command="{Binding ApplyWorldMappingsCommand}"
+                                Style="{StaticResource BtnPrimary}"
+                                Padding="12,6"
+                                Content="{x:Static loc:Texts.Xaml_ServerFileEditor_ApplyWorld}"/>
+                        <TextBlock Text="{Binding WorldOperationStatus}"
+                                   VerticalAlignment="Center"
+                                   Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"
+                                   FontSize="12"/>
+                    </DockPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

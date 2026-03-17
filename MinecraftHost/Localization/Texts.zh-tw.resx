@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>zh-tw</value></data>
+<data name="Xaml_BuildSelection_Title" xml:space="preserve"><value>建置選擇</value></data>
+<data name="Xaml_BuildSelection_BuildNumber" xml:space="preserve"><value>建置編號</value></data>
+<data name="Xaml_Common_Cancel" xml:space="preserve"><value>取消</value></data>
+<data name="Xaml_Common_Apply" xml:space="preserve"><value>套用</value></data>
+<data name="Xaml_Common_Refresh" xml:space="preserve"><value>重新整理</value></data>
+<data name="Xaml_Common_Save" xml:space="preserve"><value>儲存</value></data>
+<data name="Xaml_Common_Add" xml:space="preserve"><value>新增</value></data>
+<data name="Xaml_AuditLog_Title" xml:space="preserve"><value>稽核記錄 / 變更歷程</value></data>
+<data name="Xaml_AuditLog_DisplayCount" xml:space="preserve"><value>顯示筆數</value></data>
+<data name="Xaml_AuditLog_HeaderTimestampUtc" xml:space="preserve"><value>時間(UTC)</value></data>
+<data name="Xaml_AuditLog_HeaderCategory" xml:space="preserve"><value>類別</value></data>
+<data name="Xaml_AuditLog_HeaderAction" xml:space="preserve"><value>操作</value></data>
+<data name="Xaml_AuditLog_HeaderEntityId" xml:space="preserve"><value>目標ID</value></data>
+<data name="Xaml_AuditLog_HeaderProperty" xml:space="preserve"><value>欄位</value></data>
+<data name="Xaml_AuditLog_HeaderBefore" xml:space="preserve"><value>變更前/內容</value></data>
+<data name="Xaml_AuditLog_HeaderAfter" xml:space="preserve"><value>变更後</value></data>
+<data name="Xaml_AuditLog_HeaderActor" xml:space="preserve"><value>執行者</value></data>
+<data name="Xaml_StructuredLog_Title" xml:space="preserve"><value>結構化日誌</value></data>
+<data name="Xaml_StructuredLog_MaxItems" xml:space="preserve"><value>最大筆數</value></data>
+<data name="Xaml_StructuredLog_Reload" xml:space="preserve"><value>重新載入</value></data>
+<data name="Xaml_StructuredLog_ClearLogs" xml:space="preserve"><value>清除日誌</value></data>
+<data name="Xaml_StructuredLog_Folder" xml:space="preserve"><value>資料夾</value></data>
+<data name="Xaml_StructuredLog_Level" xml:space="preserve"><value>層級</value></data>
+<data name="Xaml_StructuredLog_Category" xml:space="preserve"><value>類別</value></data>
+<data name="Xaml_StructuredLog_Operation" xml:space="preserve"><value>操作</value></data>
+<data name="Xaml_StructuredLog_ServerId" xml:space="preserve"><value>伺服器ID</value></data>
+<data name="Xaml_StructuredLog_Search" xml:space="preserve"><value>搜尋</value></data>
+<data name="Xaml_StructuredLog_ResetFilter" xml:space="preserve"><value>清除篩選</value></data>
+<data name="Xaml_StructuredLog_HeaderTimestampUtc" xml:space="preserve"><value>時間(UTC)</value></data>
+<data name="Xaml_StructuredLog_HeaderLevel" xml:space="preserve"><value>層級</value></data>
+<data name="Xaml_StructuredLog_HeaderCategory" xml:space="preserve"><value>類別</value></data>
+<data name="Xaml_StructuredLog_HeaderOperation" xml:space="preserve"><value>操作</value></data>
+<data name="Xaml_StructuredLog_HeaderServerId" xml:space="preserve"><value>伺服器ID</value></data>
+<data name="Xaml_StructuredLog_HeaderProcess" xml:space="preserve"><value>程序</value></data>
+<data name="Xaml_StructuredLog_HeaderMessage" xml:space="preserve"><value>訊息</value></data>
+<data name="Xaml_StructuredLog_HeaderException" xml:space="preserve"><value>例外</value></data>
+<data name="Xaml_StructuredLog_HeaderCorrelationId" xml:space="preserve"><value>關聯ID</value></data>
+<data name="Xaml_PluginManager_Title" xml:space="preserve"><value>外掛管理</value></data>
+<data name="Xaml_PluginManager_ServerRunningNotice" xml:space="preserve"><value>伺服器執行中——變更會在伺服器重新啟動後生效。</value></data>
+<data name="Xaml_PluginManager_Install" xml:space="preserve"><value>安裝</value></data>
+<data name="Xaml_PluginManager_OpenFolder" xml:space="preserve"><value>開啟資料夾</value></data>
+<data name="Xaml_PluginManager_NoPlugins" xml:space="preserve"><value>沒有外掛程式</value></data>
+<data name="Xaml_PluginManager_DropOrInstallHint" xml:space="preserve"><value>將 JAR 檔拖放到此處或使用安裝按鈕。</value></data>
+<data name="Xaml_PluginManager_DropToInstall" xml:space="preserve"><value>拖放到此處安裝</value></data>
+<data name="Xaml_PluginManager_Uninstall" xml:space="preserve"><value>解除安裝</value></data>
+<data name="Xaml_OperationsCenter_Title" xml:space="preserve"><value>營運儀表板</value></data>
+<data name="Xaml_OperationsCenter_HeaderJobName" xml:space="preserve"><value>工作名稱</value></data>
+<data name="Xaml_OperationsCenter_HeaderServerId" xml:space="preserve"><value>伺服器ID</value></data>
+<data name="Xaml_OperationsCenter_HeaderStatus" xml:space="preserve"><value>狀態</value></data>
+<data name="Xaml_OperationsCenter_HeaderAttempt" xml:space="preserve"><value>嘗試次數</value></data>
+<data name="Xaml_OperationsCenter_HeaderMaxAttempt" xml:space="preserve"><value>最大嘗試</value></data>
+<data name="Xaml_OperationsCenter_HeaderDurationMs" xml:space="preserve"><value>執行時間(ms)</value></data>
+<data name="Xaml_OperationsCenter_HeaderCompletedUtc" xml:space="preserve"><value>完成時間</value></data>
+<data name="Xaml_OperationsCenter_HeaderError" xml:space="preserve"><value>錯誤</value></data>
+<data name="Xaml_ServerFileEditor_Title" xml:space="preserve"><value>檔案編輯</value></data>
+<data name="Xaml_ServerFileEditor_ConfigFiles" xml:space="preserve"><value>設定檔</value></data>
+<data name="Xaml_ServerFileEditor_AddSource" xml:space="preserve"><value>新增來源</value></data>
+<data name="Xaml_ServerFileEditor_ApplyWorld" xml:space="preserve"><value>套用世界</value></data>
+<data name="JobOrchestrator_LogJobSuccessFormat" xml:space="preserve"><value>作業成功：{0} attempt={1}</value></data>
+<data name="JobOrchestrator_LogJobFailedFormat" xml:space="preserve"><value>作業失敗：{0} attempt={1} error={2}</value></data>
+<data name="ServerFileEditor_WorldSlotOverworld" xml:space="preserve"><value>主世界</value></data>
+<data name="ServerFileEditor_WorldSlotNether" xml:space="preserve"><value>地獄</value></data>
+<data name="ServerFileEditor_WorldSlotEnd" xml:space="preserve"><value>終界</value></data>
+<data name="ServerFileEditor_JsonLoadFailed" xml:space="preserve"><value>JSON 載入失敗。</value></data>
+<data name="ServerFileEditor_InvalidUserName" xml:space="preserve"><value>使用者名稱無效。</value></data>
+<data name="ServerFileEditor_DuplicateUserName" xml:space="preserve"><value>同名使用者已存在。</value></data>
+<data name="ServerFileEditor_ResolvingUuid" xml:space="preserve"><value>正在取得 UUID...</value></data>
+<data name="ServerFileEditor_ResolveUuidFailed" xml:space="preserve"><value>取得 UUID 失敗。</value></data>
+<data name="ServerFileEditor_Added" xml:space="preserve"><value>已新增。</value></data>
+<data name="ServerFileEditor_Removed" xml:space="preserve"><value>已刪除。</value></data>
+<data name="ServerFileEditor_InvalidIpAddress" xml:space="preserve"><value>IP 位址無效。</value></data>
+<data name="ServerFileEditor_DuplicateIpAddress" xml:space="preserve"><value>相同 IP 已存在。</value></data>
+<data name="ServerFileEditor_InvalidFolderPath" xml:space="preserve"><value>請指定有效資料夾。</value></data>
+<data name="ServerFileEditor_AlreadyExistsInList" xml:space="preserve"><value>清單中已存在。</value></data>
+<data name="ServerFileEditor_AssignedToSlotFormat" xml:space="preserve"><value>已指派到 {0}。</value></data>
+<data name="ServerFileEditor_RemovedFromList" xml:space="preserve"><value>已從清單中移除。</value></data>
+<data name="ServerFileEditor_ApplyingWorlds" xml:space="preserve"><value>正在套用世界...</value></data>
+<data name="ServerFileEditor_NoAssignments" xml:space="preserve"><value>沒有指派項目。</value></data>
+<data name="ServerFileEditor_WorldSourceNotFoundFormat" xml:space="preserve"><value>找不到 {0} 的來源。</value></data>
+<data name="ServerFileEditor_Applied" xml:space="preserve"><value>已套用。</value></data>
+<data name="ServerFileEditor_ApplyFailedFormat" xml:space="preserve"><value>套用失敗：{0}</value></data>
+<data name="PluginManager_StatusPluginCountFormat" xml:space="preserve"><value>{0} 個外掛程式</value></data>
+<data name="PluginManager_SelectJarTitle" xml:space="preserve"><value>選擇外掛 JAR</value></data>
+<data name="PluginManager_SelectJarFilter" xml:space="preserve"><value>JAR 檔案 (*.jar)|*.jar</value></data>
+<data name="PluginManager_InstallFailedFormat" xml:space="preserve"><value>{0} 安裝失敗：{1}</value></data>
+<data name="Common_ErrorTitle" xml:space="preserve"><value>錯誤</value></data>
+<data name="PluginManager_InstallCompletedFormat" xml:space="preserve"><value>已安裝 {0} 個——共 {1} 個外掛程式</value></data>
+<data name="PluginManager_UninstallConfirmFormat" xml:space="preserve"><value>要刪除 {0} 嗎？</value></data>
+<data name="Common_ConfirmTitle" xml:space="preserve"><value>確認</value></data>
+<data name="PluginManager_UninstallFailedFormat" xml:space="preserve"><value>刪除失敗：{0}</value></data>
+<data name="EulaGuidance_InitialAgreementRequired" xml:space="preserve"><value>首次啟動需要同意 EULA。請從設定開啟 eula.txt 並將 eula=true 後儲存。</value></data>
+<data name="Authorization_InlineDeniedFormat" xml:space="preserve"><value>因授權限制無法執行操作：{0}</value></data>
+<data name="Authorization_DialogDenied" xml:space="preserve"><value>因授權限制無法執行操作。</value></data>
+<data name="Authorization_DialogDeniedWithReasonFormat" xml:space="preserve"><value>因授權限制無法執行操作。\n原因：{0}</value></data>
+<data name="BoundaryException_WrapMessageFormat" xml:space="preserve"><value>{0} 發生 {1} 邊界例外：{2}</value></data>
+<data name="ServerProcess_LogSendCommandFormat" xml:space="preserve"><value>傳送命令：{0}</value></data>
+<data name="ServerProcess_LogStopBegin" xml:space="preserve"><value>開始停止伺服器程序。</value></data>
+<data name="ServerProcess_LogStopAsyncBegin" xml:space="preserve"><value>開始非同步停止伺服器程序。</value></data>
+<data name="MainPage_ServerNotSelected" xml:space="preserve"><value>未選擇伺服器。</value></data>
+<data name="MainPage_NewServerName" xml:space="preserve"><value>新伺服器</value></data>
+<data name="MainPage_DeleteAfterStopRequired" xml:space="preserve"><value>請先停止伺服器再刪除。</value></data>
+<data name="MainPage_DeleteServerConfirmFormat" xml:space="preserve"><value>要刪除伺服器「{0}」嗎？其目錄也會一併刪除。是否繼續？</value></data>
+<data name="MainPage_DeleteServerDirectoryFailedFormat" xml:space="preserve"><value>刪除伺服器目錄失敗：{0}</value></data>
+<data name="SettingPage_UnnamedServer" xml:space="preserve"><value>未命名</value></data>
+<data name="SettingPage_JavaPathStatusNotConfigured" xml:space="preserve"><value>未設定——啟動時將嘗試自動下載。</value></data>
+<data name="SettingPage_JavaPathStatusValid" xml:space="preserve"><value>已設定有效路徑。</value></data>
+<data name="SettingPage_JavaPathStatusNotFound" xml:space="preserve"><value>找不到指定的檔案。</value></data>
+<data name="SettingPage_SelectJavaExeTitle" xml:space="preserve"><value>選擇 java.exe</value></data>
+<data name="SettingPage_SelectJavaExeFilter" xml:space="preserve"><value>java.exe|java.exe|可執行檔案 (*.exe)|*.exe|所有檔案 (*.*)|*.*</value></data>
+<data name="SettingPage_UnregisteredServer" xml:space="preserve"><value>未註冊伺服器</value></data>
+<data name="SettingPage_PinMismatch" xml:space="preserve"><value>新 PIN 與確認輸入不一致。</value></data>
+<data name="SettingPage_PinLengthInvalid" xml:space="preserve"><value>請將 PIN 設為 4 到 32 個字元。</value></data>
+<data name="SettingPage_RoleElevationPinRequired" xml:space="preserve"><value>角色提升需要驗證。請先設定 PIN。</value></data>
+<data name="SettingPage_CurrentPinRequired" xml:space="preserve"><value>請輸入目前 PIN。</value></data>
+<data name="SettingPage_PinVerificationFailed" xml:space="preserve"><value>PIN 驗證失敗。</value></data>
+<data name="SettingPage_WindowsHelloPrompt" xml:space="preserve"><value>請驗證身分以進行角色提升。</value></data>
+<data name="SettingPage_WindowsHelloCanceled" xml:space="preserve"><value>Windows Hello 驗證已取消。</value></data>
+<data name="SettingPage_WindowsHelloRetriesExhausted" xml:space="preserve"><value>已達到 Windows Hello 驗證重試上限。</value></data>
+<data name="SettingPage_WindowsHelloDeviceBusy" xml:space="preserve"><value>Windows Hello 裝置忙碌中。</value></data>
+<data name="SettingPage_WindowsHelloDisabledByPolicy" xml:space="preserve"><value>Windows Hello 已被原則停用。</value></data>
+<data name="SettingPage_WindowsHelloNotConfigured" xml:space="preserve"><value>Windows Hello 尚未設定。</value></data>
+<data name="SettingPage_WindowsHelloDeviceNotPresent" xml:space="preserve"><value>找不到 Windows Hello 裝置。</value></data>
+<data name="SettingPage_WindowsHelloFailed" xml:space="preserve"><value>Windows Hello 驗證失敗。</value></data>
+<data name="OperationsCenter_SummaryFormat" xml:space="preserve"><value>總工作={0}  成功={1}  失敗={2}  執行中={3}  平均時間(ms)={4:0.0}</value></data>
+<data name="StructuredLog_AllFilter" xml:space="preserve"><value>全部</value></data>
+<data name="StructuredLog_LoadFailedFormat" xml:space="preserve"><value>載入失敗：{0}</value></data>
+<data name="StructuredLog_ClearFailedFormat" xml:space="preserve"><value>清除失敗：{0}</value></data>
+<data name="StructuredLog_StatusFormat" xml:space="preserve"><value>顯示 {0} / 共 {1} 筆</value></data>
+<data name="ServerItem_CurrentBuildUnpinned" xml:space="preserve"><value>build: 未固定</value></data>
+<data name="ServerItem_CurrentBuildPinnedFormat" xml:space="preserve"><value>build: {0}</value></data>
+<data name="ServerItem_UpdateTargetBuildFormat" xml:space="preserve"><value>build {0}</value></data>
+<data name="ServerItem_UpdateMessageLatestVersionFormat" xml:space="preserve"><value>最新版本：{0}</value></data>
+<data name="ServerItem_UpdateMessageLatestBuildFormat" xml:space="preserve"><value>最新建置：{0}</value></data>
+<data name="ServerItem_DownloadStatusCheckingServerFile" xml:space="preserve"><value>正在檢查伺服器檔案...</value></data>
+<data name="ServerItem_LoadVersionsFailedFormat" xml:space="preserve"><value>取得版本清單失敗：{0}</value></data>
+<data name="ServerItem_CheckingJavaInstallation" xml:space="preserve"><value>正在檢查 Java 安裝狀態...</value></data>
+<data name="ServerItem_LogStartSequenceBegin" xml:space="preserve"><value>已開始伺服器啟動序列。</value></data>
+<data name="ServerItem_JavaPathFormat" xml:space="preserve"><value>Java 路徑：{0}</value></data>
+<data name="ServerItem_CheckingServerFile" xml:space="preserve"><value>正在檢查伺服器檔案...</value></data>
+<data name="ServerItem_StartingServerFormat" xml:space="preserve"><value>正在啟動伺服器：{0}</value></data>
+<data name="ServerItem_LogStartFailed" xml:space="preserve"><value>伺服器啟動失敗。</value></data>
+<data name="ServerItem_StartErrorFormat" xml:space="preserve"><value>啟動錯誤：{0}</value></data>
+<data name="ServerItem_LogStopRequested" xml:space="preserve"><value>已要求停止伺服器。</value></data>
+<data name="ServerItem_StoppingServer" xml:space="preserve"><value>正在停止伺服器...</value></data>
+<data name="ServerItem_SendCommandFailedFormat" xml:space="preserve"><value>命令傳送失敗：{0}</value></data>
+<data name="ServerItem_ServerProcessExited" xml:space="preserve"><value>伺服器程序已結束。</value></data>
+<data name="ServerItem_AutoRestartSkippedWaitingEula" xml:space="preserve"><value>等待 EULA 同意期間不會執行自動重啟。</value></data>
+<data name="ServerItem_AutoRestartLimitReached" xml:space="preserve"><value>已達自動重啟上限，停止處理。</value></data>
+<data name="ServerItem_LogAutoRestartScheduledFormat" xml:space="preserve"><value>已排程自動重啟：{0}/{1}</value></data>
+<data name="ServerItem_AutoRestartScheduledFormat" xml:space="preserve"><value>將在 {0:0} 秒後執行自動重啟（{1}/{2}）。</value></data>
+<data name="ServerItem_DownloadStatusCreatingBackup" xml:space="preserve"><value>正在建立備份...</value></data>
+<data name="ServerItem_DownloadStatusDownloading" xml:space="preserve"><value>下載中...</value></data>
+<data name="ServerItem_DownloadStatusVerifyingIntegrity" xml:space="preserve"><value>正在驗證完整性...</value></data>
+<data name="Xaml_Main_ServerManager" xml:space="preserve"><value>伺服器管理器</value></data>
+<data name="Xaml_Main_CreateNew" xml:space="preserve"><value>新建</value></data>
+<data name="Xaml_Main_Name" xml:space="preserve"><value>名稱</value></data>
+<data name="Xaml_Main_Type" xml:space="preserve"><value>類型</value></data>
+<data name="Xaml_Main_Version" xml:space="preserve"><value>版本</value></data>
+<data name="Xaml_Main_Loading" xml:space="preserve"><value>載入中...</value></data>
+<data name="Xaml_Main_MemoryMb" xml:space="preserve"><value>記憶體 (MB)</value></data>
+<data name="Xaml_Main_Port" xml:space="preserve"><value>連接埠</value></data>
+<data name="Xaml_Main_Start" xml:space="preserve"><value>啟動</value></data>
+<data name="Xaml_Main_Stop" xml:space="preserve"><value>停止</value></data>
+<data name="Xaml_Main_Folder" xml:space="preserve"><value>資料夾</value></data>
+<data name="Xaml_Setting_JavaSettings" xml:space="preserve"><value>Java 設定</value></data>
+<data name="Xaml_Setting_JavaDescription" xml:space="preserve"><value>手動指定 Java 路徑可略過下載。留空將自動下載。若已安裝請指定 java.exe 完整路徑。</value></data>
+<data name="Xaml_Setting_JavaExecutable" xml:space="preserve"><value>Java 可執行檔 (java.exe)</value></data>
+<data name="Xaml_Setting_Browse" xml:space="preserve"><value>瀏覽...</value></data>
+<data name="Xaml_Setting_NetworkSettings" xml:space="preserve"><value>網路設定</value></data>
+<data name="Xaml_Setting_EnablePortForwarding" xml:space="preserve"><value>啟用連接埠開放 (Windows 防火牆 + UPnP)</value></data>
+<data name="Xaml_Setting_PortForwardingDescription" xml:space="preserve"><value>啟用後啟動時會嘗試新增防火牆規則與 UPnP 連接埠對應。停用時請手動設定。</value></data>
+<data name="Xaml_Setting_OperationsStability" xml:space="preserve"><value>營運穩定化</value></data>
+<data name="Xaml_Setting_ConsoleLineRetention" xml:space="preserve"><value>主控台保留行數 (200-20000)</value></data>
+<data name="Xaml_Setting_EnableAutoRestart" xml:space="preserve"><value>伺服器異常結束時自動重啟</value></data>
+<data name="Xaml_Setting_MaxRetryCount" xml:space="preserve"><value>最大重試次數</value></data>
+<data name="Xaml_Setting_RestartDelaySeconds" xml:space="preserve"><value>重啟等待秒數</value></data>
+<data name="Xaml_Setting_StructuredLog" xml:space="preserve"><value>結構化日誌</value></data>
+<data name="Xaml_Setting_LogDirectory" xml:space="preserve"><value>日誌目錄</value></data>
+<data name="Xaml_Setting_KeepFileCount" xml:space="preserve"><value>保留檔案數</value></data>
+<data name="Xaml_Setting_MaxFileSizeMb" xml:space="preserve"><value>檔案最大大小(MB)</value></data>
+<data name="Xaml_Setting_OpenLogViewer" xml:space="preserve"><value>開啟日誌檢視器</value></data>
+<data name="Xaml_Setting_BackupRestore" xml:space="preserve"><value>備份與復原</value></data>
+<data name="Xaml_Setting_EnableSafeUpdateBackup" xml:space="preserve"><value>啟用安全更新備份</value></data>
+<data name="Xaml_Setting_BackupRetentionGenerations" xml:space="preserve"><value>保留代數 (1-30)</value></data>
+<data name="Xaml_Setting_AuthorizationPolicy" xml:space="preserve"><value>驗證授權與政策營運</value></data>
+<data name="Xaml_Setting_OperatorRole" xml:space="preserve"><value>操作員角色</value></data>
+<data name="Xaml_Setting_RequireAuthOnRoleElevation" xml:space="preserve"><value>角色提升時需要驗證</value></data>
+<data name="Xaml_Setting_PreferWindowsHello" xml:space="preserve"><value>角色提升時優先 Windows Hello</value></data>
+<data name="Xaml_Setting_CurrentPin" xml:space="preserve"><value>目前PIN</value></data>
+<data name="Xaml_Setting_NewPin" xml:space="preserve"><value>新PIN</value></data>
+<data name="Xaml_Setting_NewPinConfirm" xml:space="preserve"><value>新PIN(確認)</value></data>
+<data name="Xaml_Setting_EnableMaintenanceMode" xml:space="preserve"><value>啟用維護模式</value></data>
+<data name="Xaml_Setting_LockedTargetServer" xml:space="preserve"><value>鎖定目標伺服器</value></data>
+<data name="Xaml_Setting_ClearSelection" xml:space="preserve"><value>清除選擇</value></data>
+<data name="Xaml_Setting_AuditAndOperations" xml:space="preserve"><value>稽核記錄 變更歷程 與 營運</value></data>
+<data name="Xaml_Setting_OpenAuditLog" xml:space="preserve"><value>開啟稽核記錄與歷程</value></data>
+<data name="Xaml_Setting_OpenOperationsDashboard" xml:space="preserve"><value>開啟營運儀表板</value></data>
+<data name="Xaml_Setting_AutoSaveNotice" xml:space="preserve"><value>變更會自動儲存</value></data>
+<data name="Xaml_Setting_Clear" xml:space="preserve"><value>清除</value></data>
+<data name="JavaResolver_UseConfiguredJavaPath" xml:space="preserve"><value>使用已設定的 Java 路徑。</value></data>
+<data name="JavaResolver_ConfiguredJavaNotFoundFormat" xml:space="preserve"><value>找不到設定中指定的 Java：{0}</value></data>
+<data name="JavaResolver_UseEmbeddedJre" xml:space="preserve"><value>使用現有內建 JRE。</value></data>
+<data name="JavaResolver_UseEmbeddedJreSearchResult" xml:space="preserve"><value>使用搜尋到的內建 JRE。</value></data>
+<data name="JavaResolver_JavaExeNotFoundAfterExtract" xml:space="preserve"><value>解壓後找不到 java.exe。請在設定中手動指定路徑。</value></data>
+<data name="JavaResolver_DownloadAndExtractCompleted" xml:space="preserve"><value>Java 自動下載與解壓縮完成。</value></data>
+<data name="JarIntegrity_Sha256VerifyFailedFormat" xml:space="preserve"><value>{0} 的 SHA256 完全性驗證失敗。</value></data>
+<data name="JarIntegrity_Sha1VerifyFailedFormat" xml:space="preserve"><value>{0} 的 SHA1 完整性驗證失敗。</value></data>
+<data name="JarIntegrity_ContentHashVerifyFailedFormat" xml:space="preserve"><value>{0} 的內容雜湊驗證失敗。</value></data>
+<data name="Xaml_ModManager_Title" xml:space="preserve"><value>模組管理</value></data>
+<data name="Xaml_ModManager_ServerRunningNotice" xml:space="preserve"><value>伺服器執行中——變更會在伺服器重新啟動後生效。</value></data>
+<data name="Xaml_ModManager_Install" xml:space="preserve"><value>安裝</value></data>
+<data name="Xaml_ModManager_OpenFolder" xml:space="preserve"><value>開啟資料夾</value></data>
+<data name="Xaml_ModManager_NoMods" xml:space="preserve"><value>沒有模組</value></data>
+<data name="Xaml_ModManager_DropOrInstallHint" xml:space="preserve"><value>將 JAR 檔拖放到此處或使用安裝按鈕。</value></data>
+<data name="Xaml_ModManager_DropToInstall" xml:space="preserve"><value>拖放到此處安裝</value></data>
+<data name="Xaml_ModManager_Uninstall" xml:space="preserve"><value>解除安裝</value></data>
+<data name="ModManager_StatusModCountFormat" xml:space="preserve"><value>{0} 個模組</value></data>
+<data name="ModManager_SelectJarTitle" xml:space="preserve"><value>選擇模組 JAR</value></data>
+<data name="ModManager_SelectJarFilter" xml:space="preserve"><value>JAR 檔案 (*.jar)|*.jar</value></data>
+<data name="ModManager_InstallFailedFormat" xml:space="preserve"><value>{0} 安裝失敗：{1}</value></data>
+<data name="ModManager_InstallCompletedFormat" xml:space="preserve"><value>已安裝 {0} 個——共 {1} 個模組</value></data>
+<data name="ModManager_UninstallConfirmFormat" xml:space="preserve"><value>要刪除 {0} 嗎？</value></data>
+<data name="ModManager_UninstallFailedFormat" xml:space="preserve"><value>刪除失敗：{0}</value></data>
+<data name="Auth_Error_MaintenanceMode" xml:space="preserve"><value>維護模式中，無法操作。</value></data>
+<data name="Auth_Error_ServerLocked" xml:space="preserve"><value>目標伺服器被原則鎖定。</value></data>
+<data name="Auth_Error_RoleInsufficientFormat" xml:space="preserve"><value>權限不足。所需角色: {0}</value></data>
+<data name="JarIntegrity_UnsupportedServerTypeFormat" xml:space="preserve"><value>不支援的伺服器類型: {0}</value></data>
+<data name="JarIntegrity_OnlyHttpsAllowed" xml:space="preserve"><value>不允許使用 HTTPS 以外的下載 URL。</value></data>
+<data name="JarIntegrity_UnauthorizedHostFormat" xml:space="preserve"><value>未經授權的下載主機: {0}</value></data>
+<data name="JarIntegrity_VanillaMetadataNotFoundFormat" xml:space="preserve"><value>找不到 Vanilla 版本 {0} 的驗證元數據。</value></data>
+<data name="JarIntegrity_VanillaSha1NotFound" xml:space="preserve"><value>無法取得 Vanilla JAR 的 SHA1 資訊。</value></data>
+<data name="JarIntegrity_VanillaIntegrityFailed" xml:space="preserve"><value>Vanilla JAR 完整性驗證失敗。</value></data>
+<data name="JarIntegrity_PaperBuildNumberParseFailed" xml:space="preserve"><value>解析 Paper 建置編號失敗。</value></data>
+<data name="JarIntegrity_PaperSha256NotFound" xml:space="preserve"><value>無法取得 Paper JAR 的 SHA256 資訊。</value></data>
+<data name="JarIntegrity_PaperIntegrityFailed" xml:space="preserve"><value>Paper JAR 完整性驗證失敗。</value></data>
+<data name="Xaml_Eula_Title" xml:space="preserve"><value>EULA 同意</value></data>
+<data name="Xaml_Eula_Message" xml:space="preserve"><value>使用 Minecraft 服务器前，必须同意 Minecraft EULA 和 Microsoft 隐私声明。</value></data>
+<data name="Xaml_Eula_MinecraftEula" xml:space="preserve"><value>閱讀 Minecraft EULA</value></data>
+<data name="Xaml_Eula_PrivacyStatement" xml:space="preserve"><value>閱讀 Microsoft 隱私權聲明</value></data>
+<data name="Xaml_Eula_Agree" xml:space="preserve"><value>同意</value></data>
+<data name="Xaml_Eula_Decline" xml:space="preserve"><value>不同意</value></data>
+<data name="Xaml_Main_OpenScheduler" xml:space="preserve"><value>排程器</value></data>
+<data name="Xaml_Scheduler_Title" xml:space="preserve"><value>工作排程器</value></data>
+<data name="Xaml_Scheduler_Add" xml:space="preserve"><value>新增工作</value></data>
+<data name="Xaml_Scheduler_Delete" xml:space="preserve"><value>刪除工作</value></data>
+<data name="Xaml_Scheduler_Name" xml:space="preserve"><value>工作名稱</value></data>
+<data name="Xaml_Scheduler_Enabled" xml:space="preserve"><value>啟用</value></data>
+<data name="Xaml_Scheduler_Mode" xml:space="preserve"><value>執行模式</value></data>
+<data name="Xaml_Scheduler_ModeInterval" xml:space="preserve"><value>固定間隔</value></data>
+<data name="Xaml_Scheduler_ModeDaily" xml:space="preserve"><value>每天</value></data>
+<data name="Xaml_Scheduler_ModeWeekly" xml:space="preserve"><value>每週</value></data>
+<data name="Xaml_Scheduler_ModeSpecific" xml:space="preserve"><value>指定日期</value></data>
+<data name="Xaml_Scheduler_IntervalSeconds" xml:space="preserve"><value>間隔(秒)</value></data>
+<data name="Xaml_Scheduler_TimeOfDay" xml:space="preserve"><value>執行時間(HH:mm)</value></data>
+<data name="Xaml_Scheduler_DayOfWeek" xml:space="preserve"><value>星期</value></data>
+<data name="Xaml_Scheduler_SpecificDate" xml:space="preserve"><value>指定日期</value></data>
+<data name="Xaml_Scheduler_FilePath" xml:space="preserve"><value>檔案路徑</value></data>
+<data name="Xaml_Scheduler_Arguments" xml:space="preserve"><value>引數</value></data>
+<data name="Xaml_Scheduler_TargetType" xml:space="preserve"><value>目標伺服器</value></data>
+<data name="Xaml_Scheduler_TargetAll" xml:space="preserve"><value>所有伺服器</value></data>
+<data name="Xaml_Scheduler_TargetSpecific" xml:space="preserve"><value>指定伺服器</value></data>
+<data name="Job_Scheduler_TaskRun" xml:space="preserve"><value>透過排程器執行：{0}</value></data>
+<data name="Log_Scheduler_TaskStarted" xml:space="preserve"><value>已開始排程器工作「{0}」。</value></data>
+<data name="Log_Scheduler_TaskCompleted" xml:space="preserve"><value>排程器工作「{0}」已完成。</value></data>
+<data name="Job_Server_Create" xml:space="preserve"><value>建立伺服器：{0}</value></data>
+<data name="Job_Server_Delete" xml:space="preserve"><value>刪除伺服器：{0}</value></data>
+<data name="Job_Plugin_Install" xml:space="preserve"><value>安裝外掛：{0}</value></data>
+<data name="Job_Plugin_Uninstall" xml:space="preserve"><value>解除安裝外掛：{0}</value></data>
+<data name="Job_Mod_Install" xml:space="preserve"><value>安裝Mod：{0}</value></data>
+<data name="Job_Mod_Uninstall" xml:space="preserve"><value>解除安裝Mod：{0}</value></data>
+<data name="Job_Server_Stop" xml:space="preserve"><value>停止伺服器：{0}</value></data>
+<data name="Log_Server_Created" xml:space="preserve"><value>已建立伺服器：{0}</value></data>
+<data name="Log_Server_Deleted" xml:space="preserve"><value>已刪除伺服器：{0}</value></data>
+<data name="Log_Plugin_Installed" xml:space="preserve"><value>已安裝外掛：{0}</value></data>
+<data name="Log_Plugin_Uninstalled" xml:space="preserve"><value>已解除安裝外掛：{0}</value></data>
+<data name="Log_Mod_Installed" xml:space="preserve"><value>已安裝Mod：{0}</value></data>
+<data name="Log_Mod_Uninstalled" xml:space="preserve"><value>已解除安裝Mod：{0}</value></data>
+<data name="ServerStartedToast_Title" xml:space="preserve"><value>伺服器啟動完成</value></data>
+<data name="ServerStartedToast_Message" xml:space="preserve"><value>已公開: {0}</value></data>
+<data name="ServerStartedToast_MessageWithPort" xml:space="preserve"><value>已公開: {0}:{1}</value></data>
+</root>

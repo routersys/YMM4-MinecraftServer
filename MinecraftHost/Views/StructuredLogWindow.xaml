@@ -1,0 +1,124 @@
+<Window x:Class="MinecraftHost.Views.StructuredLogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:MinecraftHost.ViewModels"
+        xmlns:loc="clr-namespace:MinecraftHost.Localization"
+        mc:Ignorable="d"
+        Title="{x:Static loc:Texts.Xaml_StructuredLog_Title}"
+        Height="680"
+        Width="1080"
+        Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
+        Foreground="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"
+        WindowStartupLocation="CenterOwner"
+        d:DataContext="{d:DesignInstance Type=vm:StructuredLogViewerViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+                BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+                BorderThickness="0,0,0,1"
+                Padding="10,8">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                    <TextBlock Text="{x:Static loc:Texts.Xaml_StructuredLog_MaxItems}" VerticalAlignment="Center" Margin="0,0,6,0" Opacity="0.7"/>
+                    <TextBox Text="{Binding MaxItems, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource TxtSystem}" Width="90" Margin="0,0,8,0"/>
+                    <Button Content="{x:Static loc:Texts.Xaml_StructuredLog_Reload}" Command="{Binding RefreshCommand}" Style="{StaticResource BtnPrimary}" Margin="0,0,6,0"/>
+                    <Button Content="{x:Static loc:Texts.Xaml_StructuredLog_ClearLogs}" Command="{Binding ClearCommand}" Style="{StaticResource BtnDanger}" Margin="0,0,6,0"/>
+                    <Button Content="{x:Static loc:Texts.Xaml_StructuredLog_Folder}" Command="{Binding OpenFolderCommand}" Style="{StaticResource BtnSecondary}"/>
+                </StackPanel>
+                <TextBlock Text="JSON Lines 構造化ログ"
+                           VerticalAlignment="Center"
+                           FontWeight="SemiBold"/>
+            </DockPanel>
+        </Border>
+
+        <Border Grid.Row="1"
+                Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+                BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+                BorderThickness="0,0,0,1"
+                Padding="10,8">
+            <WrapPanel>
+                <TextBlock Text="{x:Static loc:Texts.Xaml_StructuredLog_Level}" VerticalAlignment="Center" Margin="0,0,6,0" Opacity="0.7"/>
+                <ComboBox ItemsSource="{Binding AvailableLevels}"
+                          SelectedItem="{Binding SelectedLevel}"
+                          Style="{StaticResource CmbSystem}"
+                          Width="110"
+                          Margin="0,0,10,0"/>
+
+                <TextBlock Text="{x:Static loc:Texts.Xaml_StructuredLog_Category}" VerticalAlignment="Center" Margin="0,0,6,0" Opacity="0.7"/>
+                <ComboBox ItemsSource="{Binding AvailableCategories}"
+                          SelectedItem="{Binding SelectedCategory}"
+                          Style="{StaticResource CmbSystem}"
+                          Width="150"
+                          Margin="0,0,10,0"/>
+
+                <TextBlock Text="{x:Static loc:Texts.Xaml_StructuredLog_Operation}" VerticalAlignment="Center" Margin="0,0,6,0" Opacity="0.7"/>
+                <ComboBox ItemsSource="{Binding AvailableOperations}"
+                          SelectedItem="{Binding SelectedOperation}"
+                          Style="{StaticResource CmbSystem}"
+                          Width="150"
+                          Margin="0,0,10,0"/>
+
+                <TextBlock Text="{x:Static loc:Texts.Xaml_StructuredLog_ServerId}" VerticalAlignment="Center" Margin="0,0,6,0" Opacity="0.7"/>
+                <ComboBox ItemsSource="{Binding AvailableServerIds}"
+                          SelectedItem="{Binding SelectedServerId}"
+                          Style="{StaticResource CmbSystem}"
+                          Width="170"
+                          Margin="0,0,10,0"/>
+
+                <TextBlock Text="{x:Static loc:Texts.Xaml_StructuredLog_Search}" VerticalAlignment="Center" Margin="0,0,6,0" Opacity="0.7"/>
+                <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                         Style="{StaticResource TxtSystem}"
+                         Width="200"
+                         Margin="0,0,10,0"/>
+
+                <Button Content="{x:Static loc:Texts.Xaml_StructuredLog_ResetFilter}"
+                        Command="{Binding ResetFiltersCommand}"
+                        Style="{StaticResource BtnSecondary}"/>
+            </WrapPanel>
+        </Border>
+
+        <DataGrid Grid.Row="2"
+                  ItemsSource="{Binding EntriesView}"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  HeadersVisibility="Column"
+                  GridLinesVisibility="None"
+                  BorderThickness="0"
+                  Background="Transparent"
+                  RowBackground="Transparent"
+                  AlternatingRowBackground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+                  EnableRowVirtualization="True"
+                  EnableColumnVirtualization="True"
+                  FontSize="12"
+                  FontFamily="Consolas">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_StructuredLog_HeaderTimestampUtc}" Binding="{Binding TimestampUtc, StringFormat={}{0:yyyy-MM-dd HH:mm:ss.fff}}" Width="185"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_StructuredLog_HeaderLevel}" Binding="{Binding Level}" Width="80"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_StructuredLog_HeaderCategory}" Binding="{Binding Category}" Width="130"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_StructuredLog_HeaderOperation}" Binding="{Binding Operation}" Width="130"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_StructuredLog_HeaderServerId}" Binding="{Binding ServerId}" Width="150"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_StructuredLog_HeaderProcess}" Binding="{Binding ProcessId}" Width="70"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_StructuredLog_HeaderMessage}" Binding="{Binding Message}" Width="2*"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_StructuredLog_HeaderException}" Binding="{Binding Exception}" Width="2*"/>
+                <DataGridTextColumn Header="{x:Static loc:Texts.Xaml_StructuredLog_HeaderCorrelationId}" Binding="{Binding CorrelationId}" Width="230"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Border Grid.Row="3"
+                Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+                BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+                BorderThickness="0,1,0,0"
+                Padding="10,8">
+            <TextBlock Text="{Binding Status}" Opacity="0.75"/>
+        </Border>
+    </Grid>
+</Window>

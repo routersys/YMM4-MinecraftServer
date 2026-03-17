@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>id-id</value></data>
+<data name="Xaml_BuildSelection_Title" xml:space="preserve"><value>Pilih build</value></data>
+<data name="Xaml_BuildSelection_BuildNumber" xml:space="preserve"><value>Nomor build</value></data>
+<data name="Xaml_Common_Cancel" xml:space="preserve"><value>Batal</value></data>
+<data name="Xaml_Common_Apply" xml:space="preserve"><value>Terapkan</value></data>
+<data name="Xaml_Common_Refresh" xml:space="preserve"><value>Segarkan</value></data>
+<data name="Xaml_Common_Save" xml:space="preserve"><value>Simpan</value></data>
+<data name="Xaml_Common_Add" xml:space="preserve"><value>Tambah</value></data>
+<data name="Xaml_AuditLog_Title" xml:space="preserve"><value>Log audit / Riwayat perubahan</value></data>
+<data name="Xaml_AuditLog_DisplayCount" xml:space="preserve"><value>Jumlah ditampilkan</value></data>
+<data name="Xaml_AuditLog_HeaderTimestampUtc" xml:space="preserve"><value>Waktu (UTC)</value></data>
+<data name="Xaml_AuditLog_HeaderCategory" xml:space="preserve"><value>Kategori</value></data>
+<data name="Xaml_AuditLog_HeaderAction" xml:space="preserve"><value>Tindakan</value></data>
+<data name="Xaml_AuditLog_HeaderEntityId" xml:space="preserve"><value>ID target</value></data>
+<data name="Xaml_AuditLog_HeaderProperty" xml:space="preserve"><value>Properti</value></data>
+<data name="Xaml_AuditLog_HeaderBefore" xml:space="preserve"><value>Sebelum / Konten</value></data>
+<data name="Xaml_AuditLog_HeaderAfter" xml:space="preserve"><value>Sesudah</value></data>
+<data name="Xaml_AuditLog_HeaderActor" xml:space="preserve"><value>Pelaku</value></data>
+<data name="Xaml_StructuredLog_Title" xml:space="preserve"><value>Log terstruktur</value></data>
+<data name="Xaml_StructuredLog_MaxItems" xml:space="preserve"><value>Jumlah maksimum</value></data>
+<data name="Xaml_StructuredLog_Reload" xml:space="preserve"><value>Muat ulang</value></data>
+<data name="Xaml_StructuredLog_ClearLogs" xml:space="preserve"><value>Hapus log</value></data>
+<data name="Xaml_StructuredLog_Folder" xml:space="preserve"><value>Folder</value></data>
+<data name="Xaml_StructuredLog_Level" xml:space="preserve"><value>Level</value></data>
+<data name="Xaml_StructuredLog_Category" xml:space="preserve"><value>Kategori</value></data>
+<data name="Xaml_StructuredLog_Operation" xml:space="preserve"><value>Operasi</value></data>
+<data name="Xaml_StructuredLog_ServerId" xml:space="preserve"><value>ID server</value></data>
+<data name="Xaml_StructuredLog_Search" xml:space="preserve"><value>Cari</value></data>
+<data name="Xaml_StructuredLog_ResetFilter" xml:space="preserve"><value>Atur ulang filter</value></data>
+<data name="Xaml_StructuredLog_HeaderTimestampUtc" xml:space="preserve"><value>Waktu (UTC)</value></data>
+<data name="Xaml_StructuredLog_HeaderLevel" xml:space="preserve"><value>Level</value></data>
+<data name="Xaml_StructuredLog_HeaderCategory" xml:space="preserve"><value>Kategori</value></data>
+<data name="Xaml_StructuredLog_HeaderOperation" xml:space="preserve"><value>Operasi</value></data>
+<data name="Xaml_StructuredLog_HeaderServerId" xml:space="preserve"><value>ID server</value></data>
+<data name="Xaml_StructuredLog_HeaderProcess" xml:space="preserve"><value>Proses</value></data>
+<data name="Xaml_StructuredLog_HeaderMessage" xml:space="preserve"><value>Pesan</value></data>
+<data name="Xaml_StructuredLog_HeaderException" xml:space="preserve"><value>Eksepsi</value></data>
+<data name="Xaml_StructuredLog_HeaderCorrelationId" xml:space="preserve"><value>ID korelasi</value></data>
+<data name="Xaml_PluginManager_Title" xml:space="preserve"><value>Manajer plugin</value></data>
+<data name="Xaml_PluginManager_ServerRunningNotice" xml:space="preserve"><value>Server sedang berjalan — perubahan berlaku setelah restart.</value></data>
+<data name="Xaml_PluginManager_Install" xml:space="preserve"><value>Pasang</value></data>
+<data name="Xaml_PluginManager_OpenFolder" xml:space="preserve"><value>Buka folder</value></data>
+<data name="Xaml_PluginManager_NoPlugins" xml:space="preserve"><value>Tidak ada plugin</value></data>
+<data name="Xaml_PluginManager_DropOrInstallHint" xml:space="preserve"><value>Seret file JAR ke sini atau gunakan tombol Pasang.</value></data>
+<data name="Xaml_PluginManager_DropToInstall" xml:space="preserve"><value>Jatuhkan di sini untuk pemasang</value></data>
+<data name="Xaml_PluginManager_Uninstall" xml:space="preserve"><value>Copot</value></data>
+<data name="Xaml_OperationsCenter_Title" xml:space="preserve"><value>Dasbor operasi</value></data>
+<data name="Xaml_OperationsCenter_HeaderJobName" xml:space="preserve"><value>Nama pekerjaan</value></data>
+<data name="Xaml_OperationsCenter_HeaderServerId" xml:space="preserve"><value>ID server</value></data>
+<data name="Xaml_OperationsCenter_HeaderStatus" xml:space="preserve"><value>Status</value></data>
+<data name="Xaml_OperationsCenter_HeaderAttempt" xml:space="preserve"><value>Jumlah percobaan</value></data>
+<data name="Xaml_OperationsCenter_HeaderMaxAttempt" xml:space="preserve"><value>Maksimum percobaan</value></data>
+<data name="Xaml_OperationsCenter_HeaderDurationMs" xml:space="preserve"><value>Durasi (ms)</value></data>
+<data name="Xaml_OperationsCenter_HeaderCompletedUtc" xml:space="preserve"><value>Waktu selesai</value></data>
+<data name="Xaml_OperationsCenter_HeaderError" xml:space="preserve"><value>Error</value></data>
+<data name="Xaml_ServerFileEditor_Title" xml:space="preserve"><value>Editor file</value></data>
+<data name="Xaml_ServerFileEditor_ConfigFiles" xml:space="preserve"><value>File konfigurasi</value></data>
+<data name="Xaml_ServerFileEditor_AddSource" xml:space="preserve"><value>Tambah sumber</value></data>
+<data name="Xaml_ServerFileEditor_ApplyWorld" xml:space="preserve"><value>Terapkan world</value></data>
+<data name="JobOrchestrator_LogJobSuccessFormat" xml:space="preserve"><value>Pekerjaan berhasil: {0} attempt={1}</value></data>
+<data name="JobOrchestrator_LogJobFailedFormat" xml:space="preserve"><value>Pekerjaan gagal: {0} attempt={1} error={2}</value></data>
+<data name="ServerFileEditor_WorldSlotOverworld" xml:space="preserve"><value>Overworld</value></data>
+<data name="ServerFileEditor_WorldSlotNether" xml:space="preserve"><value>Nether</value></data>
+<data name="ServerFileEditor_WorldSlotEnd" xml:space="preserve"><value>End</value></data>
+<data name="ServerFileEditor_JsonLoadFailed" xml:space="preserve"><value>Gagal memuat JSON.</value></data>
+<data name="ServerFileEditor_InvalidUserName" xml:space="preserve"><value>Nama pengguna tidak valid.</value></data>
+<data name="ServerFileEditor_DuplicateUserName" xml:space="preserve"><value>Pengguna dengan nama yang sama sudah ada.</value></data>
+<data name="ServerFileEditor_ResolvingUuid" xml:space="preserve"><value>Sedang mengambil UUID...</value></data>
+<data name="ServerFileEditor_ResolveUuidFailed" xml:space="preserve"><value>Gagal mengambil UUID.</value></data>
+<data name="ServerFileEditor_Added" xml:space="preserve"><value>Berhasil ditambahkan.</value></data>
+<data name="ServerFileEditor_Removed" xml:space="preserve"><value>Berhasil dihapus.</value></data>
+<data name="ServerFileEditor_InvalidIpAddress" xml:space="preserve"><value>Alamat IP tidak valid.</value></data>
+<data name="ServerFileEditor_DuplicateIpAddress" xml:space="preserve"><value>IP yang sama sudah ada.</value></data>
+<data name="ServerFileEditor_InvalidFolderPath" xml:space="preserve"><value>Tentukan folder yang valid.</value></data>
+<data name="ServerFileEditor_AlreadyExistsInList" xml:space="preserve"><value>Sudah ada di daftar.</value></data>
+<data name="ServerFileEditor_AssignedToSlotFormat" xml:space="preserve"><value>Ditugaskan ke {0}.</value></data>
+<data name="ServerFileEditor_RemovedFromList" xml:space="preserve"><value>Dihapus dari daftar.</value></data>
+<data name="ServerFileEditor_ApplyingWorlds" xml:space="preserve"><value>Sedang menerapkan world...</value></data>
+<data name="ServerFileEditor_NoAssignments" xml:space="preserve"><value>Tidak ada penugasan.</value></data>
+<data name="ServerFileEditor_WorldSourceNotFoundFormat" xml:space="preserve"><value>Sumber untuk {0} tidak ditemukan.</value></data>
+<data name="ServerFileEditor_Applied" xml:space="preserve"><value>Berhasil diterapkan.</value></data>
+<data name="ServerFileEditor_ApplyFailedFormat" xml:space="preserve"><value>Gagal menerapkan: {0}</value></data>
+<data name="PluginManager_StatusPluginCountFormat" xml:space="preserve"><value>{0} plugin</value></data>
+<data name="PluginManager_SelectJarTitle" xml:space="preserve"><value>Pilih JAR plugin</value></data>
+<data name="PluginManager_SelectJarFilter" xml:space="preserve"><value>File JAR (*.jar)|*.jar</value></data>
+<data name="PluginManager_InstallFailedFormat" xml:space="preserve"><value>Gagal memasang {0}: {1}</value></data>
+<data name="Common_ErrorTitle" xml:space="preserve"><value>Error</value></data>
+<data name="PluginManager_InstallCompletedFormat" xml:space="preserve"><value>{0} terpasang — total {1} plugin</value></data>
+<data name="PluginManager_UninstallConfirmFormat" xml:space="preserve"><value>Hapus {0}?</value></data>
+<data name="Common_ConfirmTitle" xml:space="preserve"><value>Konfirmasi</value></data>
+<data name="PluginManager_UninstallFailedFormat" xml:space="preserve"><value>Gagal menghapus: {0}</value></data>
+<data name="EulaGuidance_InitialAgreementRequired" xml:space="preserve"><value>Persetujuan EULA diperlukan saat startup pertama. Buka eula.txt dari pengaturan lalu ubah eula=true dan simpan.</value></data>
+<data name="Authorization_InlineDeniedFormat" xml:space="preserve"><value>Operasi tidak diizinkan oleh otorisasi: {0}</value></data>
+<data name="Authorization_DialogDenied" xml:space="preserve"><value>Operasi tidak diizinkan oleh otorisasi.</value></data>
+<data name="Authorization_DialogDeniedWithReasonFormat" xml:space="preserve"><value>Operasi tidak diizinkan oleh otorisasi.\nAlasan: {0}</value></data>
+<data name="BoundaryException_WrapMessageFormat" xml:space="preserve"><value>Terjadi exception batas di {0} pada {1}: {2}</value></data>
+<data name="ServerProcess_LogSendCommandFormat" xml:space="preserve"><value>Kirim perintah: {0}</value></data>
+<data name="ServerProcess_LogStopBegin" xml:space="preserve"><value>Memulai penghentian proses server.</value></data>
+<data name="ServerProcess_LogStopAsyncBegin" xml:space="preserve"><value>Memulai penghentian proses server secara asinkron.</value></data>
+<data name="MainPage_ServerNotSelected" xml:space="preserve"><value>Tidak ada server yang dipilih.</value></data>
+<data name="MainPage_NewServerName" xml:space="preserve"><value>Server baru</value></data>
+<data name="MainPage_DeleteAfterStopRequired" xml:space="preserve"><value>Hentikan server sebelum menghapusnya.</value></data>
+<data name="MainPage_DeleteServerConfirmFormat" xml:space="preserve"><value>Hapus server '{0}'? Direktori juga akan dihapus. Lanjutkan?</value></data>
+<data name="MainPage_DeleteServerDirectoryFailedFormat" xml:space="preserve"><value>Gagal menghapus direktori server: {0}</value></data>
+<data name="SettingPage_UnnamedServer" xml:space="preserve"><value>Tanpa nama</value></data>
+<data name="SettingPage_JavaPathStatusNotConfigured" xml:space="preserve"><value>Belum dikonfigurasi — akan mencoba unduh otomatis saat mulai.</value></data>
+<data name="SettingPage_JavaPathStatusValid" xml:space="preserve"><value>Jalur yang valid telah dikonfigurasi.</value></data>
+<data name="SettingPage_JavaPathStatusNotFound" xml:space="preserve"><value>File yang ditentukan tidak ditemukan.</value></data>
+<data name="SettingPage_SelectJavaExeTitle" xml:space="preserve"><value>Pilih java.exe</value></data>
+<data name="SettingPage_SelectJavaExeFilter" xml:space="preserve"><value>java.exe|java.exe|File Eksekusi (*.exe)|*.exe|Semua File (*.*)|*.*</value></data>
+<data name="SettingPage_UnregisteredServer" xml:space="preserve"><value>Server tidak terdaftar</value></data>
+<data name="SettingPage_PinMismatch" xml:space="preserve"><value>PIN baru dan konfirmasi tidak cocok.</value></data>
+<data name="SettingPage_PinLengthInvalid" xml:space="preserve"><value>Atur PIN antara 4 hingga 32 karakter.</value></data>
+<data name="SettingPage_RoleElevationPinRequired" xml:space="preserve"><value>Peningkatan peran memerlukan autentikasi. Atur PIN terlebih dahulu.</value></data>
+<data name="SettingPage_CurrentPinRequired" xml:space="preserve"><value>Masukkan PIN saat ini.</value></data>
+<data name="SettingPage_PinVerificationFailed" xml:space="preserve"><value>Verifikasi PIN gagal.</value></data>
+<data name="SettingPage_WindowsHelloPrompt" xml:space="preserve"><value>Silakan verifikasi untuk peningkatan peran.</value></data>
+<data name="SettingPage_WindowsHelloCanceled" xml:space="preserve"><value>Verifikasi Windows Hello dibatalkan.</value></data>
+<data name="SettingPage_WindowsHelloRetriesExhausted" xml:space="preserve"><value>Batas percobaan ulang Windows Hello tercapai.</value></data>
+<data name="SettingPage_WindowsHelloDeviceBusy" xml:space="preserve"><value>Perangkat Windows Hello sedang sibuk.</value></data>
+<data name="SettingPage_WindowsHelloDisabledByPolicy" xml:space="preserve"><value>Windows Hello dinonaktifkan oleh kebijakan.</value></data>
+<data name="SettingPage_WindowsHelloNotConfigured" xml:space="preserve"><value>Windows Hello belum dikonfigurasi.</value></data>
+<data name="SettingPage_WindowsHelloDeviceNotPresent" xml:space="preserve"><value>Perangkat Windows Hello tidak ditemukan.</value></data>
+<data name="SettingPage_WindowsHelloFailed" xml:space="preserve"><value>Verifikasi Windows Hello gagal.</value></data>
+<data name="OperationsCenter_SummaryFormat" xml:space="preserve"><value>Total Job={0}  Berhasil={1}  Gagal={2}  Berjalan={3}  Rata-rata waktu(ms)={4:0.0}</value></data>
+<data name="StructuredLog_AllFilter" xml:space="preserve"><value>Semua</value></data>
+<data name="StructuredLog_LoadFailedFormat" xml:space="preserve"><value>Gagal memuat: {0}</value></data>
+<data name="StructuredLog_ClearFailedFormat" xml:space="preserve"><value>Gagal menghapus: {0}</value></data>
+<data name="StructuredLog_StatusFormat" xml:space="preserve"><value>Menampilkan {0} / Total {1}</value></data>
+<data name="ServerItem_CurrentBuildUnpinned" xml:space="preserve"><value>build: belum dikunci</value></data>
+<data name="ServerItem_CurrentBuildPinnedFormat" xml:space="preserve"><value>build: {0}</value></data>
+<data name="ServerItem_UpdateTargetBuildFormat" xml:space="preserve"><value>build {0}</value></data>
+<data name="ServerItem_UpdateMessageLatestVersionFormat" xml:space="preserve"><value>Versi terbaru: {0}</value></data>
+<data name="ServerItem_UpdateMessageLatestBuildFormat" xml:space="preserve"><value>Build terbaru: {0}</value></data>
+<data name="ServerItem_DownloadStatusCheckingServerFile" xml:space="preserve"><value>Memeriksa file server...</value></data>
+<data name="ServerItem_LoadVersionsFailedFormat" xml:space="preserve"><value>Gagal mengambil daftar versi: {0}</value></data>
+<data name="ServerItem_CheckingJavaInstallation" xml:space="preserve"><value>Memeriksa instalasi Java...</value></data>
+<data name="ServerItem_LogStartSequenceBegin" xml:space="preserve"><value>Urutan startup server dimulai.</value></data>
+<data name="ServerItem_JavaPathFormat" xml:space="preserve"><value>Path Java: {0}</value></data>
+<data name="ServerItem_CheckingServerFile" xml:space="preserve"><value>Memeriksa file server...</value></data>
+<data name="ServerItem_StartingServerFormat" xml:space="preserve"><value>Memulai server: {0}</value></data>
+<data name="ServerItem_LogStartFailed" xml:space="preserve"><value>Gagal memulai server.</value></data>
+<data name="ServerItem_StartErrorFormat" xml:space="preserve"><value>Kesalahan startup: {0}</value></data>
+<data name="ServerItem_LogStopRequested" xml:space="preserve"><value>Permintaan stop server dikirim.</value></data>
+<data name="ServerItem_StoppingServer" xml:space="preserve"><value>Menghentikan server...</value></data>
+<data name="ServerItem_SendCommandFailedFormat" xml:space="preserve"><value>Gagal mengirim perintah: {0}</value></data>
+<data name="ServerItem_ServerProcessExited" xml:space="preserve"><value>Proses server telah berhenti.</value></data>
+<data name="ServerItem_AutoRestartSkippedWaitingEula" xml:space="preserve"><value>Auto-restart tidak dijalankan saat menunggu persetujuan EULA.</value></data>
+<data name="ServerItem_AutoRestartLimitReached" xml:space="preserve"><value>Dihentikan karena batas auto-restart tercapai.</value></data>
+<data name="ServerItem_LogAutoRestartScheduledFormat" xml:space="preserve"><value>Auto-restart dijadwalkan: {0}/{1}</value></data>
+<data name="ServerItem_AutoRestartScheduledFormat" xml:space="preserve"><value>Auto-restart akan dijalankan dalam {0:0} detik ({1}/{2}).</value></data>
+<data name="ServerItem_DownloadStatusCreatingBackup" xml:space="preserve"><value>Membuat cadangan...</value></data>
+<data name="ServerItem_DownloadStatusDownloading" xml:space="preserve"><value>Mengunduh...</value></data>
+<data name="ServerItem_DownloadStatusVerifyingIntegrity" xml:space="preserve"><value>Memverifikasi integritas...</value></data>
+<data name="Xaml_Main_ServerManager" xml:space="preserve"><value>Manajer server</value></data>
+<data name="Xaml_Main_CreateNew" xml:space="preserve"><value>Buat baru</value></data>
+<data name="Xaml_Main_Name" xml:space="preserve"><value>Nama</value></data>
+<data name="Xaml_Main_Type" xml:space="preserve"><value>Tipe</value></data>
+<data name="Xaml_Main_Version" xml:space="preserve"><value>Versi</value></data>
+<data name="Xaml_Main_Loading" xml:space="preserve"><value>Memuat...</value></data>
+<data name="Xaml_Main_MemoryMb" xml:space="preserve"><value>Memori (MB)</value></data>
+<data name="Xaml_Main_Port" xml:space="preserve"><value>Port</value></data>
+<data name="Xaml_Main_Start" xml:space="preserve"><value>Mulai</value></data>
+<data name="Xaml_Main_Stop" xml:space="preserve"><value>Berhenti</value></data>
+<data name="Xaml_Main_Folder" xml:space="preserve"><value>Folder</value></data>
+<data name="Xaml_Setting_JavaSettings" xml:space="preserve"><value>Pengaturan Java</value></data>
+<data name="Xaml_Setting_JavaDescription" xml:space="preserve"><value>Atur path Java manual untuk lewati unduhan. Jika kosong akan unduh otomatis. Jika sudah terpasang tentukan path lengkap java.exe</value></data>
+<data name="Xaml_Setting_JavaExecutable" xml:space="preserve"><value>File eksekusi Java (java.exe)</value></data>
+<data name="Xaml_Setting_Browse" xml:space="preserve"><value>Telusuri...</value></data>
+<data name="Xaml_Setting_NetworkSettings" xml:space="preserve"><value>Pengaturan jaringan</value></data>
+<data name="Xaml_Setting_EnablePortForwarding" xml:space="preserve"><value>Aktifkan port forwarding (Windows Firewall + UPnP)</value></data>
+<data name="Xaml_Setting_PortForwardingDescription" xml:space="preserve"><value>Saat diaktifkan saat mulai akan mencoba aturan firewall dan pemetaan port UPnP. Jika nonaktif atur manual.</value></data>
+<data name="Xaml_Setting_OperationsStability" xml:space="preserve"><value>Stabilitas operasi</value></data>
+<data name="Xaml_Setting_ConsoleLineRetention" xml:space="preserve"><value>Retensi baris konsol (200-20000)</value></data>
+<data name="Xaml_Setting_EnableAutoRestart" xml:space="preserve"><value>Restart otomatis saat server berhenti tidak normal</value></data>
+<data name="Xaml_Setting_MaxRetryCount" xml:space="preserve"><value>Jumlah percobaan maksimum</value></data>
+<data name="Xaml_Setting_RestartDelaySeconds" xml:space="preserve"><value>Detik tunggu restart</value></data>
+<data name="Xaml_Setting_StructuredLog" xml:space="preserve"><value>Log terstruktur</value></data>
+<data name="Xaml_Setting_LogDirectory" xml:space="preserve"><value>Buka penampil log</value></data>
+<data name="Xaml_Setting_KeepFileCount" xml:space="preserve"><value>Jumlah file tersimpan</value></data>
+<data name="Xaml_Setting_MaxFileSizeMb" xml:space="preserve"><value>Ukuran file maksimum (MB)</value></data>
+<data name="Xaml_Setting_OpenLogViewer" xml:space="preserve"><value>Buka penampil log</value></data>
+<data name="Xaml_Setting_BackupRestore" xml:space="preserve"><value>Pencadangan dan pemulihan</value></data>
+<data name="Xaml_Setting_EnableSafeUpdateBackup" xml:space="preserve"><value>Aktifkan cadangan pembaruan aman</value></data>
+<data name="Xaml_Setting_BackupRetentionGenerations" xml:space="preserve"><value>Generasi retensi (1-30)</value></data>
+<data name="Xaml_Setting_AuthorizationPolicy" xml:space="preserve"><value>Otentikasi otorisasi dan kebijakan</value></data>
+<data name="Xaml_Setting_OperatorRole" xml:space="preserve"><value>Peran operator</value></data>
+<data name="Xaml_Setting_RequireAuthOnRoleElevation" xml:space="preserve"><value>Wajib autentikasi saat peningkatan peran</value></data>
+<data name="Xaml_Setting_PreferWindowsHello" xml:space="preserve"><value>Utamakan Windows Hello saat peningkatan peran</value></data>
+<data name="Xaml_Setting_CurrentPin" xml:space="preserve"><value>PIN saat ini</value></data>
+<data name="Xaml_Setting_NewPin" xml:space="preserve"><value>PIN baru</value></data>
+<data name="Xaml_Setting_NewPinConfirm" xml:space="preserve"><value>Konfirmasi PIN baru</value></data>
+<data name="Xaml_Setting_EnableMaintenanceMode" xml:space="preserve"><value>Aktifkan mode pemeliharaan</value></data>
+<data name="Xaml_Setting_LockedTargetServer" xml:space="preserve"><value>Server target terkunci</value></data>
+<data name="Xaml_Setting_ClearSelection" xml:space="preserve"><value>Hapus pilihan</value></data>
+<data name="Xaml_Setting_AuditAndOperations" xml:space="preserve"><value>Audit riwayat perubahan dan operasi</value></data>
+<data name="Xaml_Setting_OpenAuditLog" xml:space="preserve"><value>Buka log audit dan riwayat</value></data>
+<data name="Xaml_Setting_OpenOperationsDashboard" xml:space="preserve"><value>Buka dasbor operasi</value></data>
+<data name="Xaml_Setting_AutoSaveNotice" xml:space="preserve"><value>Perubahan disimpan otomatis</value></data>
+<data name="Xaml_Setting_Clear" xml:space="preserve"><value>Hapus</value></data>
+<data name="JavaResolver_UseConfiguredJavaPath" xml:space="preserve"><value>Menggunakan path Java yang dikonfigurasi.</value></data>
+<data name="JavaResolver_ConfiguredJavaNotFoundFormat" xml:space="preserve"><value>Java yang dikonfigurasi tidak ditemukan: {0}</value></data>
+<data name="JavaResolver_UseEmbeddedJre" xml:space="preserve"><value>Menggunakan JRE bawaan yang ada.</value></data>
+<data name="JavaResolver_UseEmbeddedJreSearchResult" xml:space="preserve"><value>Menggunakan JRE bawaan hasil pencarian.</value></data>
+<data name="JavaResolver_JavaExeNotFoundAfterExtract" xml:space="preserve"><value>java.exe tidak ditemukan setelah ekstraksi. Atur path manual dari pengaturan.</value></data>
+<data name="JavaResolver_DownloadAndExtractCompleted" xml:space="preserve"><value>Unduhan otomatis dan ekstraksi Java selesai.</value></data>
+<data name="JarIntegrity_Sha256VerifyFailedFormat" xml:space="preserve"><value>Verifikasi integritas SHA256 gagal untuk {0}.</value></data>
+<data name="JarIntegrity_Sha1VerifyFailedFormat" xml:space="preserve"><value>Verifikasi integritas SHA1 gagal untuk {0}.</value></data>
+<data name="JarIntegrity_ContentHashVerifyFailedFormat" xml:space="preserve"><value>Verifikasi hash konten gagal untuk {0}</value></data>
+<data name="Xaml_ModManager_Title" xml:space="preserve"><value>Manajer mod</value></data>
+<data name="Xaml_ModManager_ServerRunningNotice" xml:space="preserve"><value>Server sedang berjalan — perubahan berlaku setelah restart.</value></data>
+<data name="Xaml_ModManager_Install" xml:space="preserve"><value>Pasang</value></data>
+<data name="Xaml_ModManager_OpenFolder" xml:space="preserve"><value>Buka folder</value></data>
+<data name="Xaml_ModManager_NoMods" xml:space="preserve"><value>Tidak ada mod</value></data>
+<data name="Xaml_ModManager_DropOrInstallHint" xml:space="preserve"><value>Seret file JAR ke sini atau gunakan tombol Pasang.</value></data>
+<data name="Xaml_ModManager_DropToInstall" xml:space="preserve"><value>Jatuhkan di sini untuk pemasang</value></data>
+<data name="Xaml_ModManager_Uninstall" xml:space="preserve"><value>Copot</value></data>
+<data name="ModManager_StatusModCountFormat" xml:space="preserve"><value>{0} mod</value></data>
+<data name="ModManager_SelectJarTitle" xml:space="preserve"><value>Pilih JAR mod</value></data>
+<data name="ModManager_SelectJarFilter" xml:space="preserve"><value>File JAR (*.jar)|*.jar</value></data>
+<data name="ModManager_InstallFailedFormat" xml:space="preserve"><value>Gagal memasang {0}: {1}</value></data>
+<data name="ModManager_InstallCompletedFormat" xml:space="preserve"><value>{0} terpasang — total {1} mod</value></data>
+<data name="ModManager_UninstallConfirmFormat" xml:space="preserve"><value>Hapus {0}?</value></data>
+<data name="ModManager_UninstallFailedFormat" xml:space="preserve"><value>Gagal menghapus: {0}</value></data>
+<data name="Auth_Error_MaintenanceMode" xml:space="preserve"><value>Tidak dapat mengoperasikan karena mode pemeliharaan.</value></data>
+<data name="Auth_Error_ServerLocked" xml:space="preserve"><value>Server target dikunci oleh kebijakan.</value></data>
+<data name="Auth_Error_RoleInsufficientFormat" xml:space="preserve"><value>Izin tidak cukup. Peran yang dibutuhkan: {0}</value></data>
+<data name="JarIntegrity_UnsupportedServerTypeFormat" xml:space="preserve"><value>Tipe server tidak didukung: {0}</value></data>
+<data name="JarIntegrity_OnlyHttpsAllowed" xml:space="preserve"><value>URL unduhan selain HTTPS tidak diizinkan.</value></data>
+<data name="JarIntegrity_UnauthorizedHostFormat" xml:space="preserve"><value>Host unduhan tidak sah: {0}</value></data>
+<data name="JarIntegrity_VanillaMetadataNotFoundFormat" xml:space="preserve"><value>Metadata validasi untuk Vanilla versi {0} tidak ditemukan.</value></data>
+<data name="JarIntegrity_VanillaSha1NotFound" xml:space="preserve"><value>Gagal mengambil informasi SHA1 untuk Vanilla JAR.</value></data>
+<data name="JarIntegrity_VanillaIntegrityFailed" xml:space="preserve"><value>Verifikasi integritas Vanilla JAR gagal.</value></data>
+<data name="JarIntegrity_PaperBuildNumberParseFailed" xml:space="preserve"><value>Gagal mengurai nomor build Paper.</value></data>
+<data name="JarIntegrity_PaperSha256NotFound" xml:space="preserve"><value>Gagal mengambil informasi SHA256 untuk Paper JAR.</value></data>
+<data name="JarIntegrity_PaperIntegrityFailed" xml:space="preserve"><value>Verifikasi integritas Paper JAR gagal.</value></data>
+<data name="Xaml_Eula_Title" xml:space="preserve"><value>Persetujuan EULA</value></data>
+<data name="Xaml_Eula_Message" xml:space="preserve"><value>Para usar el servidor de Minecraft</value></data>
+<data name="Xaml_Eula_MinecraftEula" xml:space="preserve"><value>Baca EULA Minecraft</value></data>
+<data name="Xaml_Eula_PrivacyStatement" xml:space="preserve"><value>Baca Pernyataan Privasi Microsoft</value></data>
+<data name="Xaml_Eula_Agree" xml:space="preserve"><value>Setuju</value></data>
+<data name="Xaml_Eula_Decline" xml:space="preserve"><value>Tolak</value></data>
+<data name="Xaml_Main_OpenScheduler" xml:space="preserve"><value>Penjadwal</value></data>
+<data name="Xaml_Scheduler_Title" xml:space="preserve"><value>Penjadwal Tugas</value></data>
+<data name="Xaml_Scheduler_Add" xml:space="preserve"><value>Tambah Tugas</value></data>
+<data name="Xaml_Scheduler_Delete" xml:space="preserve"><value>Hapus Tugas</value></data>
+<data name="Xaml_Scheduler_Name" xml:space="preserve"><value>Nama Tugas</value></data>
+<data name="Xaml_Scheduler_Enabled" xml:space="preserve"><value>Aktif</value></data>
+<data name="Xaml_Scheduler_Mode" xml:space="preserve"><value>Mode Jalankan</value></data>
+<data name="Xaml_Scheduler_ModeInterval" xml:space="preserve"><value>Interval</value></data>
+<data name="Xaml_Scheduler_ModeDaily" xml:space="preserve"><value>Harian</value></data>
+<data name="Xaml_Scheduler_ModeWeekly" xml:space="preserve"><value>Mingguan</value></data>
+<data name="Xaml_Scheduler_ModeSpecific" xml:space="preserve"><value>Tanggal Spesifik</value></data>
+<data name="Xaml_Scheduler_IntervalSeconds" xml:space="preserve"><value>Interval (detik)</value></data>
+<data name="Xaml_Scheduler_TimeOfDay" xml:space="preserve"><value>Waktu (HH:mm)</value></data>
+<data name="Xaml_Scheduler_DayOfWeek" xml:space="preserve"><value>Hari</value></data>
+<data name="Xaml_Scheduler_SpecificDate" xml:space="preserve"><value>Tanggal</value></data>
+<data name="Xaml_Scheduler_FilePath" xml:space="preserve"><value>Jalur File</value></data>
+<data name="Xaml_Scheduler_Arguments" xml:space="preserve"><value>Argumen</value></data>
+<data name="Xaml_Scheduler_TargetType" xml:space="preserve"><value>Server Target</value></data>
+<data name="Xaml_Scheduler_TargetAll" xml:space="preserve"><value>Semua Server</value></data>
+<data name="Xaml_Scheduler_TargetSpecific" xml:space="preserve"><value>Server Spesifik</value></data>
+<data name="Job_Scheduler_TaskRun" xml:space="preserve"><value>Jalankan via Penjadwal: {0}</value></data>
+<data name="Log_Scheduler_TaskStarted" xml:space="preserve"><value>Tugas penjadwal '{0}' dimulai.</value></data>
+<data name="Log_Scheduler_TaskCompleted" xml:space="preserve"><value>Tugas penjadwal '{0}' selesai.</value></data>
+<data name="Job_Server_Create" xml:space="preserve"><value>Buat Server: {0}</value></data>
+<data name="Job_Server_Delete" xml:space="preserve"><value>Hapus Server: {0}</value></data>
+<data name="Job_Plugin_Install" xml:space="preserve"><value>Instal Plugin: {0}</value></data>
+<data name="Job_Plugin_Uninstall" xml:space="preserve"><value>Uninstal Plugin: {0}</value></data>
+<data name="Job_Mod_Install" xml:space="preserve"><value>Instal Mod: {0}</value></data>
+<data name="Job_Mod_Uninstall" xml:space="preserve"><value>Uninstal Mod: {0}</value></data>
+<data name="Job_Server_Stop" xml:space="preserve"><value>Hentikan Server: {0}</value></data>
+<data name="Log_Server_Created" xml:space="preserve"><value>Server dibuat: {0}</value></data>
+<data name="Log_Server_Deleted" xml:space="preserve"><value>Server dihapus: {0}</value></data>
+<data name="Log_Plugin_Installed" xml:space="preserve"><value>Plugin diinstal: {0}</value></data>
+<data name="Log_Plugin_Uninstalled" xml:space="preserve"><value>Plugin diuninstal: {0}</value></data>
+<data name="Log_Mod_Installed" xml:space="preserve"><value>Mod diinstal: {0}</value></data>
+<data name="Log_Mod_Uninstalled" xml:space="preserve"><value>Mod diuninstal: {0}</value></data>
+<data name="ServerStartedToast_Title" xml:space="preserve"><value>Server Dimulai</value></data>
+<data name="ServerStartedToast_Message" xml:space="preserve"><value>Diterbitkan: {0}</value></data>
+<data name="ServerStartedToast_MessageWithPort" xml:space="preserve"><value>Diterbitkan: {0}:{1}</value></data>
+</root>

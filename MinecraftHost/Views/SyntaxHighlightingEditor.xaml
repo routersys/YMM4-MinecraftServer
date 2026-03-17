@@ -1,0 +1,18 @@
+<UserControl x:Class="MinecraftHost.Views.SyntaxHighlightingEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <RichTextBox x:Name="Editor"
+                 Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
+                 Foreground="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"
+                 CaretBrush="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"
+                 SelectionBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"
+                 BorderThickness="0"
+                 Padding="10"
+                 FontFamily="Consolas"
+                 FontSize="13"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 HorizontalScrollBarVisibility="Auto"
+                 VerticalScrollBarVisibility="Auto"
+                 SpellCheck.IsEnabled="False"/>
+</UserControl>
