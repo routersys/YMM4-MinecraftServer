@@ -25,12 +25,6 @@ public static class AutoScrollBehavior
 
     private static void AutoScrollPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
-        if (d is ScrollViewer sv)
-        {
-            ToggleScrollViewer(sv, (bool)e.NewValue);
-            return;
-        }
-
         if (d is not FrameworkElement element)
             return;
 
@@ -76,13 +70,6 @@ public static class AutoScrollBehavior
         }
     }
 
-    private static void ToggleScrollViewer(ScrollViewer scrollViewer, bool enable)
-    {
-        if (enable)
-            scrollViewer.ScrollChanged += ScrollViewer_ScrollChanged;
-        else
-            scrollViewer.ScrollChanged -= ScrollViewer_ScrollChanged;
-    }
 
     private static void AttachToChildScrollViewer(FrameworkElement element)
     {
@@ -92,7 +79,7 @@ public static class AutoScrollBehavior
             if (existing is not null)
                 existing.ScrollChanged -= ScrollViewer_ScrollChanged;
 
-            var childScrollViewer = FindDescendant<ScrollViewer>(element);
+            var childScrollViewer = element as ScrollViewer ?? FindDescendant<ScrollViewer>(element);
             if (childScrollViewer is null)
             {
                 element.ClearValue(HookedScrollViewerProperty);
@@ -103,6 +90,12 @@ public static class AutoScrollBehavior
             childScrollViewer.ScrollChanged += ScrollViewer_ScrollChanged;
             element.SetValue(HookedScrollViewerProperty, childScrollViewer);
 
+            if (childScrollViewer.GetValue(ScrollResumeTimerProperty) is System.Windows.Threading.DispatcherTimer oldTimer)
+            {
+                oldTimer.Stop();
+                oldTimer.Tick -= TimerOnTick;
+            }
+
             var timer = new System.Windows.Threading.DispatcherTimer
             {
                 Interval = TimeSpan.FromSeconds(3),
@@ -111,6 +104,8 @@ public static class AutoScrollBehavior
             timer.Tick += TimerOnTick;
             childScrollViewer.SetValue(ScrollResumeTimerProperty, timer);
             childScrollViewer.SetValue(IsUserScrollingProperty, false);
+
+            ScrollToBottomReliably(childScrollViewer);
         }, System.Windows.Threading.DispatcherPriority.Loaded);
     }
 

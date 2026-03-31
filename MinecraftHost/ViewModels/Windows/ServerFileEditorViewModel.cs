@@ -186,12 +186,23 @@ public class ServerFileEditorViewModel : Bindable
         }
     }
 
+    private string _originalFileContent = string.Empty;
+
     private string _fileContent = string.Empty;
     public string FileContent
     {
         get => _fileContent;
-        set => Set(ref _fileContent, value);
+        set
+        {
+            if (Set(ref _fileContent, value))
+            {
+                OnPropertyChanged(nameof(IsModified));
+                SaveCommand?.RaiseCanExecuteChanged();
+            }
+        }
     }
+
+    public bool IsModified => !string.Equals(_fileContent, _originalFileContent, StringComparison.Ordinal);
 
     public bool CanEdit => SelectedFile is not null;
     public bool CanSaveFile => CanEdit && !IsPlayerPolicyEditor && !IsBannedIpsEditor && !IsWorldManager;
@@ -341,7 +352,7 @@ public class ServerFileEditorViewModel : Bindable
             Files.Add(new ServerTargetFile("worlds", string.Empty, ServerEditorTargetKind.WorldManager));
         }
 
-        SaveCommand = new ActionCommand(_ => CanSaveFile, _ => _ = SaveFileContentAsync());
+        SaveCommand = new ActionCommand(_ => CanSaveFile && IsModified, _ => _ = SaveFileContentAsync());
         AddPlayerEntryCommand = new ActionCommand(_ => IsPlayerPolicyEditor && !string.IsNullOrWhiteSpace(NewPlayerName), _ => _ = AddPlayerEntryAsync());
         RemovePlayerEntryCommand = new ActionCommand(_ => IsPlayerPolicyEditor && SelectedPlayerEntry is not null, p => RemovePlayerEntry(p as PlayerPolicyEntry));
         AddIpEntryCommand = new ActionCommand(_ => IsBannedIpsEditor && !string.IsNullOrWhiteSpace(NewIpAddress), _ => _ = AddIpEntryAsync());
@@ -367,12 +378,14 @@ public class ServerFileEditorViewModel : Bindable
 
         if (SelectedFile is null)
         {
+            _originalFileContent = string.Empty;
             FileContent = string.Empty;
             return;
         }
 
         if (IsWorldManager)
         {
+            _originalFileContent = string.Empty;
             FileContent = string.Empty;
             return;
         }
@@ -393,27 +406,34 @@ public class ServerFileEditorViewModel : Bindable
         {
             try
             {
-                FileContent = await File.ReadAllTextAsync(SelectedFile.Path, Encoding.UTF8);
+                var content = await File.ReadAllTextAsync(SelectedFile.Path, Encoding.UTF8);
+                _originalFileContent = content;
+                FileContent = content;
             }
             catch
             {
+                _originalFileContent = string.Empty;
                 FileContent = string.Empty;
             }
         }
         else
         {
+            _originalFileContent = string.Empty;
             FileContent = string.Empty;
         }
     }
 
     private async Task SaveFileContentAsync()
     {
-        if (SelectedFile is null || !CanSaveFile)
+        if (SelectedFile is null || !CanSaveFile || !IsModified)
             return;
 
         try
         {
             await File.WriteAllTextAsync(SelectedFile.Path, FileContent, Encoding.UTF8);
+            _originalFileContent = FileContent;
+            OnPropertyChanged(nameof(IsModified));
+            SaveCommand?.RaiseCanExecuteChanged();
         }
         catch
         {
