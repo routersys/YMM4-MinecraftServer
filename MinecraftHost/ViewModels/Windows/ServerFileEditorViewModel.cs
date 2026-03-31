@@ -64,7 +64,7 @@ public class PlayerPolicyEntry : Bindable
     }
 
     public string Created { get; set; } = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss K");
-    public string Source { get; set; } = "MinecraftHost";
+    public string Source { get; set; } = "MCHost";
     public string Expires { get; set; } = "forever";
     public string Reason { get; set; } = "Banned by an operator.";
 
@@ -86,7 +86,7 @@ public class IpPolicyEntry : Bindable
     }
 
     public string Created { get; set; } = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss K");
-    public string Source { get; set; } = "MinecraftHost";
+    public string Source { get; set; } = "MCHost";
     public string Expires { get; set; } = "forever";
     public string Reason { get; set; } = "Banned by an operator.";
 }
@@ -467,7 +467,7 @@ public class ServerFileEditorViewModel : Bindable
                     Name = name,
                     Uuid = uuid,
                     Created = ReadString(node, "created", DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss K")),
-                    Source = ReadString(node, "source", "MinecraftHost"),
+                    Source = ReadString(node, "source", "MCHost"),
                     Expires = ReadString(node, "expires", "forever"),
                     Reason = ReadString(node, "reason", "Banned by an operator."),
                     Level = ReadInt(node, "level", 4),
@@ -509,7 +509,7 @@ public class ServerFileEditorViewModel : Bindable
                 {
                     Ip = ip,
                     Created = ReadString(node, "created", DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss K")),
-                    Source = ReadString(node, "source", "MinecraftHost"),
+                    Source = ReadString(node, "source", "MCHost"),
                     Expires = ReadString(node, "expires", "forever"),
                     Reason = ReadString(node, "reason", "Banned by an operator.")
                 };
@@ -644,7 +644,7 @@ public class ServerFileEditorViewModel : Bindable
                 if (IsBannedPlayersEditor)
                 {
                     item["created"] = string.IsNullOrWhiteSpace(entry.Created) ? DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss K") : entry.Created;
-                    item["source"] = string.IsNullOrWhiteSpace(entry.Source) ? "MinecraftHost" : entry.Source;
+                    item["source"] = string.IsNullOrWhiteSpace(entry.Source) ? "MCHost" : entry.Source;
                     item["expires"] = string.IsNullOrWhiteSpace(entry.Expires) ? "forever" : entry.Expires;
                     item["reason"] = string.IsNullOrWhiteSpace(entry.Reason) ? "Banned by an operator." : entry.Reason;
                 }
@@ -735,7 +735,7 @@ public class ServerFileEditorViewModel : Bindable
             {
                 ["ip"] = entry.Ip,
                 ["created"] = string.IsNullOrWhiteSpace(entry.Created) ? DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss K") : entry.Created,
-                ["source"] = string.IsNullOrWhiteSpace(entry.Source) ? "MinecraftHost" : entry.Source,
+                ["source"] = string.IsNullOrWhiteSpace(entry.Source) ? "MCHost" : entry.Source,
                 ["expires"] = string.IsNullOrWhiteSpace(entry.Expires) ? "forever" : entry.Expires,
                 ["reason"] = string.IsNullOrWhiteSpace(entry.Reason) ? "Banned by an operator." : entry.Reason
             };

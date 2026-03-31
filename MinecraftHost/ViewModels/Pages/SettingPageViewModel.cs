@@ -515,7 +515,7 @@ public class SettingPageViewModel : Bindable
         if (!decision.Allowed)
         {
             AuthorizationStatus = AuthorizationUiText.ToInline(decision.Reason);
-            MessageBox.Show(AuthorizationUiText.ToDialog(decision.Reason), "MinecraftHost", MessageBoxButton.OK, MessageBoxImage.Warning);
+            MessageBox.Show(AuthorizationUiText.ToDialog(decision.Reason), "MCHost", MessageBoxButton.OK, MessageBoxImage.Warning);
             return;
         }
 
@@ -533,7 +533,7 @@ public class SettingPageViewModel : Bindable
         if (!decision.Allowed)
         {
             AuthorizationStatus = AuthorizationUiText.ToInline(decision.Reason);
-            MessageBox.Show(AuthorizationUiText.ToDialog(decision.Reason), "MinecraftHost", MessageBoxButton.OK, MessageBoxImage.Warning);
+            MessageBox.Show(AuthorizationUiText.ToDialog(decision.Reason), "MCHost", MessageBoxButton.OK, MessageBoxImage.Warning);
             return;
         }
 

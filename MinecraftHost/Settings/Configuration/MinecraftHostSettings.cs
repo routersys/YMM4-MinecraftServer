@@ -10,7 +10,7 @@ public class MinecraftHostSettings : SettingsBase<MinecraftHostSettings>
     private static readonly MinecraftHostSettingsMigrator Migrator = new();
 
     public override SettingsCategory Category => SettingsCategory.Tool;
-    public override string Name => "MinecraftHost";
+    public override string Name => "MCHost";
     public override bool HasSettingView => true;
     public override object? SettingView => new SettingPage();
 

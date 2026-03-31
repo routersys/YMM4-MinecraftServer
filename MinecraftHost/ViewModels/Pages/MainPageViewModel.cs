@@ -79,7 +79,7 @@ public class MainPageViewModel : Bindable, IToolViewModel, IDisposable
         private set => Set(ref _authorizationStatusMessage, value);
     }
 
-    public string Title => "MinecraftHost";
+    public string Title => "MCHost";
 
     private bool _canSuspend = true;
     public bool CanSuspend
@@ -301,7 +301,7 @@ public class MainPageViewModel : Bindable, IToolViewModel, IDisposable
         if (!decision.Allowed)
         {
             UpdateAuthorizationState();
-            MessageBox.Show(AuthorizationUiText.ToDialog(decision.Reason), "MinecraftHost", MessageBoxButton.OK, MessageBoxImage.Warning);
+            MessageBox.Show(AuthorizationUiText.ToDialog(decision.Reason), "MCHost", MessageBoxButton.OK, MessageBoxImage.Warning);
             return;
         }
 
@@ -319,7 +319,7 @@ public class MainPageViewModel : Bindable, IToolViewModel, IDisposable
         if (!decision.Allowed)
         {
             UpdateAuthorizationState();
-            MessageBox.Show(AuthorizationUiText.ToDialog(decision.Reason), "MinecraftHost", MessageBoxButton.OK, MessageBoxImage.Warning);
+            MessageBox.Show(AuthorizationUiText.ToDialog(decision.Reason), "MCHost", MessageBoxButton.OK, MessageBoxImage.Warning);
             return;
         }
 
@@ -348,19 +348,19 @@ public class MainPageViewModel : Bindable, IToolViewModel, IDisposable
         if (!decision.Allowed)
         {
             UpdateAuthorizationState();
-            MessageBox.Show(AuthorizationUiText.ToDialog(decision.Reason), "MinecraftHost", MessageBoxButton.OK, MessageBoxImage.Warning);
+            MessageBox.Show(AuthorizationUiText.ToDialog(decision.Reason), "MCHost", MessageBoxButton.OK, MessageBoxImage.Warning);
             return;
         }
 
         if (target.IsRunning)
         {
-            MessageBox.Show(Texts.MainPage_DeleteAfterStopRequired, "MinecraftHost", MessageBoxButton.OK, MessageBoxImage.Warning);
+            MessageBox.Show(Texts.MainPage_DeleteAfterStopRequired, "MCHost", MessageBoxButton.OK, MessageBoxImage.Warning);
             return;
         }
 
         var confirm = MessageBox.Show(
             string.Format(Texts.MainPage_DeleteServerConfirmFormat, target.Name),
-            "MinecraftHost",
+            "MCHost",
             MessageBoxButton.YesNo,
             MessageBoxImage.Warning,
             MessageBoxResult.No);
@@ -391,7 +391,7 @@ public class MainPageViewModel : Bindable, IToolViewModel, IDisposable
             {
                 Application.Current.Dispatcher.Invoke(() =>
                 {
-                    MessageBox.Show(string.Format(Texts.MainPage_DeleteServerDirectoryFailedFormat, ex.Message), "MinecraftHost", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show(string.Format(Texts.MainPage_DeleteServerDirectoryFailedFormat, ex.Message), "MCHost", MessageBoxButton.OK, MessageBoxImage.Warning);
                 });
                 _structuredLogService.Log(Models.Logging.StructuredLogLevel.Error, "MainPageViewModel", string.Format(Texts.MainPage_DeleteServerDirectoryFailedFormat, ex.Message), "DeleteServer", targetId.ToString(), ex);
                 throw;

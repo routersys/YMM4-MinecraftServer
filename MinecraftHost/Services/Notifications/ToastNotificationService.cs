@@ -12,19 +12,19 @@ public sealed class ToastNotificationService : Interfaces.Notifications.IToastNo
         try
         {
             var title = Texts.ServerStartedToast_Title;
-            
+
             var parts = new List<string>(2);
             if (!string.IsNullOrWhiteSpace(ipv4Address))
             {
-                parts.Add(port is 25565 or 19132 
-                    ? ipv4Address 
+                parts.Add(port is 25565 or 19132
+                    ? ipv4Address
                     : $"{ipv4Address}:{port}");
             }
 
             if (!string.IsNullOrWhiteSpace(ipv6Address))
             {
-                parts.Add(port is 25565 or 19132 
-                    ? ipv6Address 
+                parts.Add(port is 25565 or 19132
+                    ? ipv6Address
                     : $"[{ipv6Address}]:{port}");
             }
 
@@ -44,9 +44,9 @@ public sealed class ToastNotificationService : Interfaces.Notifications.IToastNo
                     System.Windows.Clipboard.SetText(joinedAddresses);
                 });
             };
-            
+
             ToastNotificationManager.CreateToastNotifier(AppDomain.CurrentDomain.FriendlyName).Show(toast);
-            
+
             StructuredLogServiceProvider.Instance.Log(StructuredLogLevel.Information, nameof(ToastNotificationService), $"トースト通知を表示しました: {message}", "ShowToast");
         }
         catch (Exception ex)

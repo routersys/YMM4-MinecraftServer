@@ -52,13 +52,13 @@ public sealed class PortAvailabilityChecker : Interfaces.Net.IPortAvailabilityCh
         {
             using var client = new UdpClient();
             using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(3));
-            
+
             ReadOnlySpan<byte> magic = [0x00, 0xff, 0xff, 0x00, 0xfe, 0xfe, 0xfe, 0xfe, 0xfd, 0xfd, 0xfd, 0xfd, 0x12, 0x34, 0x56, 0x78];
             var payload = new byte[33];
             payload[0] = 0x01;
             BinaryPrimitives.WriteInt64BigEndian(payload.AsSpan(1, 8), DateTimeOffset.UtcNow.ToUnixTimeMilliseconds());
             magic.CopyTo(payload.AsSpan(9, 16));
-            
+
             await client.SendAsync(payload, ipAddress, port, cts.Token);
             var result = await client.ReceiveAsync(cts.Token);
             return result.Buffer.Length > 0 && result.Buffer[0] == 0x1c;
