@@ -1,4 +1,4 @@
-# MinecraftHost for YMM4
+# MC サーバーホスト for YMM4
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](#)
 [![.NET](https://img.shields.io/badge/.NET-10.0-purple.svg)](#)
@@ -202,6 +202,8 @@ BDS (Bedrock Dedicated Server) はEULAへの同意が必要です。初回起動
 作者は、本プラグインの使用または使用不能に起因するいかなる損害についても、一切の責任を負いません。
 
 ご利用は自己責任でお願いします。
+
+Minecraft の公式の サーバーホストプラグイン ではありません。Mojang または Microsoft から承認を受けておらず、それとの関連性もありません。
 
 ---
 
