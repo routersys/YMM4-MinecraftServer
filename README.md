@@ -7,7 +7,7 @@
 YukkuriMovieMaker4 (YMM4) 上で動作する **Minecraft サーバー管理ツールプラグイン**です。
 Vanilla・Paper・Fabric・Forge・Bedrock の5種類のサーバータイプに対応し、サーバーJARのダウンロードから起動・停止・コンソール操作・プラグイン/MOD管理・ファイル編集までを単一のUIで行います。
 
-![Image](https://github.com/routersys/YMM4-MCServer/blob/main/docs/MCHost.png)
+![Image](https://github.com/routersys/YMM4-MCServer/blob/main/docs/MCHost.gif)
 
 ---
 
